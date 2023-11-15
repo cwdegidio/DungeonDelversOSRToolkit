@@ -28,6 +28,11 @@
 		E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77852B048EF800596BF0 /* CharacterClass.swift */; };
 		E9FD77882B048F1000596BF0 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77872B048F1000596BF0 /* Language.swift */; };
 		E9FD778C2B049B4400596BF0 /* Handlee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */; };
+		E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD778F2B049E0F00596BF0 /* AbilityStatBlock.swift */; };
+		E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77912B049EAE00596BF0 /* Typography.swift */; };
+		E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77932B049FE400596BF0 /* CircularStar.swift */; };
+		E9FD77962B04A17A00596BF0 /* AbilityFlourish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77952B04A17A00596BF0 /* AbilityFlourish.swift */; };
+		E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77972B04A44800596BF0 /* GlobalBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,11 @@
 		E9FD77872B048F1000596BF0 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handlee-Regular.ttf"; sourceTree = "<group>"; };
 		E9FD778B2B049A1A00596BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E9FD778F2B049E0F00596BF0 /* AbilityStatBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityStatBlock.swift; sourceTree = "<group>"; };
+		E9FD77912B049EAE00596BF0 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		E9FD77932B049FE400596BF0 /* CircularStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularStar.swift; sourceTree = "<group>"; };
+		E9FD77952B04A17A00596BF0 /* AbilityFlourish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityFlourish.swift; sourceTree = "<group>"; };
+		E9FD77972B04A44800596BF0 /* GlobalBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 		E9FD77562B04899F00596BF0 /* DungeonDelversOSRToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				E9FD778D2B049DDB00596BF0 /* Views */,
 				E9FD778B2B049A1A00596BF0 /* Info.plist */,
 				E9FD77892B04990400596BF0 /* Resources */,
 				E9FD77742B048DF400596BF0 /* Enums */,
@@ -150,6 +161,34 @@
 				E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9FD778D2B049DDB00596BF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD77992B04A70300596BF0 /* New Group */,
+				E9FD778E2B049DE200596BF0 /* Atomics */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9FD778E2B049DE200596BF0 /* Atomics */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD778F2B049E0F00596BF0 /* AbilityStatBlock.swift */,
+				E9FD77912B049EAE00596BF0 /* Typography.swift */,
+				E9FD77932B049FE400596BF0 /* CircularStar.swift */,
+				E9FD77952B04A17A00596BF0 /* AbilityFlourish.swift */,
+				E9FD77972B04A44800596BF0 /* GlobalBackground.swift */,
+			);
+			path = Atomics;
+			sourceTree = "<group>";
+		};
+		E9FD77992B04A70300596BF0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,11 +291,16 @@
 				E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */,
 				E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */,
 				E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */,
+				E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */,
+				E9FD77962B04A17A00596BF0 /* AbilityFlourish.swift in Sources */,
 				E9FD77682B048D0600596BF0 /* CharacterAbility.swift in Sources */,
 				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
 				E9FD77802B048EA300596BF0 /* Screen.swift in Sources */,
+				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
 				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
 				E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */,
+				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,
+				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,
 				E9FD77712B048DB000596BF0 /* Ability.swift in Sources */,
 				E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */,
 				E9FD776E2B048D8400596BF0 /* ApplicationScreen.swift in Sources */,
