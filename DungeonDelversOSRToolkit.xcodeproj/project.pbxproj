@@ -27,6 +27,7 @@
 		E9FD77842B048ED800596BF0 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77832B048ED800596BF0 /* Section.swift */; };
 		E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77852B048EF800596BF0 /* CharacterClass.swift */; };
 		E9FD77882B048F1000596BF0 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77872B048F1000596BF0 /* Language.swift */; };
+		E9FD778C2B049B4400596BF0 /* Handlee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		E9FD77832B048ED800596BF0 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		E9FD77852B048EF800596BF0 /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
 		E9FD77872B048F1000596BF0 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handlee-Regular.ttf"; sourceTree = "<group>"; };
+		E9FD778B2B049A1A00596BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 		E9FD77562B04899F00596BF0 /* DungeonDelversOSRToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				E9FD778B2B049A1A00596BF0 /* Info.plist */,
+				E9FD77892B04990400596BF0 /* Resources */,
 				E9FD77742B048DF400596BF0 /* Enums */,
 				E9FD776F2B048D9A00596BF0 /* Protocols */,
 				E9FD77662B048CF400596BF0 /* Models */,
@@ -137,6 +142,14 @@
 				E9FD77872B048F1000596BF0 /* Language.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		E9FD77892B04990400596BF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FD778C2B049B4400596BF0 /* Handlee-Regular.ttf in Resources */,
 				E9FD775F2B0489A000596BF0 /* Preview Assets.xcassets in Resources */,
 				E9FD775C2B0489A000596BF0 /* Assets.xcassets in Resources */,
 			);
@@ -385,6 +399,7 @@
 				DEVELOPMENT_TEAM = AM4NFC4797;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DungeonDelversOSRToolkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -414,6 +429,7 @@
 				DEVELOPMENT_TEAM = AM4NFC4797;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DungeonDelversOSRToolkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
