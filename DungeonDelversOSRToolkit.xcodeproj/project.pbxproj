@@ -11,6 +11,22 @@
 		E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77592B04899F00596BF0 /* ContentView.swift */; };
 		E9FD775C2B0489A000596BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FD775B2B0489A000596BF0 /* Assets.xcassets */; };
 		E9FD775F2B0489A000596BF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FD775E2B0489A000596BF0 /* Preview Assets.xcassets */; };
+		E9FD77682B048D0600596BF0 /* CharacterAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77672B048D0600596BF0 /* CharacterAbility.swift */; };
+		E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77692B048D3100596BF0 /* CharacterMod.swift */; };
+		E9FD776C2B048D5C00596BF0 /* PlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD776B2B048D5C00596BF0 /* PlayerCharacter.swift */; };
+		E9FD776E2B048D8400596BF0 /* ApplicationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD776D2B048D8400596BF0 /* ApplicationScreen.swift */; };
+		E9FD77712B048DB000596BF0 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77702B048DB000596BF0 /* Ability.swift */; };
+		E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77722B048DD100596BF0 /* Modifier.swift */; };
+		E9FD77762B048DFD00596BF0 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77752B048DFD00596BF0 /* Stat.swift */; };
+		E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77772B048E2C00596BF0 /* Mod.swift */; };
+		E9FD777A2B048E4E00596BF0 /* SpokenLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77792B048E4E00596BF0 /* SpokenLanguage.swift */; };
+		E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD777B2B048E6600596BF0 /* Literacy.swift */; };
+		E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD777D2B048E7F00596BF0 /* Alignment.swift */; };
+		E9FD77802B048EA300596BF0 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD777F2B048EA300596BF0 /* Screen.swift */; };
+		E9FD77822B048EB800596BF0 /* TypeFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77812B048EB800596BF0 /* TypeFace.swift */; };
+		E9FD77842B048ED800596BF0 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77832B048ED800596BF0 /* Section.swift */; };
+		E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77852B048EF800596BF0 /* CharacterClass.swift */; };
+		E9FD77882B048F1000596BF0 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77872B048F1000596BF0 /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +35,22 @@
 		E9FD77592B04899F00596BF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9FD775B2B0489A000596BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9FD775E2B0489A000596BF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9FD77672B048D0600596BF0 /* CharacterAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAbility.swift; sourceTree = "<group>"; };
+		E9FD77692B048D3100596BF0 /* CharacterMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMod.swift; sourceTree = "<group>"; };
+		E9FD776B2B048D5C00596BF0 /* PlayerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCharacter.swift; sourceTree = "<group>"; };
+		E9FD776D2B048D8400596BF0 /* ApplicationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationScreen.swift; sourceTree = "<group>"; };
+		E9FD77702B048DB000596BF0 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		E9FD77722B048DD100596BF0 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		E9FD77752B048DFD00596BF0 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		E9FD77772B048E2C00596BF0 /* Mod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mod.swift; sourceTree = "<group>"; };
+		E9FD77792B048E4E00596BF0 /* SpokenLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenLanguage.swift; sourceTree = "<group>"; };
+		E9FD777B2B048E6600596BF0 /* Literacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Literacy.swift; sourceTree = "<group>"; };
+		E9FD777D2B048E7F00596BF0 /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		E9FD777F2B048EA300596BF0 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		E9FD77812B048EB800596BF0 /* TypeFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeFace.swift; sourceTree = "<group>"; };
+		E9FD77832B048ED800596BF0 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		E9FD77852B048EF800596BF0 /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
+		E9FD77872B048F1000596BF0 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +83,9 @@
 		E9FD77562B04899F00596BF0 /* DungeonDelversOSRToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				E9FD77742B048DF400596BF0 /* Enums */,
+				E9FD776F2B048D9A00596BF0 /* Protocols */,
+				E9FD77662B048CF400596BF0 /* Models */,
 				E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */,
 				E9FD77592B04899F00596BF0 /* ContentView.swift */,
 				E9FD775B2B0489A000596BF0 /* Assets.xcassets */,
@@ -65,6 +100,43 @@
 				E9FD775E2B0489A000596BF0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9FD77662B048CF400596BF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD77672B048D0600596BF0 /* CharacterAbility.swift */,
+				E9FD77692B048D3100596BF0 /* CharacterMod.swift */,
+				E9FD776B2B048D5C00596BF0 /* PlayerCharacter.swift */,
+				E9FD776D2B048D8400596BF0 /* ApplicationScreen.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E9FD776F2B048D9A00596BF0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD77702B048DB000596BF0 /* Ability.swift */,
+				E9FD77722B048DD100596BF0 /* Modifier.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E9FD77742B048DF400596BF0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E9FD77752B048DFD00596BF0 /* Stat.swift */,
+				E9FD77772B048E2C00596BF0 /* Mod.swift */,
+				E9FD77792B048E4E00596BF0 /* SpokenLanguage.swift */,
+				E9FD777B2B048E6600596BF0 /* Literacy.swift */,
+				E9FD777D2B048E7F00596BF0 /* Alignment.swift */,
+				E9FD777F2B048EA300596BF0 /* Screen.swift */,
+				E9FD77812B048EB800596BF0 /* TypeFace.swift */,
+				E9FD77832B048ED800596BF0 /* Section.swift */,
+				E9FD77852B048EF800596BF0 /* CharacterClass.swift */,
+				E9FD77872B048F1000596BF0 /* Language.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +231,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FD777A2B048E4E00596BF0 /* SpokenLanguage.swift in Sources */,
+				E9FD77762B048DFD00596BF0 /* Stat.swift in Sources */,
+				E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */,
+				E9FD77882B048F1000596BF0 /* Language.swift in Sources */,
+				E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */,
+				E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */,
 				E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */,
+				E9FD77682B048D0600596BF0 /* CharacterAbility.swift in Sources */,
+				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
+				E9FD77802B048EA300596BF0 /* Screen.swift in Sources */,
+				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
+				E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */,
+				E9FD77712B048DB000596BF0 /* Ability.swift in Sources */,
 				E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */,
+				E9FD776E2B048D8400596BF0 /* ApplicationScreen.swift in Sources */,
+				E9FD77842B048ED800596BF0 /* Section.swift in Sources */,
+				E9FD776C2B048D5C00596BF0 /* PlayerCharacter.swift in Sources */,
+				E9FD77822B048EB800596BF0 /* TypeFace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
