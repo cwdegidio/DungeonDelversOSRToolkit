@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CircularStar: Shape {
+  // swiftlint:disable function_body_length
+  // Disabling to allow for the creation of a custom shape.
   func path(in rect: CGRect) -> Path {
     var path = Path()
     let width = rect.size.width
@@ -108,4 +110,5 @@ struct CircularStar: Shape {
     path.closeSubpath()
     return path
   }
+  // swiftlint:enable function_body_length
 }

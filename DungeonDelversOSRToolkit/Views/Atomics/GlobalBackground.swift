@@ -11,11 +11,15 @@ struct GlobalBackground: View {
   var body: some View {
     ZStack {
       Rectangle()
-        .fill(.black)
+        .fill(.white)
         .ignoresSafeArea()
       Image("tkBackground")
         .resizable(resizingMode: .tile)
         .ignoresSafeArea()
+      Image("tkBackgroundOverlay")
+        .resizable(resizingMode: .tile)
+        .ignoresSafeArea()
+        .opacity(0.05)
     }
   }
 }
