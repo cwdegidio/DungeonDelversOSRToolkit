@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct AbilityStatBlock: View {
+  @State var scaleValue = 1.0
+  @Binding var currentCharacterAbility: Ability
+  @Binding var abilityScore: Int
+  @Binding var abilityTitle: String
+  var stat: Ability
   let score: Int
   let ability: String
 
@@ -21,15 +26,36 @@ struct AbilityStatBlock: View {
       VStack {
         Text("\(score)")
           .font(Font.custom("Courier", size: 26))
-          .font(.title)
         Text("\(ability)")
-          .font(Font.custom("Courier", size: 21))
-          .fontWeight(.black)
+          .font(.title2)
+          .fontWeight(.bold)
+      }
+    }
+    .scaleEffect(scaleValue)
+    .onTapGesture {
+      currentCharacterAbility = stat
+      abilityScore = currentCharacterAbility.score
+      abilityTitle = currentCharacterAbility.statType.name
+      withAnimation(.linear(duration: 0.10)) {
+        scaleValue = 0.85
+      }
+      withAnimation(.easeIn(duration: 0.10).delay(0.12)) {
+        scaleValue = 1.0
       }
     }
   }
 }
 
+
 #Preview {
-  AbilityStatBlock(score: 18, ability: "Str")
+  let characterAbility = CharacterAbility(statType: .str, score: 18)
+  let abilityScore = 18
+  return AbilityStatBlock(
+    currentCharacterAbility: .constant(characterAbility),
+    abilityScore: .constant(abilityScore),
+    abilityTitle: .constant(characterAbility.statType.name),
+    stat: characterAbility,
+    score: 18,
+    ability: "Str"
+  )
 }

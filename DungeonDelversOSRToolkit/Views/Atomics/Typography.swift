@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Typography: View {
-  var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-  }
-}
-
 struct Instruction: View {
   let content: String
 
@@ -32,10 +26,37 @@ struct AbilityTitle: View {
   }
 }
 
-#Preview {
-  Group {
-    Typography()
-    Instruction(content: "Tap ability to view modifiers or reroll score.")
-    AbilityTitle(content: "Strength")
+struct AbilityScoreFlourish: View {
+  let content: Int
+
+  var body: some View {
+    Text("\(content)")
+      .font(Font.custom("Handlee-Regular", size: 96))
   }
+}
+
+struct Subtitle: View {
+  let content: String
+
+  var body: some View {
+    Text(content)
+      .font(.system(size: 28.0))
+      .fontWeight(.bold)
+  }
+}
+
+#Preview("Instruction") {
+  Instruction(content: "Tap ability to view modifiers or reroll score.")
+}
+
+#Preview("Ability Title") {
+  AbilityTitle(content: "Strength")
+}
+
+#Preview("Ability Score Flourish") {
+  AbilityScoreFlourish(content: 18)
+}
+
+#Preview("Subtitle") {
+  Subtitle(content: "Modifiers")
 }

@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject private var player = PlayerCharacter()
+  @StateObject var screen = ApplicationScreen(currentScreen: .abilities)
+
   var body: some View {
-    VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundStyle(.tint)
-      Text("18")
-        .font(Font.custom("Handlee-Regular", size: 72))
-      Text("Hello, world!")
-        .font(Font.custom("Courier", size: 36))
-        .bold()
+    switch screen.currentScreen {
+    case .abilities:
+      Abilities()
+        .environment(player)
+        .environment(screen)
+      //    case .classSelection:
+      //      ClassSelection()
+      //        .environment(pc)
+      //        .environment(screen)
+      //    case .abilityAdjustment:
+      //      AbilityAdjustments()
+      //        .environment(pc)
+      //        .environment(screen)
     }
-    .padding()
   }
 }
 
