@@ -41,7 +41,7 @@ struct AbilityPortraitFlourish: View {
       }
       .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.4), radius: 20)
       AbilityScoreFlourish(content: abilityScore)
-        .padding(.top, 5)
+        .padding(.top, -10)
     }
   }
 }

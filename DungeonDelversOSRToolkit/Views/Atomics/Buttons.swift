@@ -24,6 +24,7 @@ struct SmallButton: View {
   let label: String
   let icon: String
   let bgColor: Color
+  let fgColor: Color?
   let action: () -> Void
 
   var body: some View {
@@ -36,10 +37,10 @@ struct SmallButton: View {
   var buttonLabel: some View {
     HStack {
       Image(systemName: icon)
-        .foregroundStyle(Color.white)
+        .foregroundStyle(fgColor ?? Color.white)
         .imageScale(.small)
       Text(label)
-        .foregroundStyle(Color.white)
+        .foregroundStyle(fgColor ?? Color.white)
     }
   }
 }
@@ -69,5 +70,5 @@ extension Button {
 }
 
 #Preview("Small Button") {
-  SmallButton(label: "Reroll", icon: "dice.fill", bgColor: Color("tkBlue")) {}
+  SmallButton(label: "Reroll", icon: "dice.fill", bgColor: Color("tkBlue"), fgColor: nil) {}
 }
