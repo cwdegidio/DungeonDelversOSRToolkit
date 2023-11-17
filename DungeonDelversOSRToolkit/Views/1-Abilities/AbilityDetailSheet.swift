@@ -19,27 +19,26 @@ struct AbilityDetailSheet: View {
 
   var body: some View {
     VStack {
-      AbilityTitle(content: stat.name)
+      AbilityDetailTitle(content: "\(stat.name) Modifiers")
       Text(stat.description)
         .padding(.bottom, 20)
       VStack(alignment: .leading) {
         ForEach(player.modifiers.filter { $0.asscStat == stat }, id: \.modType) { modifier in
           let modifierName = modifier.modType.name
           let modifierDescription = modifier.modType.description
-          BulletedText(content: "**\(modifierName):** \(modifierDescription)")
-        }
-      }
-      .padding(.bottom, 15)
-      Subtitle(content: "Modifiers")
-      VStack(alignment: .leading) {
-        ForEach(player.modifiers.filter { $0.asscStat == stat }, id: \.modType) { modifier in
-          let modifierName = modifier.modType.name
           let modifierString = viewModel.getModifierString(for: modifier, player: player)
-          BulletedText(content: "**\(modifierName):** \(modifierString)")
+          DisclosureGroup {
+            Text(modifierDescription)
+              .padding(.leading, 20)
+              .frame(maxWidth: .infinity, alignment: .leading)
+          } label: {
+            BulletedText(content: "**\(modifierName):** \(modifierString)")
+              .foregroundStyle(Color.primary)
+          }
         }
       }
       .padding(.bottom, 20)
-      SmallButton(label: "Got it!", icon: "hand.thumbsup.fill", bgColor: Color("tkBlue")) {
+      SmallButton(label: "Got it!", icon: "hand.thumbsup.fill", bgColor: Color("tkBlue"), fgColor: nil) {
         dismiss()
       }
     }

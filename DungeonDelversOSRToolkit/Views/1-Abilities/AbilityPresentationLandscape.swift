@@ -12,6 +12,7 @@ struct AbilityPresentationLandscape: View {
   @Binding var abilityScore: Int
   @Binding var currentCharacterAbility: Ability
   @Binding var showSheet: Bool
+  @Binding var statsRolled: Bool
   var player: PlayerCharacter
   var viewModel: AbilityViewModel
 
@@ -21,7 +22,12 @@ struct AbilityPresentationLandscape: View {
       Spacer()
       VStack {
         HStack {
-          SmallButton(label: "Modifiers", icon: "plus.forwardslash.minus", bgColor: Color("tkBlue")) {
+          SmallButton(
+            label: "Modifiers",
+            icon: "plus.forwardslash.minus",
+            bgColor: statsRolled ? Color("tkBlue") : Color.gray,
+            fgColor: statsRolled ? Color.white : Color(red: 0.75, green: 0.75, blue: 0.75)
+          ) {
             displaySheet()
           }
           .sheet(isPresented: $showSheet) {
@@ -32,14 +38,21 @@ struct AbilityPresentationLandscape: View {
           SmallButton(
             label: "Reroll \(currentCharacterAbility.statType.shortName)",
             icon: "die.face.6.fill",
-            bgColor: Color("tkBlue")
+            bgColor: statsRolled ? Color("tkBlue") : Color.gray,
+            fgColor: statsRolled ? Color.white : Color(red: 0.75, green: 0.75, blue: 0.75)
           ) {
             viewModel.setSingleAbilityScore(for: player, onAbility: currentCharacterAbility.statType)
             abilityScore = currentCharacterAbility.score
           }
         }
         .padding(.bottom, 10)
-        SmallButton(label: "Roll All Abilities", icon: "dice.fill", bgColor: Color("tkRed")) {
+        SmallButton(
+          label: "Roll All Abilities",
+          icon: "dice.fill",
+          bgColor: Color("tkRed"),
+          fgColor: nil
+        ) {
+          statsRolled = true
           viewModel.setAllAbilityScores(for: player)
           abilityScore = currentCharacterAbility.score
           if let currentAbility = player.abilityScores.first {
@@ -64,6 +77,7 @@ struct AbilityPresentationLandscape: View {
     abilityScore: .constant(18),
     currentCharacterAbility: .constant(CharacterAbility(statType: .str, score: 18)),
     showSheet: .constant(false),
+    statsRolled: .constant(false),
     player: PlayerCharacter(),
     viewModel: AbilityViewModel()
   )

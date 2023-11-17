@@ -19,6 +19,7 @@ struct Abilities: View {
   @State private var currentCharacterAbility: Ability = CharacterAbility(statType: .str, score: 0)
   @State private var abilityScore = 0
   @State private var abilityTitle = "Let's Roll!"
+  @State private var statsRolled = false
   let viewModel = AbilityViewModel()
 
   var body: some View {
@@ -36,6 +37,7 @@ struct Abilities: View {
             abilityScore: $abilityScore,
             currentCharacterAbility: $currentCharacterAbility,
             showSheet: $showSheet,
+            statsRolled: $statsRolled,
             player: player,
             viewModel: viewModel
           )
@@ -47,6 +49,7 @@ struct Abilities: View {
             abilityScore: $abilityScore,
             currentCharacterAbility: $currentCharacterAbility,
             showSheet: $showSheet,
+            statsRolled: $statsRolled,
             player: player,
             viewModel: viewModel
           )
