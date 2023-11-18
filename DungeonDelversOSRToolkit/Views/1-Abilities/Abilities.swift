@@ -14,6 +14,7 @@ struct Abilities: View {
   var horizontalSizeClass: UserInterfaceSizeClass?
 
   @EnvironmentObject var player: PlayerCharacter
+  @EnvironmentObject var screen: ApplicationScreen
 
   @State private var showSheet = false
   @State private var currentCharacterAbility: Ability = CharacterAbility(statType: .str, score: 0)
@@ -53,9 +54,8 @@ struct Abilities: View {
             player: player,
             viewModel: viewModel
           )
-            .padding(.top, 100)
+          .padding(.top, 100)
         }
-
         Spacer()
         AbilityStatBlockItems(
           currentCharacterAbility: $currentCharacterAbility,
@@ -65,8 +65,18 @@ struct Abilities: View {
           horizontalSizeClass: horizontalSizeClass ?? .regular,
           verticalSizeClass: verticalSizeClass ?? .regular
         )
+        Spacer()
+        LargeButton(label: "Next Step: Select Class") {
+          nextScreen()
+        }
+        .padding(.horizontal, 20)
+        .padding(.bottom, 20)
       }
     }
+  }
+
+  func nextScreen() {
+    screen.currentScreen = Screen.classSelection
   }
 }
 

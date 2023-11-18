@@ -58,6 +58,8 @@ struct AbilityPresentationPortrait: View {
           abilityTitle = currentAbility.statType.name
         }
       }
+      .padding(.top, -30)
+      .padding(.bottom, 30)
       .padding(.horizontal, 20)
     }
   }

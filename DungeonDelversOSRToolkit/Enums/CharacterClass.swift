@@ -7,6 +7,8 @@
 
 import Foundation
 
+// swiftlint:disable type_body_length
+// All character class data is stored in enum due to regular reference
 enum CharacterClass: CaseIterable {
   case cleric
   case dwarf
@@ -50,30 +52,26 @@ enum CharacterClass: CaseIterable {
     case .magicUser:
       return "fireworks"
     case .thief:
-      return "lock.open.fill"
+      return "figure.climbing"
     }
   }
 
   var description: String {
     switch self {
     case .cleric:
-      return "Clerics are adventurers who have sworn to serve a deity. " +
-        "They are trained for battle and channel the power of their deity."
+      return "Clerics are adventurers who have sworn to serve a deity. "
     case .dwarf:
-      return "Dwarves are known for their stubbornness and practicality. " +
-        "They are a hardy people and have a strong resistance to magic."
+      return "Dwarves are known for their stubbornness and practicality."
     case .elf:
       return "Elves are fascinated by spells and beautifully constructed magic items and love to collect both."
     case .fighter:
       return "Fighters are adventurers dedicated to mastering the arts of combat and war."
     case .halfling:
-      return "Halflings are a friendly and welcoming folk. " +
-        "Above all, they love the comforts of home and are not known for their bravery."
+      return "Halflings are a friendly and welcoming folk."
     case .magicUser:
       return "Magic-users are adventurers whose study of arcane secrets has taught them how to cast spells."
     case .thief:
-      return "Thieves are adventurers who live by their skills of deception and stealth. " +
-        "Their range of unique skills makes them very handy companions in adventures."
+      return "Thieves are adventurers who live by their skills of deception and stealth."
     }
   }
 
@@ -148,7 +146,7 @@ enum CharacterClass: CaseIterable {
     }
   }
 
-  var classFeatures: String {
+  var classFeatures: KeyValuePairs<String, String> {
     var primeReqString = ""
 
     for i in 0..<primeRequisite.count {
@@ -161,38 +159,91 @@ enum CharacterClass: CaseIterable {
 
     switch self {
     case .cleric:
-      return "Prime Requisite(s): \(primeReqString)\n" +
-        "Combat: Clerics can use all types of armour. " +
-        "They may use the following weapons: club, mace, sling, staff, war hammer.\n" +
-        "Divine Magic\n- **Holy symbol:** A cleric must carry a holy symbol.\n\t" +
-        "Deity disfavor: Clerics who fall from favour with their deity may incur penalties.\n\t" +
-        "Magical research: A cleric of any level may spend time and money on magical research.\n\t" +
-        "Spell casting: Once a cleric has proven their faith, the character may pray to receive spells.\n\t" +
-        "Using magic items: As spell casters, clerics can use magic scrolls of spells on their spell list.\n" +
-        "Turning Undead: Clerics can invoke the power of their deity to repel undead monsters encountered.\n" +
-        "After Reaching 9th Level: A cleric may establish or build a strong- hold."
+      return [
+        "Prime Requisite(s)": primeReqString,
+        "Combat": "Clerics can use all types of armour. " +
+        "They may use the following weapons: club, mace, sling, staff, war hammer.",
+        "Divine Magic": "**Holy symbol:** A cleric must carry a holy symbol.\n" +
+        "**Deity disfavor**: Clerics who fall from favour with their deity may incur penalties.\n" +
+        "**Spell casting**: Once a cleric has proven their faith, the character may pray to receive spells.\n" +
+        "**Using magic items**: As spell casters, clerics can use magic scrolls of spells on their spell list.",
+        "Turning Undead": "Clerics can invoke the power of their deity to repel undead monsters encountered.",
+        "After Reaching 9th Level": "A cleric may establish or build a strong- hold."
+      ]
     case .dwarf:
-      return "Combat: Dwarves can use all types of armour. " +
+      return [
+        "Prime Requisite(s)": primeReqString,
+        "Combat": "Dwarves can use all types of armour. " +
         "Due to their short height, dwarves can only use small or normal sized weapons. " +
-        "They cannot use longbows or two-handed swords.\n" +
-        "Detect Construction Tricks: As expert miners, dwarves have a 2-in- 6 chance of being able to detect " +
-        "new construction, sliding walls, or sloping passages when searching.\n" +
-        "Detect Room Traps:** Due to their expertise with construction, dwarves have a 2-in-6 chance of detecting " +
-        "non-magical room traps when searching.\n" +
-        "- Infravision: Dwarves have infravision to 60’.\n" +
-        "- **Listening at Doors:** Dwarves have a 2-in-6 chance of hear- ing noises.\n" +
-        "- **After Reaching 9th Level:** A dwarf has the option of creating an underground stronghold " +
+        "They cannot use longbows or two-handed swords.",
+        "Detect Construction Tricks": "As expert miners, dwarves have a 2-in- 6 chance of being able to detect " +
+        "new construction, sliding walls, or sloping passages when searching.",
+        "Detect Room Traps": "Due to their expertise with construction, dwarves have a 2-in-6 chance of detecting " +
+        "non-magical room traps when searching.",
+        "Infravision": "Dwarves have infravision to 60’",
+        "Listening at Doors": "Dwarves have a 2-in-6 chance of hearing noises.",
+        "After Reaching 9th Level": "A dwarf has the option of creating an underground stronghold " +
         "that will attract dwarves from far and wide."
+      ]
     case .elf:
-      return ""
+      return [
+        "Prime Requisite(s)": primeReqString,
+        "Combat": "Elves can use all types of weapons and armour.",
+        "Arcane Magic": "**Magical Research:** An elf of any level may spend time and money on magical research.\n" +
+        "**Spell casting:** Elves carry spell books containing the formulae for arcane spells.\n" +
+        "**Use magic items:** As spell casters, elves are able to use magic scrolls of spells on their spell list.",
+        "Detect Secret Doors": "When actively searching, an can detect hidden and secret doors with a 2-in-6 chance.",
+        "Immunity to Ghoul Paralysis": "Elves are completely unaffected by the paralysis that ghouls can inflict.",
+        "Infravision": "Elves have infravision to 60’",
+        "Listening at Doors": "Elves have a 2-in-6 chance of hearing noises",
+        "After Reaching 9th Level": "An elf may construct a stronghold in the depths of the forest"
+      ]
     case .fighter:
-      return ""
+      return [
+        "Prime Requisite(s)": primeReqString,
+        "Combat": "Fighters can use all types of weapons and armour.",
+        "Stronghold": "Any time a fighter wishes, they can build a castle or stronghold",
+        "After Reaching 9th Level": "A fighter may be granted a title such as Baron or Baroness."
+      ]
     case .halfling:
-      return ""
+      return [
+        "Prime Requisite(s)": primeReqString,
+        "Combat": "Halflings can use all types of armour, but it must be tailored to their small size. " +
+        "They cannot use long- bows or two-handed swords.",
+        "Defensive Bonus": "Due to their small size, halflings gain a +2 bonus " +
+        "to Armour Class when attacked by large opponents.",
+        "Hiding": "Halflings have an uncanny ability to disappear from sight. " +
+        "In woods or undergrowth, a halfling can hide with a 90% chance of success. " +
+        "In dungeons, a halfling can hide in shadows or behind other forms of cover. The chance of success is 2-in-6.",
+        "Initiative Bonus": "Halflings get a bonus of +1 to initiative rolls.",
+        "Listening at Doors": "Halflings have a 2-in-6 chance of hear- ing noises.",
+        "Missile Attack Bonus": "+1 bonus to attack rolls with all missile weapons.",
+        "Stronghold": "Any time a halfling wishes (and has sufficient money), they may build a stronghold, " +
+        "which will form the basis of a new community of halflings."
+      ]
     case .magicUser:
-      return ""
+      return [
+        "Prime Requisite(s)": primeReqString,
+        "Combat": "Magic-users can only use daggers and are unable to use shields or wear any kind of armour.",
+        "Arcane Magic": "**Magical Research:** A magic-user of any level " +
+        "may spend time and money on magical research.\n" +
+        "**Spell casting:** Magic-users carry spell books containing the formulae for arcane spells.\n" +
+        "**Use magic items:** As spell casters, magic-users are able to use magic scrolls " +
+        "of spells on their spell list."
+      ]
     case .thief:
-      return ""
+      return [
+        "Prime Requisite(s)": primeReqString,
+        "Combat": "Thieves cannot wear armour heavier than leather and cannot use shields. They can use any weapon.",
+        "Back-Stab": "When attacking an unaware opponent from behind, a thief receives a +4 bonus " +
+        "to hit and doubles any damage dealt.",
+        "Read Languages": "A thief of 4th level or higher can read non-magical text in any language.",
+        "Scroll Use": "A thief of 10th level or higher can cast arcane spells from scrolls.",
+        "Thief Skills": "**Climb sheer surfaces**, **Find or remove treasure traps**, **Hear noise**, " +
+        "**Hide in shadows**, **Move silently**, **Open locks**, **Pick pockets**",
+        "After Reaching 9th Level": "A thief can establish a thief den, attract- ing 2d6 apprentices of 1st level. " +
+        "These thieves will serve the character with some reliability"
+      ]
     }
   }
 
@@ -225,4 +276,24 @@ enum CharacterClass: CaseIterable {
       return "https://oldschoolessentials.necroticgnome.com/srd/index.php/Thief"
     }
   }
+
+  var imgName: String {
+    switch self {
+    case .cleric:
+      return "chCleric"
+    case .dwarf:
+      return "chDwarf"
+    case .elf:
+      return "chElf"
+    case .fighter:
+      return "chFighter"
+    case .halfling:
+      return "chHalfling"
+    case .magicUser:
+      return "chMagicUser"
+    case .thief:
+      return "chThief"
+    }
+  }
 }
+// swiftlint:enable type_body_length
