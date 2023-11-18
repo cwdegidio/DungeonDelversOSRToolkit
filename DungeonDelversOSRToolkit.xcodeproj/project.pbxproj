@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */; };
+		E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */; };
+		E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150E2B08590000E58660 /* CharacterClassSelection.swift */; };
+		E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415112B08592F00E58660 /* CharacterCarouselLandscape.swift */; };
+		E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415132B08757200E58660 /* CharacterClassDetailSheet.swift */; };
 		E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */; };
 		E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77592B04899F00596BF0 /* ContentView.swift */; };
 		E9FD775C2B0489A000596BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FD775B2B0489A000596BF0 /* Assets.xcassets */; };
@@ -46,6 +51,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassSelectionViewModel.swift; sourceTree = "<group>"; };
+		E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCarouselPortrait.swift; sourceTree = "<group>"; };
+		E994150E2B08590000E58660 /* CharacterClassSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterClassSelection.swift; sourceTree = "<group>"; };
+		E99415112B08592F00E58660 /* CharacterCarouselLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCarouselLandscape.swift; sourceTree = "<group>"; };
+		E99415132B08757200E58660 /* CharacterClassDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassDetailSheet.swift; sourceTree = "<group>"; };
 		E9FD77542B04899F00596BF0 /* DungeonDelversOSRToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonDelversOSRToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonDelversOSRToolkitApp.swift; sourceTree = "<group>"; };
 		E9FD77592B04899F00596BF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -188,6 +198,7 @@
 		E9FD778D2B049DDB00596BF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9FD77B32B075C7900596BF0 /* 2-CharacterClass */,
 				E9FD77992B04A70300596BF0 /* 1-Abilities */,
 				E9FD778E2B049DE200596BF0 /* Atomics */,
 			);
@@ -225,6 +236,7 @@
 			children = (
 				E9FD779D2B04B46600596BF0 /* AbilityViewModel.swift */,
 				E9FD77AE2B05F6D700596BF0 /* ModifierViewModel.swift */,
+				E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -235,6 +247,17 @@
 				E9FD77AC2B05F69B00596BF0 /* ModCalculator.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E9FD77B32B075C7900596BF0 /* 2-CharacterClass */ = {
+			isa = PBXGroup;
+			children = (
+				E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */,
+				E994150E2B08590000E58660 /* CharacterClassSelection.swift */,
+				E99415112B08592F00E58660 /* CharacterCarouselLandscape.swift */,
+				E99415132B08757200E58660 /* CharacterClassDetailSheet.swift */,
+			);
+			path = "2-CharacterClass";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,11 +355,14 @@
 			files = (
 				E9FD77A22B05CED100596BF0 /* Buttons.swift in Sources */,
 				E9FD777A2B048E4E00596BF0 /* SpokenLanguage.swift in Sources */,
+				E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */,
 				E9FD77762B048DFD00596BF0 /* Stat.swift in Sources */,
 				E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */,
 				E9FD77882B048F1000596BF0 /* Language.swift in Sources */,
 				E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */,
 				E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */,
+				E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */,
+				E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */,
 				E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */,
 				E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */,
 				E9FD779B2B04A77300596BF0 /* Abilities.swift in Sources */,
@@ -345,11 +371,13 @@
 				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
 				E9FD77AA2B05F61800596BF0 /* AbilityDetailSheet.swift in Sources */,
 				E9FD77802B048EA300596BF0 /* Screen.swift in Sources */,
+				E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */,
 				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
 				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
 				E9FD77AF2B05F6D700596BF0 /* ModifierViewModel.swift in Sources */,
 				E9FD77A62B05E2BE00596BF0 /* AbilityPresentationLandscape.swift in Sources */,
 				E9FD77A82B05F0CF00596BF0 /* BulletedText.swift in Sources */,
+				E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */,
 				E9FD77A02B05CBCB00596BF0 /* AbilityStatBlockItems.swift in Sources */,
 				E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */,
 				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,

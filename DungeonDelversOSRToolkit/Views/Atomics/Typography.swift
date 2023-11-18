@@ -12,6 +12,7 @@ struct Instruction: View {
 
   var body: some View {
     Text(content)
+      .lineLimit(3)
       .font(.callout)
   }
 }
@@ -56,7 +57,7 @@ struct Subtitle: View {
 }
 
 #Preview("Instruction") {
-  Instruction(content: "Tap ability to view modifiers or reroll score.")
+  Instruction(content: "Tap ability to view modifiers or reroll score. Tap ability to view modifiers or reroll score.")
 }
 
 #Preview("Ability Title") {

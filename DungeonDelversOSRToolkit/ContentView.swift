@@ -17,10 +17,10 @@ struct ContentView: View {
       Abilities()
         .environment(player)
         .environment(screen)
-      //    case .classSelection:
-      //      ClassSelection()
-      //        .environment(pc)
-      //        .environment(screen)
+    case .classSelection:
+      CharacterClassSelection()
+        .environment(player)
+        .environment(screen)
       //    case .abilityAdjustment:
       //      AbilityAdjustments()
       //        .environment(pc)
