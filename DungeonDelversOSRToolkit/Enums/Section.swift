@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: Remove?
 enum Section {
   case abilities
   case classSelection

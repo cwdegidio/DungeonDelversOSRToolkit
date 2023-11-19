@@ -247,14 +247,14 @@ enum CharacterClass: CaseIterable {
     }
   }
 
-  var hitDie: Int {
+  var hitDie: Die {
     switch self {
     case .magicUser, .thief:
-      return 4
+      return .die4
     case .cleric, .elf, .halfling:
-      return 6
+      return .die6
     case .dwarf, .fighter:
-      return 8
+      return .die8
     }
   }
 

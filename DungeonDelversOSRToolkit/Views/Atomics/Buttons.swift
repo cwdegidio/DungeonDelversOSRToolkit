@@ -45,6 +45,32 @@ struct SmallButton: View {
   }
 }
 
+struct AdjustmentButton: View {
+  let symbolName: String
+  let color: Color
+  let isDisabled: Bool
+  let action: () -> Void
+
+  var body: some View {
+    Button {
+      action()
+    } label: {
+      ZStack {
+        RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
+          .stroke(isDisabled ? Color(red: 0.25, green: 0.25, blue: 0.25) : Color.black, lineWidth: 5)
+          .fill(isDisabled ? Color.gray : color)
+          .frame(width: 30, height: 30)
+        Image(systemName: symbolName)
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width: 15, height: 15)
+          .foregroundStyle(isDisabled ? Color(red: 0.25, green: 0.25, blue: 0.25) : Color.black)
+      }
+    }
+    .disabled(isDisabled)
+  }
+}
+
 extension Button {
   func largeButtonStyle() -> some View {
     self
@@ -71,4 +97,11 @@ extension Button {
 
 #Preview("Small Button") {
   SmallButton(label: "Reroll", icon: "dice.fill", bgColor: Color("tkBlue"), fgColor: nil) {}
+}
+
+#Preview("Adjustment Button") {
+  VStack {
+    AdjustmentButton(symbolName: "plus", color: Color("tkBlue"), isDisabled: false) {}
+    AdjustmentButton(symbolName: "plus", color: Color("tkBlue"), isDisabled: true) {}
+  }
 }
