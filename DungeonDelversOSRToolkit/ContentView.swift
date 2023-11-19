@@ -21,10 +21,14 @@ struct ContentView: View {
       CharacterClassSelection()
         .environment(player)
         .environment(screen)
-      //    case .abilityAdjustment:
-      //      AbilityAdjustments()
-      //        .environment(pc)
-      //        .environment(screen)
+    case .abilityAdjustment:
+      AbilityAdjustment()
+        .environment(player)
+        .environment(screen)
+    case .characterDetails:
+      CharacterDetails()
+        .environment(player)
+        .environment(screen)
     }
   }
 }

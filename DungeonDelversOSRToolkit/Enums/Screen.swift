@@ -10,5 +10,6 @@ import Foundation
 enum Screen {
   case abilities
   case classSelection
-//  case abilityAdjustment
+  case abilityAdjustment
+  case characterDetails
 }

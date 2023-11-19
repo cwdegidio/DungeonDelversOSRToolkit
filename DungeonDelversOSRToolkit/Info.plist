@@ -4,6 +4,12 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>ArtsPolyhedralDiceD4Rounded.ttf</string>
+		<string>ArtsPolyhedralDiceD6.ttf</string>
+		<string>ArtsPolyhedralDiceD8.ttf</string>
+		<string>ArtsPolyhedralDiceD10.ttf</string>
+		<string>ArtsPolyhedralDiceD12.ttf</string>
+		<string>ArtsPolyhedralDiceD20.ttf</string>
 		<string>Handlee-Regular.ttf</string>
 	</array>
 </dict>

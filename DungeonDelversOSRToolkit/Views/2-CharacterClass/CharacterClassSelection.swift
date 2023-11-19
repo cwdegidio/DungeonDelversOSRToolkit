@@ -65,8 +65,11 @@ struct CharacterClassSelection: View {
         .padding(.top, portrait ? -30 : 0)
         Spacer()
         LargeButton(label: "Next Step: Ability Adjustment") {
-          // TODO: Update NExt Screen Action
-          print("test")
+          print("[ DEBUG ] ==== PLAYER STATS (Pre Adjustment)====")
+          for stat in player.abilityScores {
+            print("[ DEBUG ] \(stat.statType.shortName): \(stat.score)")
+          }
+          nextScreen()
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 20)
@@ -77,6 +80,10 @@ struct CharacterClassSelection: View {
         allowedClasses.append(charClass)
       }
     }
+  }
+
+  func nextScreen() {
+    screen.currentScreen = Screen.abilityAdjustment
   }
 }
 

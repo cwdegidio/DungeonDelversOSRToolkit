@@ -12,6 +12,22 @@
 		E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150E2B08590000E58660 /* CharacterClassSelection.swift */; };
 		E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415112B08592F00E58660 /* CharacterCarouselLandscape.swift */; };
 		E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415132B08757200E58660 /* CharacterClassDetailSheet.swift */; };
+		E99415172B09805000E58660 /* AbilityAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415162B09805000E58660 /* AbilityAdjustment.swift */; };
+		E99415192B0984B800E58660 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415182B0984B800E58660 /* Hexagon.swift */; };
+		E994151D2B099EE800E58660 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994151C2B099EE800E58660 /* Triangle.swift */; };
+		E994151F2B09B4B900E58660 /* AdjustmentBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994151E2B09B4B900E58660 /* AdjustmentBlock.swift */; };
+		E99415212B09C05E00E58660 /* AbilityAdjustmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415202B09C05E00E58660 /* AbilityAdjustmentViewModel.swift */; };
+		E99415232B09DB0900E58660 /* AbilityAdjustmentPresentationPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415222B09DB0900E58660 /* AbilityAdjustmentPresentationPortrait.swift */; };
+		E99415252B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415242B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift */; };
+		E99415282B09ECA300E58660 /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415272B09ECA300E58660 /* CharacterDetails.swift */; };
+		E994152A2B09ECEA00E58660 /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415292B09ECEA00E58660 /* CharacterDetailsViewModel.swift */; };
+		E99415312B09F86500E58660 /* ArtsPolyhedralDiceD4Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E994152F2B09F5CF00E58660 /* ArtsPolyhedralDiceD4Rounded.ttf */; };
+		E99415322B09F88100E58660 /* ArtsPolyhedralDiceD6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E994152C2B09F5CF00E58660 /* ArtsPolyhedralDiceD6.ttf */; };
+		E99415332B09F88400E58660 /* ArtsPolyhedralDiceD8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E99415302B09F5CF00E58660 /* ArtsPolyhedralDiceD8.ttf */; };
+		E99415342B09F88800E58660 /* ArtsPolyhedralDiceD10.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E994152D2B09F5CF00E58660 /* ArtsPolyhedralDiceD10.ttf */; };
+		E99415352B09F88B00E58660 /* ArtsPolyhedralDiceD12.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E994152E2B09F5CF00E58660 /* ArtsPolyhedralDiceD12.ttf */; };
+		E99415362B09F88F00E58660 /* ArtsPolyhedralDiceD20.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E994152B2B09F5CF00E58660 /* ArtsPolyhedralDiceD20.ttf */; };
+		E99415382B0A0AA400E58660 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415372B0A0AA400E58660 /* Die.swift */; };
 		E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */; };
 		E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77592B04899F00596BF0 /* ContentView.swift */; };
 		E9FD775C2B0489A000596BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FD775B2B0489A000596BF0 /* Assets.xcassets */; };
@@ -56,6 +72,22 @@
 		E994150E2B08590000E58660 /* CharacterClassSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterClassSelection.swift; sourceTree = "<group>"; };
 		E99415112B08592F00E58660 /* CharacterCarouselLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCarouselLandscape.swift; sourceTree = "<group>"; };
 		E99415132B08757200E58660 /* CharacterClassDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassDetailSheet.swift; sourceTree = "<group>"; };
+		E99415162B09805000E58660 /* AbilityAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityAdjustment.swift; sourceTree = "<group>"; };
+		E99415182B0984B800E58660 /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		E994151C2B099EE800E58660 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		E994151E2B09B4B900E58660 /* AdjustmentBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustmentBlock.swift; sourceTree = "<group>"; };
+		E99415202B09C05E00E58660 /* AbilityAdjustmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityAdjustmentViewModel.swift; sourceTree = "<group>"; };
+		E99415222B09DB0900E58660 /* AbilityAdjustmentPresentationPortrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityAdjustmentPresentationPortrait.swift; sourceTree = "<group>"; };
+		E99415242B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityAdjustmentPresentationLandscape.swift; sourceTree = "<group>"; };
+		E99415272B09ECA300E58660 /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
+		E99415292B09ECEA00E58660 /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
+		E994152B2B09F5CF00E58660 /* ArtsPolyhedralDiceD20.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD20.ttf; sourceTree = "<group>"; };
+		E994152C2B09F5CF00E58660 /* ArtsPolyhedralDiceD6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD6.ttf; sourceTree = "<group>"; };
+		E994152D2B09F5CF00E58660 /* ArtsPolyhedralDiceD10.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD10.ttf; sourceTree = "<group>"; };
+		E994152E2B09F5CF00E58660 /* ArtsPolyhedralDiceD12.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD12.ttf; sourceTree = "<group>"; };
+		E994152F2B09F5CF00E58660 /* ArtsPolyhedralDiceD4Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD4Rounded.ttf; sourceTree = "<group>"; };
+		E99415302B09F5CF00E58660 /* ArtsPolyhedralDiceD8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD8.ttf; sourceTree = "<group>"; };
+		E99415372B0A0AA400E58660 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		E9FD77542B04899F00596BF0 /* DungeonDelversOSRToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonDelversOSRToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonDelversOSRToolkitApp.swift; sourceTree = "<group>"; };
 		E9FD77592B04899F00596BF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +139,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E99415152B09801A00E58660 /* 3-AbilityAdjustment */ = {
+			isa = PBXGroup;
+			children = (
+				E99415162B09805000E58660 /* AbilityAdjustment.swift */,
+				E99415222B09DB0900E58660 /* AbilityAdjustmentPresentationPortrait.swift */,
+				E99415242B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift */,
+			);
+			path = "3-AbilityAdjustment";
+			sourceTree = "<group>";
+		};
+		E99415262B09EC7E00E58660 /* 4-characterDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E99415272B09ECA300E58660 /* CharacterDetails.swift */,
+			);
+			path = "4-characterDetails";
+			sourceTree = "<group>";
+		};
 		E9FD774B2B04899F00596BF0 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +233,7 @@
 				E9FD77832B048ED800596BF0 /* Section.swift */,
 				E9FD77852B048EF800596BF0 /* CharacterClass.swift */,
 				E9FD77872B048F1000596BF0 /* Language.swift */,
+				E99415372B0A0AA400E58660 /* Die.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -190,6 +241,12 @@
 		E9FD77892B04990400596BF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E994152F2B09F5CF00E58660 /* ArtsPolyhedralDiceD4Rounded.ttf */,
+				E994152C2B09F5CF00E58660 /* ArtsPolyhedralDiceD6.ttf */,
+				E99415302B09F5CF00E58660 /* ArtsPolyhedralDiceD8.ttf */,
+				E994152D2B09F5CF00E58660 /* ArtsPolyhedralDiceD10.ttf */,
+				E994152E2B09F5CF00E58660 /* ArtsPolyhedralDiceD12.ttf */,
+				E994152B2B09F5CF00E58660 /* ArtsPolyhedralDiceD20.ttf */,
 				E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */,
 			);
 			path = Resources;
@@ -198,6 +255,8 @@
 		E9FD778D2B049DDB00596BF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E99415262B09EC7E00E58660 /* 4-characterDetails */,
+				E99415152B09801A00E58660 /* 3-AbilityAdjustment */,
 				E9FD77B32B075C7900596BF0 /* 2-CharacterClass */,
 				E9FD77992B04A70300596BF0 /* 1-Abilities */,
 				E9FD778E2B049DE200596BF0 /* Atomics */,
@@ -208,6 +267,7 @@
 		E9FD778E2B049DE200596BF0 /* Atomics */ = {
 			isa = PBXGroup;
 			children = (
+				E994151E2B09B4B900E58660 /* AdjustmentBlock.swift */,
 				E9FD778F2B049E0F00596BF0 /* AbilityStatBlock.swift */,
 				E9FD77912B049EAE00596BF0 /* Typography.swift */,
 				E9FD77932B049FE400596BF0 /* CircularStar.swift */,
@@ -215,6 +275,8 @@
 				E9FD77972B04A44800596BF0 /* GlobalBackground.swift */,
 				E9FD77A12B05CED100596BF0 /* Buttons.swift */,
 				E9FD77A72B05F0CF00596BF0 /* BulletedText.swift */,
+				E99415182B0984B800E58660 /* Hexagon.swift */,
+				E994151C2B099EE800E58660 /* Triangle.swift */,
 			);
 			path = Atomics;
 			sourceTree = "<group>";
@@ -237,6 +299,8 @@
 				E9FD779D2B04B46600596BF0 /* AbilityViewModel.swift */,
 				E9FD77AE2B05F6D700596BF0 /* ModifierViewModel.swift */,
 				E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */,
+				E99415202B09C05E00E58660 /* AbilityAdjustmentViewModel.swift */,
+				E99415292B09ECEA00E58660 /* CharacterDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -319,9 +383,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99415362B09F88F00E58660 /* ArtsPolyhedralDiceD20.ttf in Resources */,
 				E9FD778C2B049B4400596BF0 /* Handlee-Regular.ttf in Resources */,
+				E99415342B09F88800E58660 /* ArtsPolyhedralDiceD10.ttf in Resources */,
 				E9FD775F2B0489A000596BF0 /* Preview Assets.xcassets in Resources */,
 				E9FD775C2B0489A000596BF0 /* Assets.xcassets in Resources */,
+				E99415332B09F88400E58660 /* ArtsPolyhedralDiceD8.ttf in Resources */,
+				E99415312B09F86500E58660 /* ArtsPolyhedralDiceD4Rounded.ttf in Resources */,
+				E99415322B09F88100E58660 /* ArtsPolyhedralDiceD6.ttf in Resources */,
+				E99415352B09F88B00E58660 /* ArtsPolyhedralDiceD12.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E994151F2B09B4B900E58660 /* AdjustmentBlock.swift in Sources */,
 				E9FD77A22B05CED100596BF0 /* Buttons.swift in Sources */,
 				E9FD777A2B048E4E00596BF0 /* SpokenLanguage.swift in Sources */,
 				E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */,
@@ -362,6 +433,8 @@
 				E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */,
 				E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */,
 				E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */,
+				E99415252B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift in Sources */,
+				E994151D2B099EE800E58660 /* Triangle.swift in Sources */,
 				E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */,
 				E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */,
 				E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */,
@@ -374,21 +447,28 @@
 				E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */,
 				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
 				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
+				E994152A2B09ECEA00E58660 /* CharacterDetailsViewModel.swift in Sources */,
 				E9FD77AF2B05F6D700596BF0 /* ModifierViewModel.swift in Sources */,
 				E9FD77A62B05E2BE00596BF0 /* AbilityPresentationLandscape.swift in Sources */,
+				E99415212B09C05E00E58660 /* AbilityAdjustmentViewModel.swift in Sources */,
 				E9FD77A82B05F0CF00596BF0 /* BulletedText.swift in Sources */,
 				E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */,
+				E99415382B0A0AA400E58660 /* Die.swift in Sources */,
 				E9FD77A02B05CBCB00596BF0 /* AbilityStatBlockItems.swift in Sources */,
 				E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */,
 				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,
 				E9FD779E2B04B46600596BF0 /* AbilityViewModel.swift in Sources */,
 				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,
+				E99415282B09ECA300E58660 /* CharacterDetails.swift in Sources */,
 				E9FD77AD2B05F69B00596BF0 /* ModCalculator.swift in Sources */,
 				E9FD77712B048DB000596BF0 /* Ability.swift in Sources */,
 				E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */,
 				E9FD776E2B048D8400596BF0 /* ApplicationScreen.swift in Sources */,
+				E99415192B0984B800E58660 /* Hexagon.swift in Sources */,
+				E99415172B09805000E58660 /* AbilityAdjustment.swift in Sources */,
 				E9FD77842B048ED800596BF0 /* Section.swift in Sources */,
 				E9FD77A42B05E20A00596BF0 /* AbilityPresentationPortrait.swift in Sources */,
+				E99415232B09DB0900E58660 /* AbilityAdjustmentPresentationPortrait.swift in Sources */,
 				E9FD776C2B048D5C00596BF0 /* PlayerCharacter.swift in Sources */,
 				E9FD77822B048EB800596BF0 /* TypeFace.swift in Sources */,
 			);

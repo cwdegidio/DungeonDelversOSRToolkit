@@ -27,6 +27,16 @@ struct AbilityTitle: View {
   }
 }
 
+struct AbilitySubtitle: View {
+  let content: String
+
+  var body: some View {
+    Text(content)
+      .font(.system(size: 32.0))
+      .fontWeight(.bold)
+  }
+}
+
 struct AbilityDetailTitle: View {
   let content: String
 
@@ -43,6 +53,15 @@ struct AbilityScoreFlourish: View {
   var body: some View {
     Text("\(content)")
       .font(.system(size: 96.0, design: .rounded))
+  }
+}
+
+struct AbilityAdjustmentFlourish: View {
+  let content: String
+
+  var body: some View {
+    Text("\(content)")
+      .font(.system(size: 72.0, design: .rounded))
   }
 }
 
