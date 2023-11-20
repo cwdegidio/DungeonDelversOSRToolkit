@@ -9,68 +9,75 @@ import SwiftUI
 
 struct Instruction: View {
   let content: String
+  let lineLimit = 3
 
   var body: some View {
     Text(content)
-      .lineLimit(3)
+      .lineLimit(lineLimit)
       .font(.callout)
   }
 }
 
 struct AbilityTitle: View {
   let content: String
+  let size = CGFloat(40)
 
   var body: some View {
     Text(content)
-      .font(.system(size: 40.0))
+      .font(.system(size: size))
       .fontWeight(.bold)
   }
 }
 
 struct AbilitySubtitle: View {
   let content: String
+  let size = CGFloat(32)
 
   var body: some View {
     Text(content)
-      .font(.system(size: 32.0))
+      .font(.system(size: size))
       .fontWeight(.bold)
   }
 }
 
 struct AbilityDetailTitle: View {
   let content: String
+  let size = CGFloat(32)
 
   var body: some View {
     Text(content)
-      .font(.system(size: 32.0))
+      .font(.system(size: size))
       .fontWeight(.bold)
   }
 }
 
 struct AbilityScoreFlourish: View {
   let content: Int
+  let size = CGFloat(96)
 
   var body: some View {
     Text("\(content)")
-      .font(.system(size: 96.0, design: .rounded))
+      .font(.system(size: size, design: .rounded))
   }
 }
 
 struct AbilityAdjustmentFlourish: View {
   let content: String
+  let size = CGFloat(72)
 
   var body: some View {
     Text("\(content)")
-      .font(.system(size: 72.0, design: .rounded))
+      .font(.system(size: size, design: .rounded))
   }
 }
 
 struct Subtitle: View {
   let content: String
+  let size = CGFloat(21)
 
   var body: some View {
     Text(content)
-      .font(.system(size: 21.0))
+      .font(.system(size: size))
       .fontWeight(.bold)
   }
 }

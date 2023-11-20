@@ -10,6 +10,9 @@ import SwiftUI
 struct BulletedText: View {
   var content: String
   private var markdownString: AttributedString
+  let bulletSize = CGFloat(21)
+  let bulletBaselineOffset = CGFloat(-2)
+  let itemPadding = CGFloat(5)
 
   init(content: String) {
     self.content = content
@@ -25,11 +28,11 @@ struct BulletedText: View {
   var body: some View {
     HStack(alignment: .top) {
       Text("•")
-        .font(Font.custom("Courier", size: 21))
-        .baselineOffset(-2)
+        .font(Font.custom("Courier", size: bulletSize))
+        .baselineOffset(bulletBaselineOffset)
       Text(markdownString)
     }
-    .padding(.bottom, 5)
+    .padding(.bottom, itemPadding)
   }
 }
 

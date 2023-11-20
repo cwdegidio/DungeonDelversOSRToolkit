@@ -10,38 +10,49 @@ import SwiftUI
 struct AbilityPortraitFlourish: View {
   let abilityScore: Int
   let abilityTitle: String
+  let smallCircleFrame = CGFloat(100)
+  let mediumCircleFrame = CGFloat(150)
+  let largeCircleFrame = CGFloat(200)
+  let largeCircleShadowOpacity = 0.25
+  let largeCircleShadowRadius = CGFloat(50)
+  let largeCircleStrokeOpacity = 0.8
+  let flourishShadowOpacity = 0.4
+  let flourishShadowRadius = CGFloat(20)
+  let abilityScorePadding = CGFloat(-10)
+  let smallCircleOffsetX = CGFloat(150)
+  let mediumCircleOffsetX = CGFloat(75)
 
   var body: some View {
     AbilityTitle(content: abilityTitle)
     ZStack {
       Group {
         Circle()
-          .foregroundStyle(Color(red: 0.58, green: 0.67, blue: 0.40))
-          .frame(width: 100)
-          .offset(x: -150)
+          .foregroundStyle(Color("tkGreen"))
+          .frame(width: smallCircleFrame)
+          .offset(x: -smallCircleOffsetX)
         Circle()
-          .foregroundStyle(Color(red: 0.58, green: 0.67, blue: 0.40))
-          .frame(width: 100)
-          .offset(x: 150)
+          .foregroundStyle(Color("tkGreen"))
+          .frame(width: smallCircleFrame)
+          .offset(x: smallCircleOffsetX)
         Circle()
-          .foregroundStyle(Color(red: 0.68, green: 0.18, blue: 0.21))
-          .frame(width: 150)
-          .offset(x: -75)
+          .foregroundStyle(Color("tkRed"))
+          .frame(width: mediumCircleFrame)
+          .offset(x: -mediumCircleOffsetX)
         Circle()
-          .foregroundStyle(Color(red: 0.68, green: 0.18, blue: 0.21))
-          .frame(width: 150)
-          .offset(x: 75)
+          .foregroundStyle(Color("tkRed"))
+          .frame(width: mediumCircleFrame)
+          .offset(x: mediumCircleOffsetX)
         CircularStar()
-          .foregroundStyle(Color(red: 0.80, green: 0.59, blue: 0.18))
-          .frame(width: 200, height: 200)
-          .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.25), radius: 50)
+          .foregroundStyle(Color("tkYellow"))
+          .frame(width: largeCircleFrame, height: largeCircleFrame)
+          .shadow(color: .black.opacity(largeCircleShadowOpacity), radius: largeCircleShadowRadius)
         CircularStar()
-          .stroke(Color(white: 0.8))
-          .frame(width: 200, height: 200)
+          .stroke(.white.opacity(largeCircleStrokeOpacity))
+          .frame(width: largeCircleFrame, height: largeCircleFrame)
       }
-      .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.4), radius: 20)
+      .shadow(color: .black.opacity(flourishShadowOpacity), radius: flourishShadowRadius)
       AbilityScoreFlourish(content: abilityScore)
-        .padding(.top, -10)
+        .padding(.top, abilityScorePadding)
     }
   }
 }
@@ -49,23 +60,31 @@ struct AbilityPortraitFlourish: View {
 struct AbilityLandscapeFlourish: View {
   let abilityScore: Int
   let abilityTitle: String
+  let largeCircleFrame = CGFloat(200)
+  let largeCircleShadowOpacity = 0.25
+  let largeCircleShadowRadius = CGFloat(50)
+  let largeCircleStrokeOpacity = 0.8
+  let flourishShadowOpacity = 0.4
+  let flourishShadowRadius = CGFloat(20)
+  let abilityScorePadding = CGFloat(5)
+  let abilityTitlePadding = CGFloat(-100)
 
   var body: some View {
     ZStack {
       Group {
         CircularStar()
-          .foregroundStyle(Color(red: 0.80, green: 0.59, blue: 0.18))
-          .frame(width: 200, height: 200)
-          .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.25), radius: 50)
+          .foregroundStyle(Color("tkYellow"))
+          .frame(width: largeCircleFrame, height: largeCircleFrame)
+          .shadow(color: .black.opacity(largeCircleShadowOpacity), radius: largeCircleShadowRadius)
         CircularStar()
-          .stroke(Color(white: 0.8))
-          .frame(width: 200, height: 200)
+          .stroke(.white.opacity(largeCircleStrokeOpacity))
+          .frame(width: largeCircleFrame, height: largeCircleFrame)
       }
-      .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.4), radius: 20)
+      .shadow(color: .black.opacity(flourishShadowOpacity), radius: flourishShadowRadius)
       AbilityScoreFlourish(content: abilityScore)
-        .padding(.top, 5)
+        .padding(.top, abilityScorePadding)
       AbilityTitle(content: abilityTitle)
-        .padding(.top, -100)
+        .padding(.top, abilityTitlePadding)
     }
   }
 }
@@ -75,46 +94,61 @@ struct AbilityAdjustmentPortraitFlourish: View {
   let xpBonus: String
   let abilityTitle: String
   @Binding var pointsPool: Int
+  let triangleFrame = CGFloat(200)
+  let triangleAngle = 180.0
+  let triangleOuterOffsetX = CGFloat(175)
+  let triangleInnerOffsetX = CGFloat(75)
+  let hexagonFrameWidth = CGFloat(200)
+  let hexagonFrameHeight = CGFloat(250)
+  let hexagonShadowOpacity = 0.25
+  let hexagonShadowRadius = CGFloat(50)
+  let hexagonStrokeOpacity = 0.8
+  let bottomTitlePadding = CGFloat(100)
+  let flourishShadowOpacity = 0.4
+  let flourishShadowRadius = CGFloat(20)
+  let topTitlePadding = CGFloat(155)
+  let xpBonusPadding = CGFloat(-30)
+  let pointsPoolPadding = CGFloat(175)
 
   var body: some View {
     ZStack {
       Group {
         Triangle()
           .foregroundStyle(Color("tkRed"))
-          .frame(width: 200, height: 200)
-          .offset(x: -175)
+          .frame(width: triangleFrame, height: triangleFrame)
+          .offset(x: -triangleOuterOffsetX)
         Triangle()
           .foregroundStyle(Color("tkYellow"))
-          .frame(width: 200, height: 200)
-          .offset(x: -75)
+          .frame(width: triangleFrame, height: triangleFrame)
+          .offset(x: -triangleInnerOffsetX)
         Triangle()
           .foregroundStyle(Color("tkRed"))
-          .rotationEffect(Angle(degrees: 180))
-          .frame(width: 200, height: 200)
-          .offset(x: 175)
+          .rotationEffect(Angle(degrees: triangleAngle))
+          .frame(width: triangleFrame, height: triangleFrame)
+          .offset(x: triangleOuterOffsetX)
         Triangle()
           .foregroundStyle(Color("tkYellow"))
-          .rotationEffect(Angle(degrees: 180))
-          .frame(width: 200, height: 200)
-          .offset(x: 75)
+          .rotationEffect(Angle(degrees: triangleAngle))
+          .frame(width: triangleFrame, height: triangleFrame)
+          .offset(x: triangleInnerOffsetX)
         Hexagon()
           .foregroundStyle(Color("tkGreen"))
-          .frame(width: 200, height: 250)
-          .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.25), radius: 50)
+          .frame(width: hexagonFrameWidth, height: hexagonFrameHeight)
+          .shadow(color: .black.opacity(hexagonShadowOpacity), radius: hexagonShadowRadius)
         Hexagon()
-          .stroke(Color(white: 0.8))
-          .frame(width: 200, height: 250)
+          .stroke(.white.opacity(hexagonStrokeOpacity))
+          .frame(width: hexagonFrameWidth, height: hexagonFrameHeight)
         AbilityTitle(content: "XP Bonus")
-          .padding(.top, 100)
+          .padding(.top, bottomTitlePadding)
       }
-      .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.4), radius: 20)
+      .shadow(color: .black.opacity(flourishShadowOpacity), radius: flourishShadowRadius)
       AbilityTitle(content: characterClass)
-        .padding(.bottom, 155)
+        .padding(.bottom, topTitlePadding)
       AbilityAdjustmentFlourish(content: xpBonus)
-        .padding(.top, -30)
+        .padding(.top, xpBonusPadding)
       Text("**Points Pool:** \(pointsPool)")
         .font(.title2)
-        .padding(.top, 175)
+        .padding(.top, pointsPoolPadding)
     }
   }
 }
@@ -124,28 +158,39 @@ struct AbilityAdjustmentLandscapeFlourish: View {
   let xpBonus: String
   let abilityTitle: String
   @Binding var pointsPool: Int
+  let hexagonFrameWidth = CGFloat(200)
+  let hexagonFrameHeight = CGFloat(250)
+  let hexagonShadowOpacity = 0.25
+  let hexagonShadowRadius = CGFloat(50)
+  let hexagonStrokeOpacity = 0.8
+  let bottomTitlePadding = CGFloat(100)
+  let flourishShadowOpacity = 0.4
+  let flourishShadowRadius = CGFloat(20)
+  let topTitlePadding = CGFloat(155)
+  let xpBonusPadding = CGFloat(-30)
+  let pointsPoolPadding = CGFloat(175)
 
   var body: some View {
     ZStack {
       Group {
         Hexagon()
           .foregroundStyle(Color("tkGreen"))
-          .frame(width: 200, height: 250)
-          .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.25), radius: 50)
+          .frame(width: hexagonFrameWidth, height: hexagonFrameHeight)
+          .shadow(color: .black.opacity(hexagonShadowOpacity), radius: hexagonShadowRadius)
         Hexagon()
-          .stroke(Color(white: 0.8))
-          .frame(width: 200, height: 250)
+          .stroke(.white.opacity(hexagonStrokeOpacity))
+          .frame(width: hexagonFrameWidth, height: hexagonFrameHeight)
         AbilityTitle(content: "XP Bonus")
-          .padding(.top, 100)
+          .padding(.top, bottomTitlePadding)
       }
-      .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.4), radius: 20)
+      .shadow(color: .black.opacity(flourishShadowOpacity), radius: flourishShadowRadius)
       AbilityTitle(content: characterClass)
-        .padding(.bottom, 155)
+        .padding(.bottom, topTitlePadding)
       AbilityAdjustmentFlourish(content: xpBonus)
-        .padding(.top, -30)
+        .padding(.top, xpBonusPadding)
       Text("**Points Pool:** \(pointsPool)")
         .font(.title2)
-        .padding(.top, 175)
+        .padding(.top, pointsPoolPadding)
     }
   }
 }

@@ -16,14 +16,22 @@ struct AdjustmentBlock: View {
   @State var isPrimeReq = false
   let viewModel: AbilityAdjustmentViewModel
   let maxPrimeReqScore = 18
+  let primeReqPointValue = 1
+  let standardPointValue = 2
+  let pointPoolCost = 2
+  let rectangleCornerSize = CGSize(width: 10, height: 10)
+  let rectangleStrokeWidth = CGFloat(5)
+  let rectangleFrameHeight = CGFloat(60)
+  let rectangleShadowOpacity = 0.8
+  let rectangleShadowRadius = CGFloat(2.5)
 
   var body: some View {
     ZStack {
-      RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-        .stroke(.black, lineWidth: 5)
+      RoundedRectangle(cornerSize: rectangleCornerSize)
+        .stroke(.black, lineWidth: rectangleStrokeWidth)
         .fill(Color("tkGreen"))
-        .frame(height: 60)
-        .shadow(color: .black.opacity(0.8), radius: 2.5)
+        .frame(height: rectangleFrameHeight)
+        .shadow(color: .black.opacity(rectangleShadowOpacity), radius: rectangleShadowRadius)
       HStack {
         VStack(alignment: .leading) {
           let blockTitle = charAbility.statType.shortName
@@ -35,14 +43,14 @@ struct AdjustmentBlock: View {
         VStack(alignment: .leading) {
           HStack(alignment: .center) {
             Text("Starting Score:")
-              .bold()
+              .fontWeight(.bold)
               .font(.subheadline)
             Text("\(maxScore)")
               .fontDesign(.rounded)
           }
           HStack(alignment: .center) {
             Text("Adjusted Score:")
-              .bold()
+              .fontWeight(.bold)
               .font(.subheadline)
             Text("\(charAbility.score)")
               .fontDesign(.rounded)
@@ -51,29 +59,27 @@ struct AdjustmentBlock: View {
         Spacer()
         HStack {
           AdjustmentButton(symbolName: "plus", color: Color("tkBlue"), isDisabled: disableAddButton()) {
-            print("add action fired")
             if isPrimeReq {
-              charAbility.score += 1
+              charAbility.score += primeReqPointValue
             } else {
-              charAbility.score += 2
+              charAbility.score += standardPointValue
             }
 
-            pointsPool -= 2
+            pointsPool -= pointPoolCost
           }
-          .padding(.trailing, 20)
+          .padding(.trailing)
           AdjustmentButton(symbolName: "minus", color: Color("tkRed"), isDisabled: disableSubtractButton()) {
-            print("subtract action fired")
             if isPrimeReq {
-              charAbility.score -= 1
+              charAbility.score -= primeReqPointValue
             } else {
-              charAbility.score -= 2
+              charAbility.score -= standardPointValue
             }
 
-            pointsPool += 2
+            pointsPool += pointPoolCost
           }
         }
       }
-      .padding(.horizontal, 20)
+      .padding(.horizontal)
     }
     .onAppear {
       isPrimeReq = viewModel.getIsPrimeReq(for: charAbility.statType, using: player)

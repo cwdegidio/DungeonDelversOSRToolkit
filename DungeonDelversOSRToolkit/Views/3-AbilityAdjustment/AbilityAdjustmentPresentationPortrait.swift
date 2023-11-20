@@ -9,10 +9,11 @@ import SwiftUI
 
 struct AbilityAdjustmentPresentationPortrait: View {
   @EnvironmentObject var player: PlayerCharacter
-  let modCalculator: ModCalculator
-  let viewModel: AbilityAdjustmentViewModel
   @Binding var pointsPool: Int
   @Binding var tempStatsScores: [Ability]
+  let modCalculator: ModCalculator
+  let viewModel: AbilityAdjustmentViewModel
+  let adjBlockStackPaddingTop = CGFloat(-50)
 
   var body: some View {
     VStack {
@@ -22,7 +23,7 @@ struct AbilityAdjustmentPresentationPortrait: View {
         abilityTitle: "XP Bonus",
         pointsPool: $pointsPool
       )
-      .padding(.top, 20)
+      .padding(.top)
       VStack {
         ForEach($tempStatsScores, id: \.statType) { $thisCharAbility in
           if viewModel.isStatAdjustable(for: thisCharAbility.statType, using: player) {
@@ -34,9 +35,9 @@ struct AbilityAdjustmentPresentationPortrait: View {
           }
         }
       }
-      .padding(.horizontal, 20)
-      .padding(.top, -50)
-      .padding(.bottom, 20)
+      .padding(.horizontal)
+      .padding(.top, adjBlockStackPaddingTop)
+      .padding(.bottom)
     }
   }
 }
@@ -55,10 +56,10 @@ struct AbilityAdjustmentPresentationPortrait: View {
 
   let statScores = player.abilityScores
   return AbilityAdjustmentPresentationPortrait(
-    modCalculator: ModCalculator(),
-    viewModel: AbilityAdjustmentViewModel(),
     pointsPool: .constant(10),
-    tempStatsScores: .constant(statScores)
+    tempStatsScores: .constant(statScores),
+    modCalculator: ModCalculator(),
+    viewModel: AbilityAdjustmentViewModel()
   )
     .environment(player)
 }

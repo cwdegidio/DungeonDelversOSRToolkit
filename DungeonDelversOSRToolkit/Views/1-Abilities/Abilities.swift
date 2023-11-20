@@ -9,9 +9,9 @@ import SwiftUI
 
 struct Abilities: View {
   @Environment(\.verticalSizeClass)
-  var verticalSizeClass: UserInterfaceSizeClass?
+  var vSizeClass: UserInterfaceSizeClass?
   @Environment(\.horizontalSizeClass)
-  var horizontalSizeClass: UserInterfaceSizeClass?
+  var hSizeClass: UserInterfaceSizeClass?
 
   @EnvironmentObject var player: PlayerCharacter
   @EnvironmentObject var screen: ApplicationScreen
@@ -22,11 +22,10 @@ struct Abilities: View {
   @State private var abilityTitle = "Let's Roll!"
   @State private var statsRolled = false
   let viewModel = AbilityViewModel()
+  let landscapePadding = CGFloat(100)
 
   var body: some View {
-    let portrait = horizontalSizeClass == .compact && verticalSizeClass == .regular
-    let landscape = horizontalSizeClass == .compact && verticalSizeClass == .compact ||
-    horizontalSizeClass == .regular && verticalSizeClass == .compact
+    let portrait = OrientationHelper.isPortrait(hClass: hSizeClass, vClass: vSizeClass)
 
     ZStack {
       GlobalBackground()
@@ -42,9 +41,7 @@ struct Abilities: View {
             player: player,
             viewModel: viewModel
           )
-        }
-
-        if landscape {
+        } else {
           AbilityPresentationLandscape(
             abilityTitle: $abilityTitle,
             abilityScore: $abilityScore,
@@ -54,7 +51,7 @@ struct Abilities: View {
             player: player,
             viewModel: viewModel
           )
-          .padding(.top, 100)
+          .padding(.top, landscapePadding)
         }
         Spacer()
         AbilityStatBlockItems(
@@ -62,15 +59,15 @@ struct Abilities: View {
           abilityScore: $abilityScore,
           abilityTitle: $abilityTitle,
           player: player,
-          horizontalSizeClass: horizontalSizeClass ?? .regular,
-          verticalSizeClass: verticalSizeClass ?? .regular
+          horizontalSizeClass: hSizeClass ?? .regular,
+          verticalSizeClass: vSizeClass ?? .regular
         )
         Spacer()
         LargeButton(label: "Next Step: Select Class") {
           nextScreen()
         }
-        .padding(.horizontal, 20)
-        .padding(.bottom, 20)
+        .padding(.horizontal)
+        .padding(.bottom)
       }
     }
   }

@@ -15,17 +15,27 @@ struct AbilityStatBlock: View {
   var stat: Ability
   let score: Int
   let ability: String
+  let rectangleCornerSize = CGSize(width: 10, height: 10)
+  let rectangleStrikeWidth = CGFloat(5)
+  let rectangleFrameSize = CGFloat(75)
+  let rectangleShadowOpacity = 0.8
+  let rectangleShadowRadius = CGFloat(2.5)
+  let scoreFontSize = CGFloat(26)
+  let animationDuration = TimeInterval(0.10)
+  let animationDelay = TimeInterval(0.12)
+  let smallScaleValue = 0.85
+  let largeScaleValue = 1.0
 
   var body: some View {
     ZStack {
-      RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-        .stroke(.black, lineWidth: 5)
+      RoundedRectangle(cornerSize: rectangleCornerSize)
+        .stroke(.black, lineWidth: rectangleStrikeWidth)
         .fill(Color("tkGreen"))
-        .frame(width: 75, height: 75)
-        .shadow(color: .black.opacity(0.8), radius: 2.5)
+        .frame(width: rectangleFrameSize, height: rectangleFrameSize)
+        .shadow(color: .black.opacity(rectangleShadowOpacity), radius: rectangleShadowRadius)
       VStack {
         Text("\(score)")
-          .font(Font.custom("Courier", size: 26))
+          .font(Font.custom("Courier", size: scoreFontSize))
         Text("\(ability)")
           .font(.title2)
           .fontWeight(.bold)
@@ -36,11 +46,11 @@ struct AbilityStatBlock: View {
       currentCharacterAbility = stat
       abilityScore = currentCharacterAbility.score
       abilityTitle = currentCharacterAbility.statType.name
-      withAnimation(.linear(duration: 0.10)) {
-        scaleValue = 0.85
+      withAnimation(.linear(duration: animationDuration)) {
+        scaleValue = smallScaleValue
       }
-      withAnimation(.easeIn(duration: 0.10).delay(0.12)) {
-        scaleValue = 1.0
+      withAnimation(.easeIn(duration: animationDuration).delay(animationDelay)) {
+        scaleValue = largeScaleValue
       }
     }
   }
