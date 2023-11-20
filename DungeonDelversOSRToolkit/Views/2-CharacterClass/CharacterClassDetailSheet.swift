@@ -11,6 +11,7 @@ struct CharacterClassDetailSheet: View {
   @Environment(\.dismiss)
   var dismiss
   var characterClass: CharacterClass
+  @State var characterURLString: AttributedString = ""
   let fallbackURL = "https://oldschoolessentials.necroticgnome.com/srd/index.php/Main_Page"
 
   var body: some View {
@@ -34,15 +35,14 @@ struct CharacterClassDetailSheet: View {
         .padding(.horizontal, 20)
       }
     }
-    Link(destination: URL(string: characterClass.srdURL)!) {
-      Text("Learn more in the OSE SRD")
-    }
+    Text(characterURLString)
     SmallButton(label: "Got it!", icon: "hand.thumbsup.fill", bgColor: Color("tkBlue"), fgColor: nil) {
       print("[ DEBUG ] Trying to fire dismiss...")
       dismiss()
     }
     .padding()
     .onAppear {
+      characterURLString = returnMarkdown(for: "[Learn more in the OSE SRD](\(characterClass.srdURL))") ?? ""
       print("[ DEBUG ] Character Class in Detail Sheet is: \(characterClass)")
     }
   }

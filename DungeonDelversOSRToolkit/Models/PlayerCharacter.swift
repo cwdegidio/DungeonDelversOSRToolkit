@@ -14,6 +14,7 @@ class PlayerCharacter: ObservableObject, Observable {
   var level: Int
   var modifiers: [Modifier]
   var pcHitPoints: Int
+  @Published var coins: [Coinage: Int]
   @Published var characterClass: CharacterClass?
   @Published var abilityScores: [Ability]
 
@@ -21,6 +22,13 @@ class PlayerCharacter: ObservableObject, Observable {
     self.level = 1
     self.characterClass = nil
     self.pcHitPoints = 0
+    self.coins = [
+      .platinumPieces: 0,
+      .goldPieces: 0,
+      .electrumPieces: 0,
+      .silverPieces: 0,
+      .copperPieces: 0
+    ]
     self.abilityScores = [
       CharacterAbility(statType: .str, score: 0),
       CharacterAbility(statType: .dex, score: 0),

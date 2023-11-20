@@ -28,6 +28,7 @@
 		E99415352B09F88B00E58660 /* ArtsPolyhedralDiceD12.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E994152E2B09F5CF00E58660 /* ArtsPolyhedralDiceD12.ttf */; };
 		E99415362B09F88F00E58660 /* ArtsPolyhedralDiceD20.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E994152B2B09F5CF00E58660 /* ArtsPolyhedralDiceD20.ttf */; };
 		E99415382B0A0AA400E58660 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415372B0A0AA400E58660 /* Die.swift */; };
+		E9A52AC92B0AAC3D009E90C1 /* Coinage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A52AC82B0AAC3D009E90C1 /* Coinage.swift */; };
 		E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */; };
 		E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77592B04899F00596BF0 /* ContentView.swift */; };
 		E9FD775C2B0489A000596BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FD775B2B0489A000596BF0 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		E994152F2B09F5CF00E58660 /* ArtsPolyhedralDiceD4Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD4Rounded.ttf; sourceTree = "<group>"; };
 		E99415302B09F5CF00E58660 /* ArtsPolyhedralDiceD8.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtsPolyhedralDiceD8.ttf; sourceTree = "<group>"; };
 		E99415372B0A0AA400E58660 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		E9A52AC82B0AAC3D009E90C1 /* Coinage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coinage.swift; sourceTree = "<group>"; };
 		E9FD77542B04899F00596BF0 /* DungeonDelversOSRToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonDelversOSRToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonDelversOSRToolkitApp.swift; sourceTree = "<group>"; };
 		E9FD77592B04899F00596BF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				E9FD77852B048EF800596BF0 /* CharacterClass.swift */,
 				E9FD77872B048F1000596BF0 /* Language.swift */,
 				E99415372B0A0AA400E58660 /* Die.swift */,
+				E9A52AC82B0AAC3D009E90C1 /* Coinage.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,
 				E99415282B09ECA300E58660 /* CharacterDetails.swift in Sources */,
 				E9FD77AD2B05F69B00596BF0 /* ModCalculator.swift in Sources */,
+				E9A52AC92B0AAC3D009E90C1 /* Coinage.swift in Sources */,
 				E9FD77712B048DB000596BF0 /* Ability.swift in Sources */,
 				E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */,
 				E9FD776E2B048D8400596BF0 /* ApplicationScreen.swift in Sources */,
