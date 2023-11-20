@@ -38,9 +38,7 @@ struct AbilityAdjustment: View {
             pointsPool: $pointsPool,
             tempStatsScores: $tempStatsScores
           )
-        }
-
-        if landscape {
+        } else if landscape {
           AbilityAdjustmentPresentationLandscape(
             modCalculator: modCalculator,
             viewModel: viewModel,
