@@ -17,7 +17,6 @@ class AbilityAdjustmentViewModel {
   }
 
   func getMaxScore(for thisStat: Stat, using player: PlayerCharacter) -> Int {
-    print("Current Stat: \(thisStat.name)")
     return player.abilityScores.first { $0.statType == thisStat }?.score ?? 0
   }
 

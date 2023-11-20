@@ -50,21 +50,25 @@ struct AdjustmentButton: View {
   let color: Color
   let isDisabled: Bool
   let action: () -> Void
+  let rectangleCornerSize = CGSize(width: 10, height: 10)
+  let rectangleStrokeWidth = CGFloat(5)
+  let rectangleFrame = CGFloat(30)
+  let symbolFrame = CGFloat(15)
 
   var body: some View {
     Button {
       action()
     } label: {
       ZStack {
-        RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-          .stroke(isDisabled ? Color(red: 0.25, green: 0.25, blue: 0.25) : Color.black, lineWidth: 5)
+        RoundedRectangle(cornerSize: rectangleCornerSize)
+          .stroke(isDisabled ? Color("tkDisabledStroke") : Color.black, lineWidth: rectangleStrokeWidth)
           .fill(isDisabled ? Color.gray : color)
-          .frame(width: 30, height: 30)
+          .frame(width: rectangleFrame, height: rectangleFrame)
         Image(systemName: symbolName)
           .resizable()
           .aspectRatio(contentMode: .fit)
-          .frame(width: 15, height: 15)
-          .foregroundStyle(isDisabled ? Color(red: 0.25, green: 0.25, blue: 0.25) : Color.black)
+          .frame(width: symbolFrame, height: symbolFrame)
+          .foregroundStyle(isDisabled ? Color("tkDisabledStroke") : Color.black)
       }
     }
     .disabled(isDisabled)
@@ -73,21 +77,30 @@ struct AdjustmentButton: View {
 
 extension Button {
   func largeButtonStyle() -> some View {
-    self
-      .padding([.top, .bottom], 8)
+    let rectangleCornerSize = CGSize(width: 10, height: 5)
+    let padding = CGFloat(8)
+
+    return self
+      .padding(.vertical, padding)
       .frame(maxWidth: .infinity)
       .background(Color("tkRed"))
-      .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 5)))
+      .clipShape(RoundedRectangle(cornerSize: rectangleCornerSize))
   }
 
   func smallButtonStyle(bgColor: Color) -> some View {
-    self
-      .padding([.top, .bottom], 5)
+    let rectangleCornerSize = CGSize(width: 10, height: 5)
+    let padding = CGFloat(5)
+    let rectangleStrokeWidth = CGFloat(2)
+
+    return self
+      .padding(.vertical, padding)
       .frame(maxWidth: .infinity)
       .background(bgColor)
-      .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 5)))
-      .overlay(RoundedRectangle(cornerSize: CGSize(width: 10, height: 5))
-        .stroke(Color.blue, lineWidth: 2))
+      .clipShape(RoundedRectangle(cornerSize: rectangleCornerSize))
+      .overlay(
+        RoundedRectangle(cornerSize: rectangleCornerSize)
+          .stroke(Color.blue, lineWidth: rectangleStrokeWidth)
+      )
   }
 }
 

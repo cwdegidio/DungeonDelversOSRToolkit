@@ -12,15 +12,20 @@ struct CharacterCarouselPortrait: View {
   @Binding var showSheet: Bool
   var thisClass: CharacterClass
   var viewModel: CharacterClassSelectionViewModel
+  let imageShadowRadius = CGFloat(5)
+  let imageBorderOpacity = 0.25
+  let imageBorderWidth = CGFloat(3)
+  let featureButtonPadding = CGFloat(10)
+  let instructionFrameHeight = CGFloat(80)
 
   var body: some View {
     VStack {
       Image(thisClass.imgName)
         .resizable()
         .aspectRatio(contentMode: .fit)
-        .shadow(radius: 5)
-        .border(.black.opacity(0.25), width: 3.0)
-        .padding(.horizontal, 20)
+        .shadow(radius: imageShadowRadius)
+        .border(.black.opacity(imageBorderOpacity), width: imageBorderWidth)
+        .padding(.horizontal)
       AbilityTitle(content: thisClass.name)
       SmallButton(
         label: "View \(thisClass.name) Features",
@@ -30,7 +35,7 @@ struct CharacterCarouselPortrait: View {
       ) {
         showSheet.toggle()
       }
-      .padding(.bottom, 10)
+      .padding(.bottom, featureButtonPadding)
       .sheet(isPresented: $showSheet) {
         CharacterClassDetailSheet(characterClass: thisClass)
           .presentationDetents([.large])
@@ -43,13 +48,12 @@ struct CharacterCarouselPortrait: View {
         fgColor: Color.white
       ) {
         viewModel.setCharacterClass(as: thisClass, for: player)
-        print("[ DEBUG ] Player class is: \(player.characterClass?.name ?? "no class assigned")")
       }
       Instruction(content: thisClass.description)
         .padding(.top)
-        .frame(height: 80, alignment: .top)
+        .frame(height: instructionFrameHeight, alignment: .top)
     }
-    .padding(20)
+    .padding()
     .frame(maxHeight: .infinity, alignment: .top)
   }
 }

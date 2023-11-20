@@ -15,6 +15,9 @@ struct AbilityPresentationPortrait: View {
   @Binding var statsRolled: Bool
   var player: PlayerCharacter
   var viewModel: AbilityViewModel
+  let smallButtonStackPadding = CGFloat(-80)
+  let allRollTopPadding = CGFloat(-30)
+  let allRollBottomPadding = CGFloat(30)
 
   var body: some View {
     VStack {
@@ -25,7 +28,7 @@ struct AbilityPresentationPortrait: View {
           label: "Modifiers",
           icon: "plus.forwardslash.minus",
           bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-          fgColor: statsRolled ? Color.white : Color(red: 0.75, green: 0.75, blue: 0.75)
+          fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
         ) {
           displaySheet()
         }
@@ -39,15 +42,15 @@ struct AbilityPresentationPortrait: View {
           label: "Reroll \(currentCharacterAbility.statType.shortName)",
           icon: "die.face.6.fill",
           bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-          fgColor: statsRolled ? Color.white : Color(red: 0.75, green: 0.75, blue: 0.75)
+          fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
         ) {
           viewModel.setSingleAbilityScore(for: player, onAbility: currentCharacterAbility.statType)
           abilityScore = currentCharacterAbility.score
         }
         .disabled(!statsRolled)
       }
-      .padding(.horizontal, 20)
-      .padding(.top, -80)
+      .padding(.horizontal)
+      .padding(.top, smallButtonStackPadding)
       SmallButton(label: "Roll All Abilities", icon: "dice.fill", bgColor: Color("tkRed"), fgColor: nil) {
         statsRolled = true
         viewModel.setAllAbilityScores(for: player)
@@ -58,9 +61,9 @@ struct AbilityPresentationPortrait: View {
           abilityTitle = currentAbility.statType.name
         }
       }
-      .padding(.top, -30)
-      .padding(.bottom, 30)
-      .padding(.horizontal, 20)
+      .padding(.top, allRollTopPadding)
+      .padding(.bottom, allRollBottomPadding)
+      .padding(.horizontal)
     }
   }
 

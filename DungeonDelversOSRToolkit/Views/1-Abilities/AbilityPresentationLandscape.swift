@@ -15,6 +15,7 @@ struct AbilityPresentationLandscape: View {
   @Binding var statsRolled: Bool
   var player: PlayerCharacter
   var viewModel: AbilityViewModel
+  let smallButtonStackPadding = CGFloat(10)
 
   var body: some View {
     HStack {
@@ -26,7 +27,7 @@ struct AbilityPresentationLandscape: View {
             label: "Modifiers",
             icon: "plus.forwardslash.minus",
             bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-            fgColor: statsRolled ? Color.white : Color(red: 0.75, green: 0.75, blue: 0.75)
+            fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
           ) {
             displaySheet()
           }
@@ -39,13 +40,13 @@ struct AbilityPresentationLandscape: View {
             label: "Reroll \(currentCharacterAbility.statType.shortName)",
             icon: "die.face.6.fill",
             bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-            fgColor: statsRolled ? Color.white : Color(red: 0.75, green: 0.75, blue: 0.75)
+            fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
           ) {
             viewModel.setSingleAbilityScore(for: player, onAbility: currentCharacterAbility.statType)
             abilityScore = currentCharacterAbility.score
           }
         }
-        .padding(.bottom, 10)
+        .padding(.bottom, smallButtonStackPadding)
         SmallButton(
           label: "Roll All Abilities",
           icon: "dice.fill",
@@ -63,7 +64,7 @@ struct AbilityPresentationLandscape: View {
         }
       }
     }
-    .padding(.horizontal, 20)
+    .padding(.horizontal)
   }
 
   func displaySheet() {

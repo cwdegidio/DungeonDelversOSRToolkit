@@ -21,7 +21,7 @@ struct AbilityDetailSheet: View {
     VStack {
       AbilityDetailTitle(content: "\(stat.name) Modifiers")
       Text(stat.description)
-        .padding(.bottom, 20)
+        .padding(.bottom)
       VStack(alignment: .leading) {
         ForEach(player.modifiers.filter { $0.asscStat == stat }, id: \.modType) { modifier in
           let modifierName = modifier.modType.name
@@ -29,7 +29,7 @@ struct AbilityDetailSheet: View {
           let modifierString = viewModel.getModifierString(for: modifier, player: player)
           DisclosureGroup {
             Text(modifierDescription)
-              .padding(.leading, 20)
+              .padding(.leading)
               .frame(maxWidth: .infinity, alignment: .leading)
           } label: {
             BulletedText(content: "**\(modifierName):** \(modifierString)")
@@ -37,12 +37,12 @@ struct AbilityDetailSheet: View {
           }
         }
       }
-      .padding(.bottom, 20)
+      .padding(.bottom)
       SmallButton(label: "Got it!", icon: "hand.thumbsup.fill", bgColor: Color("tkBlue"), fgColor: nil) {
         dismiss()
       }
     }
-    .padding(20)
+    .padding()
   }
 }
 

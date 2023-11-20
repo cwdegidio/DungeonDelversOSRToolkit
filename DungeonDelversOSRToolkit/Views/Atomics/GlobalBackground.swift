@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GlobalBackground: View {
+  let overlayOpacity = 0.05
+
   var body: some View {
     ZStack {
       Rectangle()
@@ -19,7 +21,7 @@ struct GlobalBackground: View {
       Image("tkBackgroundOverlay")
         .resizable(resizingMode: .tile)
         .ignoresSafeArea()
-        .opacity(0.05)
+        .opacity(overlayOpacity)
     }
   }
 }

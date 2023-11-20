@@ -9,9 +9,9 @@ import SwiftUI
 
 struct AbilityAdjustment: View {
   @Environment(\.verticalSizeClass)
-  var verticalSizeClass: UserInterfaceSizeClass?
+  var vSizeClass: UserInterfaceSizeClass?
   @Environment(\.horizontalSizeClass)
-  var horizontalSizeClass: UserInterfaceSizeClass?
+  var hSizeClass: UserInterfaceSizeClass?
   @EnvironmentObject var player: PlayerCharacter
   @EnvironmentObject var screen: ApplicationScreen
   @State private var pointsPool = 0
@@ -24,39 +24,33 @@ struct AbilityAdjustment: View {
   }
 
   var body: some View {
-    let portrait = horizontalSizeClass == .compact && verticalSizeClass == .regular
-    let landscape = horizontalSizeClass == .compact && verticalSizeClass == .compact ||
-    horizontalSizeClass == .regular && verticalSizeClass == .compact
+    let portrait = OrientationHelper.isPortrait(hClass: hSizeClass, vClass: vSizeClass)
 
     ZStack {
       GlobalBackground()
       VStack {
         if portrait {
           AbilityAdjustmentPresentationPortrait(
-            modCalculator: modCalculator,
-            viewModel: viewModel,
             pointsPool: $pointsPool,
-            tempStatsScores: $tempStatsScores
+            tempStatsScores: $tempStatsScores,
+            modCalculator: modCalculator,
+            viewModel: viewModel
           )
-        } else if landscape {
+        } else {
           AbilityAdjustmentPresentationLandscape(
-            modCalculator: modCalculator,
-            viewModel: viewModel,
             pointsPool: $pointsPool,
-            tempStatsScores: $tempStatsScores
+            tempStatsScores: $tempStatsScores,
+            modCalculator: modCalculator,
+            viewModel: viewModel
           )
         }
 
         Spacer()
         LargeButton(label: "Next Step: Select Class") {
-          print("[ DEBUG ] ==== PLAYER STATS (Post Adjustment)====")
-          for stat in player.abilityScores {
-            print("[ DEBUG ] \(stat.statType.shortName): \(stat.score)")
-          }
           screen.currentScreen = Screen.characterDetails
         }
-        .padding(.horizontal, 20)
-        .padding(.bottom, 20)
+        .padding(.horizontal)
+        .padding(.bottom)
       }
     }
     .onAppear {

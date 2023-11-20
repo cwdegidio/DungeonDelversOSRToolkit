@@ -12,6 +12,9 @@ struct CharacterCarouselLandscape: View {
   @Binding var showSheet: Bool
   var thisClass: CharacterClass
   var viewModel: CharacterClassSelectionViewModel
+  let imageShadowRadius = CGFloat(5)
+  let imageBorderOpacity = 0.25
+  let imageBorderWidth = CGFloat(2)
 
   var body: some View {
     HStack(alignment: .bottom) {
@@ -19,10 +22,10 @@ struct CharacterCarouselLandscape: View {
         Image(thisClass.imgName)
           .resizable()
           .aspectRatio(contentMode: .fit)
-          .shadow(radius: 5)
-          .border(.black.opacity(0.25), width: 2.0)
+          .shadow(radius: imageShadowRadius)
+          .border(.black.opacity(imageBorderOpacity), width: imageBorderWidth)
           .frame(maxWidth: .infinity, alignment: .bottom)
-          .padding(.top, 20)
+          .padding(.top)
       }
       VStack {
         AbilityTitle(content: thisClass.name)
@@ -35,7 +38,7 @@ struct CharacterCarouselLandscape: View {
         ) {
           showSheet.toggle()
         }
-        .padding(.bottom, 20)
+        .padding(.bottom)
         .sheet(isPresented: $showSheet) {
           CharacterClassDetailSheet(characterClass: thisClass)
             .presentationDetents([.large])
@@ -48,11 +51,10 @@ struct CharacterCarouselLandscape: View {
           fgColor: Color.white
         ) {
           viewModel.setCharacterClass(as: thisClass, for: player)
-          print("[ DEBUG ] Player class is: \(player.characterClass?.name ?? "no class assigned")")
         }
       }
       .padding(.leading)
-      .padding(.trailing, 20)
+      .padding(.trailing)
       .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
   }

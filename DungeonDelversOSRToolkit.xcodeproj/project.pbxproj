@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93B1C022B0B341F00702379 /* IndexPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C012B0B341F00702379 /* IndexPublisher.swift */; };
+		E93B1C042B0B355D00702379 /* OrientationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C032B0B355D00702379 /* OrientationHelper.swift */; };
+		E93B1C062B0B381500702379 /* MarkdownHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C052B0B381500702379 /* MarkdownHelper.swift */; };
 		E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */; };
 		E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */; };
 		E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150E2B08590000E58660 /* CharacterClassSelection.swift */; };
@@ -68,6 +71,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E93B1C012B0B341F00702379 /* IndexPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPublisher.swift; sourceTree = "<group>"; };
+		E93B1C032B0B355D00702379 /* OrientationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationHelper.swift; sourceTree = "<group>"; };
+		E93B1C052B0B381500702379 /* MarkdownHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHelper.swift; sourceTree = "<group>"; };
 		E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassSelectionViewModel.swift; sourceTree = "<group>"; };
 		E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCarouselPortrait.swift; sourceTree = "<group>"; };
 		E994150E2B08590000E58660 /* CharacterClassSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterClassSelection.swift; sourceTree = "<group>"; };
@@ -209,6 +215,7 @@
 				E9FD77692B048D3100596BF0 /* CharacterMod.swift */,
 				E9FD776B2B048D5C00596BF0 /* PlayerCharacter.swift */,
 				E9FD776D2B048D8400596BF0 /* ApplicationScreen.swift */,
+				E93B1C012B0B341F00702379 /* IndexPublisher.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				E9FD77AC2B05F69B00596BF0 /* ModCalculator.swift */,
+				E93B1C032B0B355D00702379 /* OrientationHelper.swift */,
+				E93B1C052B0B381500702379 /* MarkdownHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -444,7 +453,9 @@
 				E9FD779B2B04A77300596BF0 /* Abilities.swift in Sources */,
 				E9FD77962B04A17A00596BF0 /* AbilityFlourish.swift in Sources */,
 				E9FD77682B048D0600596BF0 /* CharacterAbility.swift in Sources */,
+				E93B1C062B0B381500702379 /* MarkdownHelper.swift in Sources */,
 				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
+				E93B1C042B0B355D00702379 /* OrientationHelper.swift in Sources */,
 				E9FD77AA2B05F61800596BF0 /* AbilityDetailSheet.swift in Sources */,
 				E9FD77802B048EA300596BF0 /* Screen.swift in Sources */,
 				E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */,
@@ -453,6 +464,7 @@
 				E994152A2B09ECEA00E58660 /* CharacterDetailsViewModel.swift in Sources */,
 				E9FD77AF2B05F6D700596BF0 /* ModifierViewModel.swift in Sources */,
 				E9FD77A62B05E2BE00596BF0 /* AbilityPresentationLandscape.swift in Sources */,
+				E93B1C022B0B341F00702379 /* IndexPublisher.swift in Sources */,
 				E99415212B09C05E00E58660 /* AbilityAdjustmentViewModel.swift in Sources */,
 				E9FD77A82B05F0CF00596BF0 /* BulletedText.swift in Sources */,
 				E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */,

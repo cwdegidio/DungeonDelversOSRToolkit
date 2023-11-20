@@ -14,6 +14,11 @@ struct AbilityStatBlockItems: View {
   var player: PlayerCharacter
   var horizontalSizeClass: UserInterfaceSizeClass
   var verticalSizeClass: UserInterfaceSizeClass
+  let portraitPadding = CGFloat(50)
+  let landscapePadding = CGFloat(100)
+  let vGridSpacing = CGFloat(40)
+  let hGridSpacing = CGFloat(20)
+  let hGridItemSize = CGFloat(50)
 
   var body: some View {
     let portrait = horizontalSizeClass == .compact && verticalSizeClass == .regular
@@ -22,7 +27,10 @@ struct AbilityStatBlockItems: View {
 
     Group {
       if portrait {
-        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 40) {
+        LazyVGrid(
+          columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())],
+          spacing: vGridSpacing
+        ) {
           ForEach(player.abilityScores, id: \.statType) { stat in
             AbilityStatBlock(
               currentCharacterAbility: $currentCharacterAbility,
@@ -34,11 +42,14 @@ struct AbilityStatBlockItems: View {
             )
           }
         }
-        .padding(.bottom, 50)
+        .padding(.bottom, portraitPadding)
       }
 
       if landscape {
-        LazyHGrid(rows: [GridItem(.fixed(50))], spacing: 20) {
+        LazyHGrid(
+          rows: [GridItem(.fixed(hGridItemSize))],
+          spacing: hGridSpacing
+        ) {
           ForEach(player.abilityScores, id: \.statType) { stat in
             AbilityStatBlock(
               currentCharacterAbility: $currentCharacterAbility,
@@ -50,7 +61,7 @@ struct AbilityStatBlockItems: View {
             )
           }
         }
-        .padding(.bottom, 100)
+        .padding(.bottom, landscapePadding)
       }
     }
   }
