@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "D79843B9-DFF9-4070-AF0F-9F2F1B30BD3C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:DungeonDelversOSRToolkit.xcodeproj",
+      "identifier" : "E9FD77532B04899F00596BF0",
+      "name" : "DungeonDelversOSRToolkit"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:DungeonDelversOSRToolkit.xcodeproj",
+        "identifier" : "E9FE6C612B0C2FA4003006D8",
+        "name" : "DungeonDelversOSRToolkitTests"
+      }
+    }
+  ],
+  "version" : 1
+}
