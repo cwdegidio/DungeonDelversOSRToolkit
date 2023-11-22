@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Alignment {
+enum Alignment: String, CaseIterable, Codable {
   case law
   case neutrality
   case chaos

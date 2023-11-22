@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Ability {
+protocol Ability: Codable {
   var statType: Stat { get }
   var score: Int { get set }
 }

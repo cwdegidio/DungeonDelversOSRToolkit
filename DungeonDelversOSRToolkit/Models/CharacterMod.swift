@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CharacterMod: Modifier {
+struct CharacterMod: Modifier, Codable {
   var modType: Mod
   var asscStat: Stat
 }

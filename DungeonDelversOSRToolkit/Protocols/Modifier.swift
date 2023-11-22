@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Modifier {
+protocol Modifier: Codable {
   var modType: Mod { get }
   var asscStat: Stat { get }
 }

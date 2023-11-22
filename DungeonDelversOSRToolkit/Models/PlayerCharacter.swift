@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PlayerCharacter: ObservableObject, Observable {
+final class PlayerCharacter: ObservableObject, Observable, Codable {
   var name: String?
   var alignment: Alignment?
   var title: String?
@@ -16,7 +16,19 @@ class PlayerCharacter: ObservableObject, Observable {
   var pcHitPoints: Int
   @Published var coins: [Coinage: Int]
   @Published var characterClass: CharacterClass?
-  @Published var abilityScores: [Ability]
+  @Published var abilityScores: [any Ability]
+
+  enum CodingKeys: CodingKey {
+    case name
+    case alignment
+    case title
+    case level
+    case modifiers
+    case pcHitPoints
+    case coins
+    case characterClass
+    case abilityScores
+  }
 
   init() {
     self.level = 1
@@ -51,5 +63,41 @@ class PlayerCharacter: ObservableObject, Observable {
       CharacterMod(modType: .retainerMax, asscStat: .cha),
       CharacterMod(modType: .retainerLoyalty, asscStat: .cha)
     ]
+  }
+
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    self.coins = try container.decode([Coinage: Int].self, forKey: .coins)
+    self.characterClass = try container.decode(CharacterClass.self, forKey: .characterClass)
+    self.abilityScores = try container.decode([CharacterAbility].self, forKey: .abilityScores)
+    self.name = try container.decode(String.self, forKey: .name)
+    self.alignment = try container.decode(Alignment.self, forKey: .alignment)
+    self.title = try container.decode(String.self, forKey: .title)
+    self.level = try container.decode(Int.self, forKey: .level)
+    self.modifiers = try container.decode([CharacterMod].self, forKey: .modifiers)
+    self.pcHitPoints = try container.decode(Int.self, forKey: .pcHitPoints)
+  }
+
+  func encode(to encoder: Encoder) throws {
+    var container = encoder.container(keyedBy: CodingKeys.self)
+    try container.encode(coins, forKey: .coins)
+    try container.encode(characterClass, forKey: .characterClass)
+//    try container.encode(abilityScores, forKey: .abilityScores)
+    try container.encode(name, forKey: .name)
+    try container.encode(alignment, forKey: .alignment)
+    try container.encode(title, forKey: .title)
+    try container.encode(level, forKey: .level)
+//    try container.encode(modifiers, forKey: .modifiers)
+    try container.encode(pcHitPoints, forKey: .pcHitPoints)
+
+    var abilityScoreContainer = container.nestedUnkeyedContainer(forKey: .abilityScores)
+    for abilityScore in abilityScores {
+      try abilityScoreContainer.encode(abilityScore)
+    }
+
+    var modifiersContainer = container.nestedUnkeyedContainer(forKey: .modifiers)
+    for modifier in modifiers {
+      try modifiersContainer.encode(modifier)
+    }
   }
 }

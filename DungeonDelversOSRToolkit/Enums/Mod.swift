@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Mod {
+enum Mod: String, Codable {
   case melee
   case openDoors
   case armorClass
