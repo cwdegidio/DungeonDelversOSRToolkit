@@ -80,6 +80,18 @@ struct Subtitle: View {
       .font(.system(size: size))
       .fontWeight(.bold)
   }
+
+  init(content: String) {
+    self.content = content
+  }
+
+  init(content: AttributedString?) {
+    if let attributedString = content {
+      self.content = String(attributedString.characters)
+    } else {
+      self.content = ""
+    }
+  }
 }
 
 #Preview("Instruction") {
