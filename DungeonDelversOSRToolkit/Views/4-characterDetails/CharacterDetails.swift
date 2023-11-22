@@ -101,9 +101,16 @@ struct CharacterDetails: View {
         baseline = player.characterClass?.hitDie.baselineOffset ?? Die.die4.baselineOffset
         conModifier = ModCalculator().getValue(
           for: player.modifiers.first { $0.modType == Mod.hitPoints }!,
-          using: player.abilityScores.first { $0.statType == .con}?.score ?? 0
+          using: player.abilityScores.first { $0.statType == .con }?.score ?? 0
         )
       }
+    }
+    .onAppear {
+//      let jsonData = try? JSONEncoder().encode(player)
+//
+//      if let jsonString = String(data: jsonData!, encoding: .utf8) {
+//        print(jsonString)
+//      }
     }
   }
 

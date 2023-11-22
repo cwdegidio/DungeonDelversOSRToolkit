@@ -29,14 +29,6 @@ class ModifierViewModel {
     }
   }
 
-  //    func getXPModifierString(for value: Int) -> String {
-  //        if value == 0 {
-  //            return "None"
-  //        }
-  //
-  //        return "\(value)%"
-  //    }
-
   func getLiteracyString(for value: Literacy) -> String {
     switch value {
     case .illiterate:

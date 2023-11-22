@@ -68,7 +68,33 @@
 		E9FD77AA2B05F61800596BF0 /* AbilityDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77A92B05F61800596BF0 /* AbilityDetailSheet.swift */; };
 		E9FD77AD2B05F69B00596BF0 /* ModCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77AC2B05F69B00596BF0 /* ModCalculator.swift */; };
 		E9FD77AF2B05F6D700596BF0 /* ModifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77AE2B05F6D700596BF0 /* ModifierViewModel.swift */; };
+		E9FE6C652B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C642B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift */; };
+		E9FE6C702B0C4AAF003006D8 /* ModCalculatorStandardResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C6F2B0C4AAF003006D8 /* ModCalculatorStandardResultTest.swift */; };
+		E9FE6C722B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C712B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift */; };
+		E9FE6C742B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C732B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift */; };
+		E9FE6C762B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C752B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift */; };
+		E9FE6C782B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C772B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift */; };
+		E9FE6C7A2B0C4C31003006D8 /* ModCaculatorRetainerMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C792B0C4C31003006D8 /* ModCaculatorRetainerMax.swift */; };
+		E9FE6C7C2B0C4C68003006D8 /* ModCalculatorRetainerLoyalty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C7B2B0C4C68003006D8 /* ModCalculatorRetainerLoyalty.swift */; };
+		E9FE6C7E2B0C4CA7003006D8 /* ModCalculatorXPAdjustmentSinglePrimeReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C7D2B0C4CA7003006D8 /* ModCalculatorXPAdjustmentSinglePrimeReq.swift */; };
+		E9FE6C802B0C4CE3003006D8 /* ModCalculatorXPAdjustmentElf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C7F2B0C4CE3003006D8 /* ModCalculatorXPAdjustmentElf.swift */; };
+		E9FE6C822B0C4D15003006D8 /* ModCalculatorXPAdjustmentHalfling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C812B0C4D15003006D8 /* ModCalculatorXPAdjustmentHalfling.swift */; };
+		E9FE6C852B0C4D96003006D8 /* OrientationHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C842B0C4D96003006D8 /* OrientationHelperTest.swift */; };
+		E9FE6C8A2B0C6739003006D8 /* AbilityViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C892B0C6739003006D8 /* AbilityViewModelTest.swift */; };
+		E9FE6C8C2B0C6BE6003006D8 /* ModifierViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C8B2B0C6BE6003006D8 /* ModifierViewModelTest.swift */; };
+		E9FE6C902B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C8F2B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift */; };
+		E9FE6C922B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE6C912B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9FE6C662B0C2FA4003006D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9FD774C2B04899F00596BF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9FD77532B04899F00596BF0;
+			remoteInfo = DungeonDelversOSRToolkit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E93B1C012B0B341F00702379 /* IndexPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPublisher.swift; sourceTree = "<group>"; };
@@ -134,10 +160,35 @@
 		E9FD77A92B05F61800596BF0 /* AbilityDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityDetailSheet.swift; sourceTree = "<group>"; };
 		E9FD77AC2B05F69B00596BF0 /* ModCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculator.swift; sourceTree = "<group>"; };
 		E9FD77AE2B05F6D700596BF0 /* ModifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierViewModel.swift; sourceTree = "<group>"; };
+		E9FE6C622B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DungeonDelversOSRToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FE6C642B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DungeonDelversOSRToolkitTests.swift; sourceTree = "<group>"; };
+		E9FE6C6D2B0C31EF003006D8 /* DungeonDelversOSRToolkit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DungeonDelversOSRToolkit.xctestplan; sourceTree = "<group>"; };
+		E9FE6C6F2B0C4AAF003006D8 /* ModCalculatorStandardResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorStandardResultTest.swift; sourceTree = "<group>"; };
+		E9FE6C712B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorSecondaryResultTest.swift; sourceTree = "<group>"; };
+		E9FE6C732B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorOpenDoorsTest.swift; sourceTree = "<group>"; };
+		E9FE6C752B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorSpokenLanguagesTest.swift; sourceTree = "<group>"; };
+		E9FE6C772B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorLiteracyTest.swift; sourceTree = "<group>"; };
+		E9FE6C792B0C4C31003006D8 /* ModCaculatorRetainerMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCaculatorRetainerMax.swift; sourceTree = "<group>"; };
+		E9FE6C7B2B0C4C68003006D8 /* ModCalculatorRetainerLoyalty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorRetainerLoyalty.swift; sourceTree = "<group>"; };
+		E9FE6C7D2B0C4CA7003006D8 /* ModCalculatorXPAdjustmentSinglePrimeReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorXPAdjustmentSinglePrimeReq.swift; sourceTree = "<group>"; };
+		E9FE6C7F2B0C4CE3003006D8 /* ModCalculatorXPAdjustmentElf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorXPAdjustmentElf.swift; sourceTree = "<group>"; };
+		E9FE6C812B0C4D15003006D8 /* ModCalculatorXPAdjustmentHalfling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModCalculatorXPAdjustmentHalfling.swift; sourceTree = "<group>"; };
+		E9FE6C842B0C4D96003006D8 /* OrientationHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationHelperTest.swift; sourceTree = "<group>"; };
+		E9FE6C892B0C6739003006D8 /* AbilityViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityViewModelTest.swift; sourceTree = "<group>"; };
+		E9FE6C8B2B0C6BE6003006D8 /* ModifierViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierViewModelTest.swift; sourceTree = "<group>"; };
+		E9FE6C8F2B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassSelectionViewModelTest.swift; sourceTree = "<group>"; };
+		E9FE6C912B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityAdjustmentViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E9FD77512B04899F00596BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9FE6C5F2B0C2FA4003006D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -168,7 +219,9 @@
 		E9FD774B2B04899F00596BF0 = {
 			isa = PBXGroup;
 			children = (
+				E9FE6C6D2B0C31EF003006D8 /* DungeonDelversOSRToolkit.xctestplan */,
 				E9FD77562B04899F00596BF0 /* DungeonDelversOSRToolkit */,
+				E9FE6C632B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests */,
 				E9FD77552B04899F00596BF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -177,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E9FD77542B04899F00596BF0 /* DungeonDelversOSRToolkit.app */,
+				E9FE6C622B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -336,6 +390,53 @@
 			path = "2-CharacterClass";
 			sourceTree = "<group>";
 		};
+		E9FE6C632B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE6C882B0C6721003006D8 /* ViewModels */,
+				E9FE6C832B0C4D7A003006D8 /* Helpers */,
+				E9FE6C642B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift */,
+			);
+			path = DungeonDelversOSRToolkitTests;
+			sourceTree = "<group>";
+		};
+		E9FE6C6E2B0C4A7F003006D8 /* ModCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE6C6F2B0C4AAF003006D8 /* ModCalculatorStandardResultTest.swift */,
+				E9FE6C712B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift */,
+				E9FE6C732B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift */,
+				E9FE6C752B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift */,
+				E9FE6C772B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift */,
+				E9FE6C792B0C4C31003006D8 /* ModCaculatorRetainerMax.swift */,
+				E9FE6C7B2B0C4C68003006D8 /* ModCalculatorRetainerLoyalty.swift */,
+				E9FE6C7D2B0C4CA7003006D8 /* ModCalculatorXPAdjustmentSinglePrimeReq.swift */,
+				E9FE6C7F2B0C4CE3003006D8 /* ModCalculatorXPAdjustmentElf.swift */,
+				E9FE6C812B0C4D15003006D8 /* ModCalculatorXPAdjustmentHalfling.swift */,
+			);
+			path = ModCalculator;
+			sourceTree = "<group>";
+		};
+		E9FE6C832B0C4D7A003006D8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE6C6E2B0C4A7F003006D8 /* ModCalculator */,
+				E9FE6C842B0C4D96003006D8 /* OrientationHelperTest.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E9FE6C882B0C6721003006D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E9FE6C892B0C6739003006D8 /* AbilityViewModelTest.swift */,
+				E9FE6C8B2B0C6BE6003006D8 /* ModifierViewModelTest.swift */,
+				E9FE6C8F2B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift */,
+				E9FE6C912B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,6 +458,24 @@
 			productReference = E9FD77542B04899F00596BF0 /* DungeonDelversOSRToolkit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E9FE6C612B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9FE6C6A2B0C2FA4003006D8 /* Build configuration list for PBXNativeTarget "DungeonDelversOSRToolkitTests" */;
+			buildPhases = (
+				E9FE6C5E2B0C2FA4003006D8 /* Sources */,
+				E9FE6C5F2B0C2FA4003006D8 /* Frameworks */,
+				E9FE6C602B0C2FA4003006D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9FE6C672B0C2FA4003006D8 /* PBXTargetDependency */,
+			);
+			name = DungeonDelversOSRToolkitTests;
+			productName = DungeonDelversOSRToolkitTests;
+			productReference = E9FE6C622B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,6 +488,10 @@
 				TargetAttributes = {
 					E9FD77532B04899F00596BF0 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					E9FE6C612B0C2FA4003006D8 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E9FD77532B04899F00596BF0;
 					};
 				};
 			};
@@ -386,6 +509,7 @@
 			projectRoot = "";
 			targets = (
 				E9FD77532B04899F00596BF0 /* DungeonDelversOSRToolkit */,
+				E9FE6C612B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -404,6 +528,13 @@
 				E99415312B09F86500E58660 /* ArtsPolyhedralDiceD4Rounded.ttf in Resources */,
 				E99415322B09F88100E58660 /* ArtsPolyhedralDiceD6.ttf in Resources */,
 				E99415352B09F88B00E58660 /* ArtsPolyhedralDiceD12.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9FE6C602B0C2FA4003006D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +621,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9FE6C5E2B0C2FA4003006D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FE6C652B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift in Sources */,
+				E9FE6C782B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift in Sources */,
+				E9FE6C762B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift in Sources */,
+				E9FE6C8C2B0C6BE6003006D8 /* ModifierViewModelTest.swift in Sources */,
+				E9FE6C722B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift in Sources */,
+				E9FE6C902B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift in Sources */,
+				E9FE6C742B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift in Sources */,
+				E9FE6C7E2B0C4CA7003006D8 /* ModCalculatorXPAdjustmentSinglePrimeReq.swift in Sources */,
+				E9FE6C922B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift in Sources */,
+				E9FE6C8A2B0C6739003006D8 /* AbilityViewModelTest.swift in Sources */,
+				E9FE6C852B0C4D96003006D8 /* OrientationHelperTest.swift in Sources */,
+				E9FE6C7A2B0C4C31003006D8 /* ModCaculatorRetainerMax.swift in Sources */,
+				E9FE6C822B0C4D15003006D8 /* ModCalculatorXPAdjustmentHalfling.swift in Sources */,
+				E9FE6C802B0C4CE3003006D8 /* ModCalculatorXPAdjustmentElf.swift in Sources */,
+				E9FE6C702B0C4AAF003006D8 /* ModCalculatorStandardResultTest.swift in Sources */,
+				E9FE6C7C2B0C4C68003006D8 /* ModCalculatorRetainerLoyalty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9FE6C672B0C2FA4003006D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9FD77532B04899F00596BF0 /* DungeonDelversOSRToolkit */;
+			targetProxy = E9FE6C662B0C2FA4003006D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E9FD77602B0489A000596BF0 /* Debug */ = {
@@ -672,6 +834,44 @@
 			};
 			name = Release;
 		};
+		E9FE6C682B0C2FA4003006D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM4NFC4797;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwdegidio.DungeonDelversOSRToolkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DungeonDelversOSRToolkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DungeonDelversOSRToolkit";
+			};
+			name = Debug;
+		};
+		E9FE6C692B0C2FA4003006D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM4NFC4797;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwdegidio.DungeonDelversOSRToolkitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DungeonDelversOSRToolkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DungeonDelversOSRToolkit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -689,6 +889,15 @@
 			buildConfigurations = (
 				E9FD77632B0489A000596BF0 /* Debug */,
 				E9FD77642B0489A000596BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9FE6C6A2B0C2FA4003006D8 /* Build configuration list for PBXNativeTarget "DungeonDelversOSRToolkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9FE6C682B0C2FA4003006D8 /* Debug */,
+				E9FE6C692B0C2FA4003006D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
