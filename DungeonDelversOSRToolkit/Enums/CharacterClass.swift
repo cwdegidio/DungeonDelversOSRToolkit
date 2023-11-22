@@ -9,7 +9,7 @@ import Foundation
 
 // swiftlint:disable type_body_length
 // All character class data is stored in enum due to regular reference
-enum CharacterClass: CaseIterable {
+enum CharacterClass: String, CaseIterable, Codable {
   case cleric
   case dwarf
   case elf

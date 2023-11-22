@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CharacterAbility: Ability {
+class CharacterAbility: Ability, Codable {
   var statType: Stat
   var score: Int
 

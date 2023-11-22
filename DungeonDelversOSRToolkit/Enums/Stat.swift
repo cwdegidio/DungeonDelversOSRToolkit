@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Stat {
+enum Stat: String, Codable {
   case str
   case dex
   case con

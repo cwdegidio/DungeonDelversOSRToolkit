@@ -23,6 +23,7 @@ struct CharacterDetails: View {
   @State var baseline = 0.0
   @State var hpRolled = false
   @State var conModifier: Int = 0
+  @State var selectedAlignment: Alignment? = .law
   var startingGoldRange = 3...18
   var startingdGoldMultiplier = 10
   var conBonusString: String {
@@ -58,7 +59,12 @@ struct CharacterDetails: View {
               .font(Font.system(size: 21.0, design: .monospaced))
           }
           .padding(.top, -70)
-          SmallButton(label: "Roll Hit Points", icon: "", bgColor: Color("tkBlue"), fgColor: Color.white) {
+          SmallButton(
+            label: "Roll Hit Points",
+            icon: "cross.vial.fill",
+            bgColor: Color("tkBlue"),
+            fgColor: Color.white
+          ) {
             determineCharacterHitPoints()
             hpRolled = true
           }
@@ -68,19 +74,49 @@ struct CharacterDetails: View {
         .padding(.horizontal, 20)
         Divider()
           .padding(.top, -20)
-        HStack {
+        VStack {
           HStack {
             Text("**Starting Gold:**")
               .font(.title2)
             Text("\(player.coins.first { $0.key == Coinage.goldPieces }?.value ?? 0)")
               .font(Font.system(size: 21.0, design: .monospaced))
           }
-          SmallButton(label: "Roll", icon: "dollarsign", bgColor: Color("tkGreen"), fgColor: Color.white) {
+          SmallButton(label: "Roll", icon: "banknote.fill", bgColor: Color("tkGreen"), fgColor: Color.white) {
             let startingGold = Int.random(in: startingGoldRange) * startingdGoldMultiplier
             player.coins.updateValue(startingGold, forKey: .goldPieces)
           }
         }
         .padding(.horizontal, 20)
+        Divider()
+        VStack {
+          Text("**Select Alignment**")
+            .font(.title2)
+          Picker("Alignment", selection: $selectedAlignment) {
+            ForEach(Alignment.allCases, id: \.rawValue) { alignment in
+              Text(alignment.name).tag(alignment as Alignment?)
+            }
+          }
+          .padding(5)
+          .pickerStyle(.segmented)
+          .background(Color("tkBlue"))
+          .clipShape(RoundedRectangle(cornerSize: CGSize(width: 5, height: 5)))
+          .onAppear {
+            let fontStyles = [
+              NSAttributedString.Key.foregroundColor: UIColor.white,
+              NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16)
+            ]
+            UISegmentedControl.appearance().setTitleTextAttributes(fontStyles, for: .selected)
+            UISegmentedControl.appearance().setTitleTextAttributes(fontStyles, for: .normal)
+            UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(Color("tkYellow"))
+          }
+          .onChange(of: $selectedAlignment.wrappedValue) {
+            if let newAlignment = selectedAlignment {
+              player.alignment = newAlignment
+              print("[ DEBUG ] Player Alignment: \(player.alignment?.name ?? "")")
+            }
+          }
+          .padding()
+        }
 
         Spacer()
         LargeButton(label: "Next Step: Starting Funds") {
@@ -90,6 +126,7 @@ struct CharacterDetails: View {
           }
           print("[ DEBUG ] Hit Points: \(player.pcHitPoints)")
           print("[ DEBUG ] Gold Pieces: \(String(describing: player.coins[.goldPieces]))")
+          dump(player)
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 20)
@@ -99,18 +136,16 @@ struct CharacterDetails: View {
         fontFace = player.characterClass?.hitDie.typeFace.name ?? TypeFace.die4.name
         dieFaces = player.characterClass?.hitDie.dieFaces ?? Die.die4.dieFaces
         baseline = player.characterClass?.hitDie.baselineOffset ?? Die.die4.baselineOffset
-        conModifier = ModCalculator().getValue(
-          for: player.modifiers.first { $0.modType == Mod.hitPoints }!,
-          using: player.abilityScores.first { $0.statType == .con }?.score ?? 0
-        )
+        player.alignment = .law
+
+        if let hpModifier = player.modifiers.first(where: { $0.modType == Mod.hitPoints }),
+          let conScore = player.abilityScores.first(where: { $0.statType == .con })?.score {
+          conModifier = ModCalculator().getValue(
+            for: hpModifier,
+            using: conScore
+          )
+        }
       }
-    }
-    .onAppear {
-//      let jsonData = try? JSONEncoder().encode(player)
-//
-//      if let jsonString = String(data: jsonData!, encoding: .utf8) {
-//        print(jsonString)
-//      }
     }
   }
 

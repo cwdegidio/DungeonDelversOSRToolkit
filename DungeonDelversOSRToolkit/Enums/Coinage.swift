@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Coinage {
+enum Coinage: String, Codable {
   case platinumPieces
   case goldPieces
   case electrumPieces
