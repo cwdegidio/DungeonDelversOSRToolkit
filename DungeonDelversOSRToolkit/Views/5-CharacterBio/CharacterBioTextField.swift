@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CharacterBioTextField: View {
+  let viewModel: CharacterBioViewModel
   @Binding var playerFieldToUpdate: String
   @Binding var enteredText: String
   var focusedField: FocusState<UUID?>.Binding
@@ -30,7 +31,10 @@ struct CharacterBioTextField: View {
       .focused(focusedField, equals: textFieldUUID)
       .autocorrectionDisabled()
       .onChange(of: enteredText) {
-        playerFieldToUpdate = enteredText
+        viewModel.setValueonPlayer(
+          onfield: &playerFieldToUpdate,
+          withText: enteredText
+        )
       }
     }
     .padding()
@@ -40,7 +44,9 @@ struct CharacterBioTextField: View {
 #Preview {
   let player = PlayerCharacter()
   @FocusState var focusField: UUID?
+  let viewModel = CharacterBioViewModel()
   return CharacterBioTextField(
+    viewModel: viewModel,
     playerFieldToUpdate: .constant(player.name),
     enteredText: .constant(""),
     focusedField: $focusField,

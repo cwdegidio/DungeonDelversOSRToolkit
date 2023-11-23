@@ -16,18 +16,9 @@ struct LanguageMultiSelectPicker: View {
   @State var languageList: [Language] = []
   @State var languagesSelected: [Language] = []
   @State var languageLimit = 0
-  let viewModel = CharacterBioViewModel()
+  let viewModel: CharacterBioViewModel
   var selectedLanguageString: String {
-    if !player.additionalLanguages.isEmpty {
-      var text = player.additionalLanguages.first?.name ?? ""
-      if player.additionalLanguages.count > 1 {
-        for i in 1..<player.additionalLanguages.count {
-          text += ", \(player.additionalLanguages[i].name)"
-        }
-      }
-      return text
-    }
-    return "None"
+    viewModel.generateSelectedLanguagesString(for: player)
   }
 
   var body: some View {
@@ -47,12 +38,7 @@ struct LanguageMultiSelectPicker: View {
       List {
         ForEach(languageList, id: \.self) { language in
           Button {
-            if !player.additionalLanguages.contains(language) && player.additionalLanguages.count < languageLimit {
-              player.additionalLanguages.append(language)
-            } else {
-              player.additionalLanguages.removeAll { $0 == language }
-            }
-            print(player.additionalLanguages)
+            viewModel.updatePlayerLanguages(using: language, for: player, withLimit: languageLimit)
           } label: {
             HStack {
               Text(language.name)
@@ -70,15 +56,7 @@ struct LanguageMultiSelectPicker: View {
       .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 5)))
     }
     .onAppear {
-      guard let characterClass = player.characterClass else {
-        print("No character class selected")
-        return
-      }
-
-      languageList = Language.allCases.filter { language in
-        !characterClass.languages.contains(language)
-      }
-
+      languageList = viewModel.generateLanguageList(for: player)
       languageLimit = viewModel.getNumberOfLanguages(for: player)
     }
   }
@@ -95,6 +73,7 @@ struct LanguageMultiSelectPicker: View {
     CharacterAbility(statType: .wis, score: Int.random(in: 3...18)),
     CharacterAbility(statType: .cha, score: Int.random(in: 3...18))
   ]
-  return LanguageMultiSelectPicker()
+  let viewModel = CharacterBioViewModel()
+  return LanguageMultiSelectPicker(viewModel: viewModel)
     .environment(player)
 }

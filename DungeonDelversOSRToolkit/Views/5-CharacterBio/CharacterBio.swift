@@ -18,6 +18,7 @@ struct CharacterBio: View {
   @State var characterName = ""
   @State var characterTitle = ""
   @State var selectedLanguage: Language = .common
+  let viewModel = CharacterBioViewModel()
 
   var body: some View {
     let portrait = OrientationHelper.isPortrait(hClass: hSizeClass, vClass: vSizeClass)
@@ -31,6 +32,7 @@ struct CharacterBio: View {
       VStack {
         layout {
           CharacterBioTextField(
+            viewModel: viewModel,
             playerFieldToUpdate: $player.name,
             enteredText: $characterName,
             focusedField: $focusedField,
@@ -38,6 +40,7 @@ struct CharacterBio: View {
             emptyTextContent: "Give your character a name..."
           )
           CharacterBioTextField(
+            viewModel: viewModel,
             playerFieldToUpdate: $player.title,
             enteredText: $characterTitle,
             focusedField: $focusedField,
@@ -46,7 +49,7 @@ struct CharacterBio: View {
           )
         }
         VStack {
-          LanguageMultiSelectPicker()
+          LanguageMultiSelectPicker(viewModel: viewModel)
         }
         .padding()
         Spacer()
