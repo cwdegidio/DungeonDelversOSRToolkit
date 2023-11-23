@@ -10,6 +10,7 @@ import SwiftUI
 struct AlignmentSelector: View {
   @EnvironmentObject var player: PlayerCharacter
   @State var selectedAlignment: Alignment? = .law
+  let viewModel: CharacterDetailsViewModel
 
   var body: some View {
     VStack {
@@ -35,7 +36,7 @@ struct AlignmentSelector: View {
       }
       .onChange(of: $selectedAlignment.wrappedValue) {
         if let newAlignment = selectedAlignment {
-          player.alignment = newAlignment
+          viewModel.setPlayerAlignment(newAlignment, for: player)
         }
       }
       .padding()
@@ -44,6 +45,6 @@ struct AlignmentSelector: View {
 }
 
 #Preview {
-  AlignmentSelector()
+  AlignmentSelector(viewModel: CharacterDetailsViewModel())
     .environment(PlayerCharacter())
 }

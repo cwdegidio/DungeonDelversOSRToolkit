@@ -10,16 +10,17 @@ import SwiftUI
 struct CharacterDetailsPresentationPortrait: View {
   @EnvironmentObject var player: PlayerCharacter
   @Binding var hpRolled: Bool
+  let viewModel: CharacterDetailsViewModel
 
   var body: some View {
     VStack {
-      HitPointsGenerator(hpRolled: $hpRolled)
+      HitPointsGenerator(hpRolled: $hpRolled, viewModel: viewModel)
       Divider()
         .padding(.top, -20)
-      GoldGenerator()
+      GoldGenerator(viewModel: viewModel)
       Divider()
         .padding(.vertical)
-      AlignmentSelector()
+      AlignmentSelector(viewModel: viewModel)
       Spacer()
       LargeButton(label: "Next Step: Biography") {
         print("TODO")
@@ -31,6 +32,6 @@ struct CharacterDetailsPresentationPortrait: View {
 }
 
 #Preview {
-  CharacterDetailsPresentationPortrait(hpRolled: .constant(true))
+  CharacterDetailsPresentationPortrait(hpRolled: .constant(true), viewModel: CharacterDetailsViewModel())
     .environment(PlayerCharacter())
 }

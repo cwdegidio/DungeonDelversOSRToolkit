@@ -22,7 +22,6 @@ final class AbilityAdjustmentViewModelTest: XCTestCase {
       CharacterAbility(statType: .cha, score: 12)
     ]
     characterClassViewModel.setCharacterClass(as: .fighter, for: player)
-    let currentCharacterClass = player.characterClass
     XCTAssertEqual("Strength", abilityAdjViewModel.getPrimeRequitsiteString(using: player))
   }
 
@@ -39,7 +38,7 @@ final class AbilityAdjustmentViewModelTest: XCTestCase {
       CharacterAbility(statType: .cha, score: 12)
     ]
     characterClassViewModel.setCharacterClass(as: .elf, for: player)
-    let currentCharacterClass = player.characterClass
+    //    let currentCharacterClass = player.characterClass
     XCTAssertEqual("Intelligence, Strength", abilityAdjViewModel.getPrimeRequitsiteString(using: player))
   }
 

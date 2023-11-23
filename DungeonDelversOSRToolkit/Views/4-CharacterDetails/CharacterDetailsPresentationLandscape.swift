@@ -10,18 +10,19 @@ import SwiftUI
 struct CharacterDetailsPresentationLandscape: View {
   @EnvironmentObject var player: PlayerCharacter
   @Binding var hpRolled: Bool
+  let viewModel: CharacterDetailsViewModel
 
   var body: some View {
     VStack {
       HStack {
         VStack {
-          HitPointsGenerator(hpRolled: $hpRolled)
+          HitPointsGenerator(hpRolled: $hpRolled, viewModel: viewModel)
         }
         VStack {
           Spacer()
-          GoldGenerator()
+          GoldGenerator(viewModel: viewModel)
             .padding(.bottom)
-          AlignmentSelector()
+          AlignmentSelector(viewModel: viewModel)
         }
       }
       Spacer()
@@ -35,6 +36,6 @@ struct CharacterDetailsPresentationLandscape: View {
 }
 
 #Preview {
-  CharacterDetailsPresentationLandscape(hpRolled: .constant(true))
+  CharacterDetailsPresentationLandscape(hpRolled: .constant(true), viewModel: CharacterDetailsViewModel())
     .environment(PlayerCharacter())
 }
