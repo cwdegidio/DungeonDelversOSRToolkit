@@ -10,9 +10,11 @@ import SwiftUI
 struct CharacterBioTextField: View {
   @Binding var playerFieldToUpdate: String
   @Binding var enteredText: String
-  @FocusState var focusState: Bool
+  var focusedField: FocusState<UUID?>.Binding
+  @State var textFieldUUID = UUID()
   var title: String
   var emptyTextContent: String
+
 
   var body: some View {
     VStack(alignment: .leading) {
@@ -25,12 +27,9 @@ struct CharacterBioTextField: View {
       .padding(10)
       .background(.white)
       .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 5)))
-      .focused($focusState)
-      .onLongPressGesture(minimumDuration: 0.0) {
-        focusState = true
-      }
+      .focused(focusedField, equals: textFieldUUID)
       .autocorrectionDisabled()
-      .onChange(of: focusState) {
+      .onChange(of: enteredText) {
         playerFieldToUpdate = enteredText
       }
     }
@@ -39,10 +38,12 @@ struct CharacterBioTextField: View {
 }
 
 #Preview {
-  var player = PlayerCharacter()
+  let player = PlayerCharacter()
+  @FocusState var focusField: UUID?
   return CharacterBioTextField(
     playerFieldToUpdate: .constant(player.name),
     enteredText: .constant(""),
+    focusedField: $focusField,
     title: "Name",
     emptyTextContent: "Please enter a name..."
   )

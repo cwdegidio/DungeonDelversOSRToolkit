@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct LanguageMultiSelectPicker: View {
+  @Environment(\.verticalSizeClass)
+  var vSizeClass: UserInterfaceSizeClass?
+  @Environment(\.horizontalSizeClass)
+  var hSizeClass: UserInterfaceSizeClass?
   @EnvironmentObject var player: PlayerCharacter
   @State var languageList: [Language] = []
   @State var languagesSelected: [Language] = []
@@ -27,9 +31,16 @@ struct LanguageMultiSelectPicker: View {
   }
 
   var body: some View {
+    let portrait = OrientationHelper.isPortrait(hClass: hSizeClass, vClass: vSizeClass)
+
+    let layout = portrait ?
+    AnyLayout(VStackLayout()) :
+    AnyLayout(HStackLayout())
+
     VStack {
-      HStack {
-        Text("**Languages Remaining:** \(languageLimit - languagesSelected.count)")
+      layout {
+        Text("**Languages Remaining:** \(languageLimit - player.additionalLanguages.count)")
+          .padding(.trailing, portrait ? 0 : 10)
         Text("**Languages Selected:**")
         Text(selectedLanguageString)
       }
