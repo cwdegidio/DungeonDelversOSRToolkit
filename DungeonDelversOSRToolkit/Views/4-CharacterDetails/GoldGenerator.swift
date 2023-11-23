@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GoldGenerator: View {
   @EnvironmentObject var player: PlayerCharacter
+  let viewModel: CharacterDetailsViewModel
   var startingdGoldMultiplier = 10
   var startingGoldRange = 3...18
 
@@ -24,16 +25,13 @@ struct GoldGenerator: View {
         icon: "banknote.fill",
         bgColor: Color("tkGreen"),
         fgColor: Color.white
-      ) {
-        let startingGold = Int.random(in: startingGoldRange) * startingdGoldMultiplier
-        player.coins.updateValue(startingGold, forKey: .goldPieces)
-      }
+      ) { viewModel.generateStartingGold(for: player) }
     }
     .padding(.horizontal)
   }
 }
 
 #Preview {
-  GoldGenerator()
+  GoldGenerator(viewModel: CharacterDetailsViewModel())
     .environment(PlayerCharacter())
 }

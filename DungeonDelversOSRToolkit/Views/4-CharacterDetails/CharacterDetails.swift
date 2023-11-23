@@ -15,6 +15,7 @@ struct CharacterDetails: View {
   @EnvironmentObject var player: PlayerCharacter
   @EnvironmentObject var screen: ApplicationScreen
   @State var hpRolled = false
+  let viewModel = CharacterDetailsViewModel()
 
   var body: some View {
     let portrait = OrientationHelper.isPortrait(hClass: hSizeClass, vClass: vSizeClass)
@@ -22,9 +23,9 @@ struct CharacterDetails: View {
     ZStack {
       GlobalBackground()
       if portrait {
-        CharacterDetailsPresentationPortrait(hpRolled: $hpRolled)
+        CharacterDetailsPresentationPortrait(hpRolled: $hpRolled, viewModel: viewModel)
       } else {
-        CharacterDetailsPresentationLandscape(hpRolled: $hpRolled)
+        CharacterDetailsPresentationLandscape(hpRolled: $hpRolled, viewModel: viewModel)
       }
     }
   }

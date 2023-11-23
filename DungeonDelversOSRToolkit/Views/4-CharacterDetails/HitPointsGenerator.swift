@@ -18,6 +18,7 @@ struct HitPointsGenerator: View {
   @State var hpValue: Int = 0
   @State var label: String = "A"
   @State var baseline = 0.0
+  let viewModel: CharacterDetailsViewModel
   let counterMax = 20
   var animationTimer: Timer?
   var conBonusString: String {
@@ -62,19 +63,16 @@ struct HitPointsGenerator: View {
     .padding(.horizontal, 20)
     .animation(.bouncy, value: label)
     .onAppear {
-      fontFace = player.characterClass?.hitDie.typeFace.name ?? TypeFace.die4.name
-      dieFaces = player.characterClass?.hitDie.dieFaces ?? Die.die4.dieFaces
-      baseline = player.characterClass?.hitDie.baselineOffset ?? Die.die4.baselineOffset
-      player.alignment = .law
-
-      if let hpModifier = player.modifiers.first(where: { $0.modType == Mod.hitPoints }),
-        let conScore = player.abilityScores.first(where: { $0.statType == .con })?.score {
-        conModifier = ModCalculator().getValue(
-          for: hpModifier,
-          using: conScore
-        )
-      }
+      initalSetup()
     }
+  }
+
+  func initalSetup() {
+    fontFace = player.characterClass?.hitDie.typeFace.name ?? TypeFace.die4.name
+    dieFaces = player.characterClass?.hitDie.dieFaces ?? Die.die4.dieFaces
+    baseline = player.characterClass?.hitDie.baselineOffset ?? Die.die4.baselineOffset
+    player.alignment = .law
+    conModifier = viewModel.getHPModifierValue(for: player)
   }
 
 
@@ -90,17 +88,13 @@ struct HitPointsGenerator: View {
         timer.invalidate()
         counter = 0
         angle = 0
-        if hpValue + conModifier <= 0 {
-          player.pcHitPoints = 1
-        } else {
-          player.pcHitPoints = hpValue + conModifier
-        }
+        viewModel.generateCharactersMaxHP(hitPoints: hpValue, for: player)
       }
     }
   }
 }
 
 #Preview {
-  HitPointsGenerator(hpRolled: .constant(false))
+  HitPointsGenerator(hpRolled: .constant(false), viewModel: CharacterDetailsViewModel())
     .environment(PlayerCharacter())
 }
