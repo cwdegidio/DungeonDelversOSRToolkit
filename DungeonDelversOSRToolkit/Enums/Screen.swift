@@ -12,4 +12,5 @@ enum Screen {
   case classSelection
   case abilityAdjustment
   case characterDetails
+  case characterBio
 }

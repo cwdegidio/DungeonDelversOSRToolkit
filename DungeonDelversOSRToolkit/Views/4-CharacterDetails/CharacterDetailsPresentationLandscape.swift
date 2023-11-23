@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CharacterDetailsPresentationLandscape: View {
   @EnvironmentObject var player: PlayerCharacter
+  @EnvironmentObject var screen: ApplicationScreen
   @Binding var hpRolled: Bool
   let viewModel: CharacterDetailsViewModel
 
@@ -27,7 +28,7 @@ struct CharacterDetailsPresentationLandscape: View {
       }
       Spacer()
       LargeButton(label: "Next Step: Biography") {
-        print("TODO")
+        screen.currentScreen = .characterBio
       }
       .padding(.horizontal, 20)
       .padding(.bottom, 20)

@@ -29,6 +29,10 @@ struct ContentView: View {
       CharacterDetails()
         .environment(player)
         .environment(screen)
+    case .characterBio:
+      CharacterBio()
+        .environment(player)
+        .environment(screen)
     }
   }
 }

@@ -16,6 +16,10 @@
 		E94198072B0DFDB500B54205 /* AlignmentSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198062B0DFDB500B54205 /* AlignmentSelector.swift */; };
 		E94198092B0E00D600B54205 /* CharacterDetailsPresentationLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198082B0E00D600B54205 /* CharacterDetailsPresentationLandscape.swift */; };
 		E941980B2B0E674100B54205 /* CharacterDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941980A2B0E674100B54205 /* CharacterDetailsViewModelTest.swift */; };
+		E941980E2B0F117D00B54205 /* CharacterBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941980D2B0F117D00B54205 /* CharacterBio.swift */; };
+		E94198102B0F1FD300B54205 /* LanguageMultiSelectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941980F2B0F1FD300B54205 /* LanguageMultiSelectPicker.swift */; };
+		E94198122B0F2B6100B54205 /* CharacterBioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */; };
+		E94198142B0F4A0600B54205 /* CharacterBioTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198132B0F4A0600B54205 /* CharacterBioTextField.swift */; };
 		E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */; };
 		E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */; };
 		E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150E2B08590000E58660 /* CharacterClassSelection.swift */; };
@@ -112,6 +116,10 @@
 		E94198062B0DFDB500B54205 /* AlignmentSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentSelector.swift; sourceTree = "<group>"; };
 		E94198082B0E00D600B54205 /* CharacterDetailsPresentationLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsPresentationLandscape.swift; sourceTree = "<group>"; };
 		E941980A2B0E674100B54205 /* CharacterDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModelTest.swift; sourceTree = "<group>"; };
+		E941980D2B0F117D00B54205 /* CharacterBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBio.swift; sourceTree = "<group>"; };
+		E941980F2B0F1FD300B54205 /* LanguageMultiSelectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageMultiSelectPicker.swift; sourceTree = "<group>"; };
+		E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBioViewModel.swift; sourceTree = "<group>"; };
+		E94198132B0F4A0600B54205 /* CharacterBioTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBioTextField.swift; sourceTree = "<group>"; };
 		E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassSelectionViewModel.swift; sourceTree = "<group>"; };
 		E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCarouselPortrait.swift; sourceTree = "<group>"; };
 		E994150E2B08590000E58660 /* CharacterClassSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterClassSelection.swift; sourceTree = "<group>"; };
@@ -213,6 +221,9 @@
 		E941980C2B0F0ADD00B54205 /* 5-CharacterBio */ = {
 			isa = PBXGroup;
 			children = (
+				E941980D2B0F117D00B54205 /* CharacterBio.swift */,
+				E941980F2B0F1FD300B54205 /* LanguageMultiSelectPicker.swift */,
+				E94198132B0F4A0600B54205 /* CharacterBioTextField.swift */,
 			);
 			path = "5-CharacterBio";
 			sourceTree = "<group>";
@@ -390,6 +401,7 @@
 				E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */,
 				E99415202B09C05E00E58660 /* AbilityAdjustmentViewModel.swift */,
 				E99415292B09ECEA00E58660 /* CharacterDetailsViewModel.swift */,
+				E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -593,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E994151F2B09B4B900E58660 /* AdjustmentBlock.swift in Sources */,
+				E94198122B0F2B6100B54205 /* CharacterBioViewModel.swift in Sources */,
 				E9FD77A22B05CED100596BF0 /* Buttons.swift in Sources */,
 				E9FD777A2B048E4E00596BF0 /* SpokenLanguage.swift in Sources */,
 				E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */,
@@ -608,6 +621,7 @@
 				E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */,
 				E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */,
 				E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */,
+				E941980E2B0F117D00B54205 /* CharacterBio.swift in Sources */,
 				E9FD779B2B04A77300596BF0 /* Abilities.swift in Sources */,
 				E9FD77962B04A17A00596BF0 /* AbilityFlourish.swift in Sources */,
 				E9FD77682B048D0600596BF0 /* CharacterAbility.swift in Sources */,
@@ -629,8 +643,10 @@
 				E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */,
 				E99415382B0A0AA400E58660 /* Die.swift in Sources */,
 				E9FD77A02B05CBCB00596BF0 /* AbilityStatBlockItems.swift in Sources */,
+				E94198102B0F1FD300B54205 /* LanguageMultiSelectPicker.swift in Sources */,
 				E94198092B0E00D600B54205 /* CharacterDetailsPresentationLandscape.swift in Sources */,
 				E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */,
+				E94198142B0F4A0600B54205 /* CharacterBioTextField.swift in Sources */,
 				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,
 				E9FD779E2B04B46600596BF0 /* AbilityViewModel.swift in Sources */,
 				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,

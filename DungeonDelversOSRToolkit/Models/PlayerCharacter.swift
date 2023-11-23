@@ -8,15 +8,16 @@
 import Foundation
 
 final class PlayerCharacter: ObservableObject, Observable, Codable {
-  var name: String?
+  @Published var name: String
   var alignment: Alignment?
-  var title: String?
+  @Published var title: String
   var level: Int
   var modifiers: [Modifier]
   var pcHitPoints: Int
   @Published var coins: [Coinage: Int]
   @Published var characterClass: CharacterClass?
   @Published var abilityScores: [any Ability]
+  @Published var additionalLanguages: [Language]
 
   enum CodingKeys: CodingKey {
     case name
@@ -28,9 +29,12 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     case coins
     case characterClass
     case abilityScores
+    case additionalLanguages
   }
 
   init() {
+    self.name = ""
+    self.title = ""
     self.level = 1
     self.characterClass = nil
     self.pcHitPoints = 0
@@ -63,6 +67,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
       CharacterMod(modType: .retainerMax, asscStat: .cha),
       CharacterMod(modType: .retainerLoyalty, asscStat: .cha)
     ]
+    self.additionalLanguages = []
   }
 
   init(from decoder: Decoder) throws {
@@ -76,6 +81,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     self.level = try container.decode(Int.self, forKey: .level)
     self.modifiers = try container.decode([CharacterMod].self, forKey: .modifiers)
     self.pcHitPoints = try container.decode(Int.self, forKey: .pcHitPoints)
+    self.additionalLanguages = try container.decode([Language].self, forKey: .additionalLanguages)
   }
 
   func encode(to encoder: Encoder) throws {
@@ -89,6 +95,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     try container.encode(level, forKey: .level)
     //    try container.encode(modifiers, forKey: .modifiers)
     try container.encode(pcHitPoints, forKey: .pcHitPoints)
+    try container.encode(additionalLanguages, forKey: .additionalLanguages)
 
     var abilityScoreContainer = container.nestedUnkeyedContainer(forKey: .abilityScores)
     for abilityScore in abilityScores {
