@@ -13,4 +13,6 @@ enum Screen {
   case abilityAdjustment
   case characterDetails
   case characterBio
+  case spells
+  case armor
 }

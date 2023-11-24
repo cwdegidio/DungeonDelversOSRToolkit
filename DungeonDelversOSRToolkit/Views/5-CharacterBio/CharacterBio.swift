@@ -19,6 +19,9 @@ struct CharacterBio: View {
   @State var characterTitle = ""
   @State var selectedLanguage: Language = .common
   let viewModel = CharacterBioViewModel()
+  var isMagicUser: Bool {
+    player.characterClass == .magicUser
+  }
 
   var body: some View {
     let portrait = OrientationHelper.isPortrait(hClass: hSizeClass, vClass: vSizeClass)
@@ -53,10 +56,14 @@ struct CharacterBio: View {
         }
         .padding()
         Spacer()
-        LargeButton(label: "Next Step: Biography") {
-          print("[ DEBUG ] Character Name: \(player.name)")
-          print("[ DEBUG ] Character Title: \(player.title)")
-          print("[ DEBUG ] Character Languages: \(player.additionalLanguages)")
+        LargeButton(label: "Next Step: \(isMagicUser ? "Spell Selection" : "Equipment")") {
+          var nextScreen: Screen
+          if isMagicUser {
+            nextScreen = .spells
+          } else {
+            nextScreen = .armor
+          }
+          screen.currentScreen = nextScreen
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 20)
