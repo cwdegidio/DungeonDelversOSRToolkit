@@ -33,6 +33,14 @@ struct ContentView: View {
       CharacterBio()
         .environment(player)
         .environment(screen)
+    case .spells:
+      Spells()
+        .environment(player)
+        .environment(screen)
+    case .armor:
+      Armor()
+        .environment(player)
+        .environment(screen)
     }
   }
 }

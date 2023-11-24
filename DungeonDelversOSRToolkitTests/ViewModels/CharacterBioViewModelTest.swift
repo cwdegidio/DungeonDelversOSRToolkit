@@ -11,7 +11,7 @@ import XCTest
 final class CharacterBioViewModelTest: XCTestCase {
   func test_CharacterBioViewModel_getNumberOfLanguages_hasScore_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.abilityScores = [
       CharacterAbility(statType: .str, score: 18),
       CharacterAbility(statType: .dex, score: 9),
@@ -26,7 +26,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_getNumberOfLanguages_doesNotHaveScore_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.abilityScores = [
       CharacterAbility(statType: .str, score: 18),
       CharacterAbility(statType: .dex, score: 9),
@@ -42,7 +42,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_getNumberOfLanguages_doesNotHaveModifier_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.abilityScores = [
       CharacterAbility(statType: .str, score: 18),
       CharacterAbility(statType: .dex, score: 9),
@@ -58,7 +58,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_generateLanuageList_asFighter_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .fighter
     let languageList = viewModel.generateLanguageList(for: player)
     let languagesToTest: [Language] = [
@@ -88,7 +88,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_generateLanuageList_asDwarf_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .dwarf
     let languageList = viewModel.generateLanguageList(for: player)
     let languagesToTest: [Language] = [
@@ -114,7 +114,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_generateLanuageList_asElf_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .elf
     let languageList = viewModel.generateLanguageList(for: player)
     let languagesToTest: [Language] = [
@@ -140,7 +140,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_generateLanuageList_asHalfling_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .halfling
     let languageList = viewModel.generateLanguageList(for: player)
     let languagesToTest: [Language] = [
@@ -169,14 +169,14 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_generateLanuageList_noClass_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     let languageList = viewModel.generateLanguageList(for: player)
     XCTAssertEqual([], languageList)
   }
 
   func test_CharacterBioViewModel_updatePlayerLanguage_addLanguages_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .fighter
     player.abilityScores = [
       CharacterAbility(statType: .str, score: 18),
@@ -193,7 +193,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_updatePlayerLanguage_removeLanguages_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .fighter
     player.abilityScores = [
       CharacterAbility(statType: .str, score: 18),
@@ -213,7 +213,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_generateSelectedLanguagesString_hasLanguages_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .fighter
     player.abilityScores = [
       CharacterAbility(statType: .str, score: 18),
@@ -233,7 +233,7 @@ final class CharacterBioViewModelTest: XCTestCase {
 
   func test_CharacterBioViewModel_generateSelectedLanguagesString_hasNoLanguages_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     player.characterClass = .fighter
     player.abilityScores = [
       CharacterAbility(statType: .str, score: 18),
@@ -243,14 +243,13 @@ final class CharacterBioViewModelTest: XCTestCase {
       CharacterAbility(statType: .wis, score: 10),
       CharacterAbility(statType: .cha, score: 12)
     ]
-    let limit = viewModel.getNumberOfLanguages(for: player)
     let text = viewModel.generateSelectedLanguagesString(for: player)
     XCTAssertEqual("None", text)
   }
 
   func test_CharacterBioViewModel_setValueonPlayer_shouldBeEqual() {
     let viewModel = CharacterBioViewModel()
-    var player = PlayerCharacter()
+    let player = PlayerCharacter()
     viewModel.setValueonPlayer(onfield: &player.name, withText: "Gandalf")
     XCTAssertEqual("Gandalf", player.name)
   }

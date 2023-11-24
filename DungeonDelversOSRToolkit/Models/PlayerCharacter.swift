@@ -18,6 +18,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
   @Published var characterClass: CharacterClass?
   @Published var abilityScores: [any Ability]
   @Published var additionalLanguages: [Language]
+  @Published var spells: [MUSpell]
 
   enum CodingKeys: CodingKey {
     case name
@@ -30,6 +31,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     case characterClass
     case abilityScores
     case additionalLanguages
+    case spells
   }
 
   init() {
@@ -68,6 +70,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
       CharacterMod(modType: .retainerLoyalty, asscStat: .cha)
     ]
     self.additionalLanguages = []
+    self.spells = []
   }
 
   init(from decoder: Decoder) throws {
@@ -82,6 +85,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     self.modifiers = try container.decode([CharacterMod].self, forKey: .modifiers)
     self.pcHitPoints = try container.decode(Int.self, forKey: .pcHitPoints)
     self.additionalLanguages = try container.decode([Language].self, forKey: .additionalLanguages)
+    self.spells = try container.decode([MUSpell].self, forKey: .spells)
   }
 
   func encode(to encoder: Encoder) throws {
@@ -96,6 +100,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     //    try container.encode(modifiers, forKey: .modifiers)
     try container.encode(pcHitPoints, forKey: .pcHitPoints)
     try container.encode(additionalLanguages, forKey: .additionalLanguages)
+    try container.encode(spells, forKey: .spells)
 
     var abilityScoreContainer = container.nestedUnkeyedContainer(forKey: .abilityScores)
     for abilityScore in abilityScores {

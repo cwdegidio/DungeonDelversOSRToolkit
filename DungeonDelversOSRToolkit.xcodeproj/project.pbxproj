@@ -21,6 +21,23 @@
 		E94198122B0F2B6100B54205 /* CharacterBioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */; };
 		E94198142B0F4A0600B54205 /* CharacterBioTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198132B0F4A0600B54205 /* CharacterBioTextField.swift */; };
 		E94198162B0F635800B54205 /* CharacterBioViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198152B0F635800B54205 /* CharacterBioViewModelTest.swift */; };
+		E94198192B10278E00B54205 /* MUSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198182B10278E00B54205 /* MUSpell.swift */; };
+		E941981C2B10293F00B54205 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941981B2B10293F00B54205 /* Spells.swift */; };
+		E941981E2B10298E00B54205 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941981D2B10298E00B54205 /* Armor.swift */; };
+		E94198212B1034AF00B54205 /* SDCharmPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198202B1034AF00B54205 /* SDCharmPerson.swift */; };
+		E94198232B1040D900B54205 /* SDDetectMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198222B1040D900B54205 /* SDDetectMagic.swift */; };
+		E94198252B10422C00B54205 /* SDFloatingDisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198242B10422C00B54205 /* SDFloatingDisc.swift */; };
+		E94198272B1042DF00B54205 /* SDHoldPortal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198262B1042DF00B54205 /* SDHoldPortal.swift */; };
+		E94198292B10436A00B54205 /* SDLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198282B10436A00B54205 /* SDLight.swift */; };
+		E941982B2B10448900B54205 /* SDMagicMissile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941982A2B10448900B54205 /* SDMagicMissile.swift */; };
+		E941982D2B10452200B54205 /* SDProtectionFromEvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941982C2B10452200B54205 /* SDProtectionFromEvil.swift */; };
+		E941982F2B1045AA00B54205 /* SDReadLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941982E2B1045AA00B54205 /* SDReadLanguages.swift */; };
+		E94198312B10460300B54205 /* SDReadMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198302B10460300B54205 /* SDReadMagic.swift */; };
+		E94198332B1046B300B54205 /* SDShield.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198322B1046B300B54205 /* SDShield.swift */; };
+		E94198352B10473500B54205 /* SDSleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198342B10473500B54205 /* SDSleep.swift */; };
+		E94198372B10484400B54205 /* SDVentriloquism.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94198362B10484400B54205 /* SDVentriloquism.swift */; };
+		E941983B2B10564F00B54205 /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941983A2B10564F00B54205 /* SpellsViewModel.swift */; };
+		E941983D2B10576200B54205 /* SpellViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941983C2B10576200B54205 /* SpellViewModelTest.swift */; };
 		E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */; };
 		E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */; };
 		E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150E2B08590000E58660 /* CharacterClassSelection.swift */; };
@@ -122,6 +139,23 @@
 		E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBioViewModel.swift; sourceTree = "<group>"; };
 		E94198132B0F4A0600B54205 /* CharacterBioTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBioTextField.swift; sourceTree = "<group>"; };
 		E94198152B0F635800B54205 /* CharacterBioViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterBioViewModelTest.swift; sourceTree = "<group>"; };
+		E94198182B10278E00B54205 /* MUSpell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSpell.swift; sourceTree = "<group>"; };
+		E941981B2B10293F00B54205 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
+		E941981D2B10298E00B54205 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		E94198202B1034AF00B54205 /* SDCharmPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDCharmPerson.swift; sourceTree = "<group>"; };
+		E94198222B1040D900B54205 /* SDDetectMagic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDDetectMagic.swift; sourceTree = "<group>"; };
+		E94198242B10422C00B54205 /* SDFloatingDisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDFloatingDisc.swift; sourceTree = "<group>"; };
+		E94198262B1042DF00B54205 /* SDHoldPortal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDHoldPortal.swift; sourceTree = "<group>"; };
+		E94198282B10436A00B54205 /* SDLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDLight.swift; sourceTree = "<group>"; };
+		E941982A2B10448900B54205 /* SDMagicMissile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDMagicMissile.swift; sourceTree = "<group>"; };
+		E941982C2B10452200B54205 /* SDProtectionFromEvil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDProtectionFromEvil.swift; sourceTree = "<group>"; };
+		E941982E2B1045AA00B54205 /* SDReadLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDReadLanguages.swift; sourceTree = "<group>"; };
+		E94198302B10460300B54205 /* SDReadMagic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDReadMagic.swift; sourceTree = "<group>"; };
+		E94198322B1046B300B54205 /* SDShield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDShield.swift; sourceTree = "<group>"; };
+		E94198342B10473500B54205 /* SDSleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSleep.swift; sourceTree = "<group>"; };
+		E94198362B10484400B54205 /* SDVentriloquism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDVentriloquism.swift; sourceTree = "<group>"; };
+		E941983A2B10564F00B54205 /* SpellsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
+		E941983C2B10576200B54205 /* SpellViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellViewModelTest.swift; sourceTree = "<group>"; };
 		E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassSelectionViewModel.swift; sourceTree = "<group>"; };
 		E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCarouselPortrait.swift; sourceTree = "<group>"; };
 		E994150E2B08590000E58660 /* CharacterClassSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterClassSelection.swift; sourceTree = "<group>"; };
@@ -230,6 +264,42 @@
 			path = "5-CharacterBio";
 			sourceTree = "<group>";
 		};
+		E94198172B10269100B54205 /* 6-Spells */ = {
+			isa = PBXGroup;
+			children = (
+				E941981F2B10349300B54205 /* SpellDescriptions */,
+				E941981B2B10293F00B54205 /* Spells.swift */,
+			);
+			path = "6-Spells";
+			sourceTree = "<group>";
+		};
+		E941981A2B10291800B54205 /* 7-Armor */ = {
+			isa = PBXGroup;
+			children = (
+				E941981D2B10298E00B54205 /* Armor.swift */,
+			);
+			path = "7-Armor";
+			sourceTree = "<group>";
+		};
+		E941981F2B10349300B54205 /* SpellDescriptions */ = {
+			isa = PBXGroup;
+			children = (
+				E94198202B1034AF00B54205 /* SDCharmPerson.swift */,
+				E94198222B1040D900B54205 /* SDDetectMagic.swift */,
+				E94198242B10422C00B54205 /* SDFloatingDisc.swift */,
+				E94198262B1042DF00B54205 /* SDHoldPortal.swift */,
+				E94198282B10436A00B54205 /* SDLight.swift */,
+				E941982A2B10448900B54205 /* SDMagicMissile.swift */,
+				E941982C2B10452200B54205 /* SDProtectionFromEvil.swift */,
+				E941982E2B1045AA00B54205 /* SDReadLanguages.swift */,
+				E94198302B10460300B54205 /* SDReadMagic.swift */,
+				E94198322B1046B300B54205 /* SDShield.swift */,
+				E94198342B10473500B54205 /* SDSleep.swift */,
+				E94198362B10484400B54205 /* SDVentriloquism.swift */,
+			);
+			path = SpellDescriptions;
+			sourceTree = "<group>";
+		};
 		E99415152B09801A00E58660 /* 3-AbilityAdjustment */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +405,7 @@
 				E9FD77872B048F1000596BF0 /* Language.swift */,
 				E99415372B0A0AA400E58660 /* Die.swift */,
 				E9A52AC82B0AAC3D009E90C1 /* Coinage.swift */,
+				E94198182B10278E00B54205 /* MUSpell.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -356,6 +427,8 @@
 		E9FD778D2B049DDB00596BF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E941981A2B10291800B54205 /* 7-Armor */,
+				E94198172B10269100B54205 /* 6-Spells */,
 				E941980C2B0F0ADD00B54205 /* 5-CharacterBio */,
 				E99415262B09EC7E00E58660 /* 4-CharacterDetails */,
 				E99415152B09801A00E58660 /* 3-AbilityAdjustment */,
@@ -404,6 +477,7 @@
 				E99415202B09C05E00E58660 /* AbilityAdjustmentViewModel.swift */,
 				E99415292B09ECEA00E58660 /* CharacterDetailsViewModel.swift */,
 				E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */,
+				E941983A2B10564F00B54205 /* SpellsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -474,6 +548,7 @@
 				E9FE6C912B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift */,
 				E941980A2B0E674100B54205 /* CharacterDetailsViewModelTest.swift */,
 				E94198152B0F635800B54205 /* CharacterBioViewModelTest.swift */,
+				E941983C2B10576200B54205 /* SpellViewModelTest.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -608,18 +683,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E994151F2B09B4B900E58660 /* AdjustmentBlock.swift in Sources */,
+				E94198272B1042DF00B54205 /* SDHoldPortal.swift in Sources */,
+				E941982F2B1045AA00B54205 /* SDReadLanguages.swift in Sources */,
+				E94198332B1046B300B54205 /* SDShield.swift in Sources */,
 				E94198122B0F2B6100B54205 /* CharacterBioViewModel.swift in Sources */,
 				E9FD77A22B05CED100596BF0 /* Buttons.swift in Sources */,
+				E94198352B10473500B54205 /* SDSleep.swift in Sources */,
 				E9FD777A2B048E4E00596BF0 /* SpokenLanguage.swift in Sources */,
 				E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */,
 				E9FD77762B048DFD00596BF0 /* Stat.swift in Sources */,
 				E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */,
 				E94198032B0DF81E00B54205 /* HitPointsGenerator.swift in Sources */,
 				E9FD77882B048F1000596BF0 /* Language.swift in Sources */,
+				E94198292B10436A00B54205 /* SDLight.swift in Sources */,
 				E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */,
 				E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */,
 				E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */,
 				E99415252B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift in Sources */,
+				E941983B2B10564F00B54205 /* SpellsViewModel.swift in Sources */,
+				E94198312B10460300B54205 /* SDReadMagic.swift in Sources */,
 				E994151D2B099EE800E58660 /* Triangle.swift in Sources */,
 				E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */,
 				E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */,
@@ -631,9 +713,12 @@
 				E93B1C062B0B381500702379 /* MarkdownHelper.swift in Sources */,
 				E94198012B0DE7EF00B54205 /* CharacterDetailsPresentationPortrait.swift in Sources */,
 				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
+				E94198212B1034AF00B54205 /* SDCharmPerson.swift in Sources */,
+				E94198252B10422C00B54205 /* SDFloatingDisc.swift in Sources */,
 				E93B1C042B0B355D00702379 /* OrientationHelper.swift in Sources */,
 				E9FD77AA2B05F61800596BF0 /* AbilityDetailSheet.swift in Sources */,
 				E9FD77802B048EA300596BF0 /* Screen.swift in Sources */,
+				E941981C2B10293F00B54205 /* Spells.swift in Sources */,
 				E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */,
 				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
 				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
@@ -641,20 +726,26 @@
 				E9FD77AF2B05F6D700596BF0 /* ModifierViewModel.swift in Sources */,
 				E9FD77A62B05E2BE00596BF0 /* AbilityPresentationLandscape.swift in Sources */,
 				E93B1C022B0B341F00702379 /* IndexPublisher.swift in Sources */,
+				E941982B2B10448900B54205 /* SDMagicMissile.swift in Sources */,
 				E99415212B09C05E00E58660 /* AbilityAdjustmentViewModel.swift in Sources */,
+				E94198372B10484400B54205 /* SDVentriloquism.swift in Sources */,
 				E9FD77A82B05F0CF00596BF0 /* BulletedText.swift in Sources */,
 				E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */,
 				E99415382B0A0AA400E58660 /* Die.swift in Sources */,
+				E941981E2B10298E00B54205 /* Armor.swift in Sources */,
 				E9FD77A02B05CBCB00596BF0 /* AbilityStatBlockItems.swift in Sources */,
+				E941982D2B10452200B54205 /* SDProtectionFromEvil.swift in Sources */,
 				E94198102B0F1FD300B54205 /* LanguageMultiSelectPicker.swift in Sources */,
 				E94198092B0E00D600B54205 /* CharacterDetailsPresentationLandscape.swift in Sources */,
 				E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */,
+				E94198232B1040D900B54205 /* SDDetectMagic.swift in Sources */,
 				E94198142B0F4A0600B54205 /* CharacterBioTextField.swift in Sources */,
 				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,
 				E9FD779E2B04B46600596BF0 /* AbilityViewModel.swift in Sources */,
 				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,
 				E99415282B09ECA300E58660 /* CharacterDetails.swift in Sources */,
 				E9FD77AD2B05F69B00596BF0 /* ModCalculator.swift in Sources */,
+				E94198192B10278E00B54205 /* MUSpell.swift in Sources */,
 				E9A52AC92B0AAC3D009E90C1 /* Coinage.swift in Sources */,
 				E9FD77712B048DB000596BF0 /* Ability.swift in Sources */,
 				E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */,
@@ -679,6 +770,7 @@
 				E9FE6C782B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift in Sources */,
 				E9FE6C762B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift in Sources */,
 				E9FE6C8C2B0C6BE6003006D8 /* ModifierViewModelTest.swift in Sources */,
+				E941983D2B10576200B54205 /* SpellViewModelTest.swift in Sources */,
 				E9FE6C722B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift in Sources */,
 				E9FE6C902B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift in Sources */,
 				E9FE6C742B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift in Sources */,
