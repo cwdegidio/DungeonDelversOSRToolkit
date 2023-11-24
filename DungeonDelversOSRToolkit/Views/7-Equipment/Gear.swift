@@ -1,5 +1,5 @@
 //
-//  Armor.swift
+//  Gear.swift
 //  DungeonDelversOSRToolkit
 //
 //  Created by Curtis DeGidio on 11/23/23.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct Armor: View {
+struct Gear: View {
   var body: some View {
-    Text("This is the Armor View")
+    Text("This is for Gear")
   }
 }
 
 #Preview {
-  Armor()
+  Gear()
 }

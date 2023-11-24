@@ -14,5 +14,5 @@ enum Screen {
   case characterDetails
   case characterBio
   case spells
-  case armor
+  case equipment
 }

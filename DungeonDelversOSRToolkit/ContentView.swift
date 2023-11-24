@@ -37,8 +37,8 @@ struct ContentView: View {
       Spells()
         .environment(player)
         .environment(screen)
-    case .armor:
-      Armor()
+    case .equipment:
+      Equipment()
         .environment(player)
         .environment(screen)
     }

@@ -61,7 +61,7 @@ struct CharacterBio: View {
           if isMagicUser {
             nextScreen = .spells
           } else {
-            nextScreen = .armor
+            nextScreen = .equipment
           }
           screen.currentScreen = nextScreen
         }
