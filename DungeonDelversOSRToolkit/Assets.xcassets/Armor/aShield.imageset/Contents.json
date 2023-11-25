@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "shield-final.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
