@@ -21,22 +21,22 @@ struct Equipment: View {
       VStack {
         TabView {
           Group {
-            ArmorView()
+            ArmorTabList()
               .background(BackgroundHelper())
               .tabItem {
                 Label("Armor", systemImage: "shield")
               }
-            Weapons()
+            WeaponsTabList()
               .background(BackgroundHelper())
               .tabItem {
                 Label("Weapons", systemImage: "figure.fencing")
               }
-            Ammo()
+            AmmoTabList()
               .background(BackgroundHelper())
               .tabItem {
                 Label("Ammo", systemImage: "figure.archery")
               }
-            Gear()
+            GearTabList()
               .background(BackgroundHelper())
               .tabItem {
                 Label("Gear", systemImage: "hammer.fill")

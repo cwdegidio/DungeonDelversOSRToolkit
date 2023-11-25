@@ -1,5 +1,5 @@
 //
-//  ArmorView.swift
+//  WeaponsTabList.swift
 //  DungeonDelversOSRToolkit
 //
 //  Created by Curtis DeGidio on 11/23/23.
@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct ArmorView: View {
+struct WeaponsTabList: View {
   var body: some View {
     NavigationStack {
       ZStack {
         GlobalBackground()
         List {
           ScrollView {
-            ForEach(Armor.allCases, id: \.self) { armor in
-              NavigationLink(destination: ArmorDetail(armor: armor)) {
-                EquipmentListItem(itemName: armor.name, itemImage: armor.imgName, itemCost: armor.cost)
+            ForEach(Weapon.allCases, id: \.self) { weapon in
+              NavigationLink(destination: WeaponDetail(weapon: weapon)) {
+                EquipmentListItem(itemName: weapon.name, itemImage: weapon.imgName, itemCost: weapon.cost)
                 Image(systemName: "chevron.forward")
               }
               .padding()
             }
           }
         }
-        .navigationTitle("Armor")
+        .navigationTitle("Weapons")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .scrollContentBackground(.hidden)
@@ -34,5 +34,5 @@ struct ArmorView: View {
 }
 
 #Preview {
-  ArmorView()
+  WeaponsTabList()
 }

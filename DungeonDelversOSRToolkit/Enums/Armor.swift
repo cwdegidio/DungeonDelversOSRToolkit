@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Armor: String, CaseIterable, Codable {
+enum Armor: String, Purchasable, CaseIterable, Codable {
   case leather
   case chainmail
   case plateMail

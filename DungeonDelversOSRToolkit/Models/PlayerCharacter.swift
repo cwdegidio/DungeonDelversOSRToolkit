@@ -21,6 +21,9 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
   @Published var spells: [MUSpell]
   @Published var armor: Armor?
   @Published var hasShield: Bool
+  @Published var weapons: [Weapon]
+  @Published var ammo: [Ammo]
+  @Published var gear: [Gear]
 
   enum CodingKeys: CodingKey {
     case name
@@ -36,6 +39,9 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     case spells
     case armor
     case hasShield
+    case weapons
+    case ammo
+    case gear
   }
 
   init() {
@@ -77,6 +83,9 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     self.spells = []
     self.armor = nil
     self.hasShield = false
+    self.weapons = []
+    self.ammo = []
+    self.gear = []
   }
 
   init(from decoder: Decoder) throws {
@@ -94,6 +103,9 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     self.spells = try container.decode([MUSpell].self, forKey: .spells)
     self.armor = try container.decode(Armor.self, forKey: .armor)
     self.hasShield = try container.decode(Bool.self, forKey: .hasShield)
+    self.weapons = try container.decode([Weapon].self, forKey: .weapons)
+    self.ammo = try container.decode([Ammo].self, forKey: .ammo)
+    self.gear = try container.decode([Gear].self, forKey: .gear)
   }
 
   func encode(to encoder: Encoder) throws {
@@ -111,6 +123,9 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
     try container.encode(spells, forKey: .spells)
     try container.encode(armor, forKey: .armor)
     try container.encode(hasShield, forKey: .hasShield)
+    try container.encode(weapons, forKey: .weapons)
+    try container.encode(ammo, forKey: .ammo)
+    try container.encode(gear, forKey: .gear)
 
     var abilityScoreContainer = container.nestedUnkeyedContainer(forKey: .abilityScores)
     for abilityScore in abilityScores {

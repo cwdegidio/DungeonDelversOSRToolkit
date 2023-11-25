@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Weapon: String, CaseIterable, Codable {
+enum Weapon: String, Purchasable, CaseIterable, Codable {
   case battleAxe
   case club
   case crossbow
@@ -193,6 +193,49 @@ enum Weapon: String, CaseIterable, Codable {
       return "(5'–70' / 71'–140' / 141'–210')"
     case .crossbow:
       return "(5'–80' / 81'–160' / 161'–240')"
+    }
+  }
+
+  var imgName: String {
+    switch self {
+    case .battleAxe:
+      return "wBattleAxe"
+    case .club:
+      return "wClub"
+    case .crossbow:
+      return "wCrossbow"
+    case .dagger:
+      return "wDagger"
+    case .handAxe:
+      return "wHandAxe"
+    case .javelin:
+      return "wJavelin"
+    case .lance:
+      return "wLance"
+    case .longBow:
+      return "wLongBow"
+    case .mace:
+      return "wMace"
+    case .poleArm:
+      return "wPoleArm"
+    case .shortBow:
+      return "wShortBow"
+    case .shortSword:
+      return "wShortSword"
+    case .silverDagger:
+      return "wSilverDagger"
+    case .sling:
+      return "wSling"
+    case .spear:
+      return "wSpear"
+    case .staff:
+      return "wStaff"
+    case .sword:
+      return "wSword"
+    case .twoHandedSword:
+      return "wTwoHandedSword"
+    case .warHammer:
+      return "wWarHammer"
     }
   }
 }
