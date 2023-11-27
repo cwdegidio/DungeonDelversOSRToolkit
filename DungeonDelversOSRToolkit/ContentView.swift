@@ -41,6 +41,10 @@ struct ContentView: View {
       Equipment()
         .environment(player)
         .environment(screen)
+    case .characterReview:
+      CharacterReview()
+        .environment(player)
+        .environment(screen)
     }
   }
 }

@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E930BB8D2B13643F0054187E /* TurningUndeadSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB8C2B13643E0054187E /* TurningUndeadSubReview.swift */; };
+		E930BB8F2B1366360054187E /* SpellsReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB8E2B1366360054187E /* SpellsReview.swift */; };
+		E930BB932B1455B50054187E /* AbilitySubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB922B1455B40054187E /* AbilitySubReviewModel.swift */; };
+		E930BB952B1458480054187E /* SavingThrowsSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB942B1458480054187E /* SavingThrowsSubReviewModel.swift */; };
+		E930BB972B1458F30054187E /* CombatSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB962B1458F30054187E /* CombatSubReviewModel.swift */; };
+		E930BB992B1459720054187E /* ClassAbilitySubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB982B1459720054187E /* ClassAbilitySubReviewModel.swift */; };
+		E930BB9B2B1459F00054187E /* EncounterSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB9A2B1459F00054187E /* EncounterSubReviewModel.swift */; };
+		E930BB9D2B145A940054187E /* ExplorationSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB9C2B145A940054187E /* ExplorationSubReviewModel.swift */; };
+		E930BB9F2B145B200054187E /* MovementSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BB9E2B145B200054187E /* MovementSubReviewModel.swift */; };
+		E930BBA12B145BB00054187E /* LanguageSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBA02B145BB00054187E /* LanguageSubReviewModel.swift */; };
+		E930BBA32B145C170054187E /* AdvancementSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBA22B145C170054187E /* AdvancementSubReviewModel.swift */; };
+		E930BBA52B145C740054187E /* ArmorSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBA42B145C740054187E /* ArmorSubReviewModel.swift */; };
+		E930BBA72B145CF80054187E /* WeaponsSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBA62B145CF80054187E /* WeaponsSubReviewModel.swift */; };
+		E930BBA92B145D6B0054187E /* GearSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBA82B145D6B0054187E /* GearSubReviewModel.swift */; };
+		E930BBAB2B1461220054187E /* ThievesSkillsSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBAA2B1461220054187E /* ThievesSkillsSubReviewModel.swift */; };
+		E930BBAD2B14616D0054187E /* TurningUndeadSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBAC2B14616D0054187E /* TurningUndeadSubReviewModel.swift */; };
+		E930BBAF2B1461D80054187E /* SpellSubReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBAE2B1461D80054187E /* SpellSubReviewModel.swift */; };
+		E930BBB22B1464B40054187E /* AbilitySubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBB12B1464B40054187E /* AbilitySubReviewModelTest.swift */; };
+		E930BBB42B1467BD0054187E /* SavingThrowsSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBB32B1467BD0054187E /* SavingThrowsSubReviewModelTest.swift */; };
+		E930BBB62B146A910054187E /* CombatSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBB52B146A910054187E /* CombatSubReviewModelTest.swift */; };
+		E930BBB82B1470D30054187E /* ClassAbilitySubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBB72B1470D30054187E /* ClassAbilitySubReviewModelTest.swift */; };
+		E930BBBA2B14726E0054187E /* EncounterSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBB92B14726E0054187E /* EncounterSubReviewModelTest.swift */; };
+		E930BBBC2B1475190054187E /* ExplorationSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBBB2B1475190054187E /* ExplorationSubReviewModelTest.swift */; };
+		E930BBBE2B1477E10054187E /* MovementSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBBD2B1477E10054187E /* MovementSubReviewModelTest.swift */; };
+		E930BBC02B147B920054187E /* LanguageSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBBF2B147B920054187E /* LanguageSubReviewModelTest.swift */; };
+		E930BBC22B147DF00054187E /* AdvancementSubReviewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBC12B147DF00054187E /* AdvancementSubReviewTest.swift */; };
+		E930BBC42B147F970054187E /* ArmorSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBC32B147F970054187E /* ArmorSubReviewModelTest.swift */; };
+		E930BBC62B1480820054187E /* WeaponSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBC52B1480820054187E /* WeaponSubReviewModelTest.swift */; };
+		E930BBC82B1481C80054187E /* GearSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBC72B1481C80054187E /* GearSubReviewModelTest.swift */; };
+		E930BBCA2B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBC92B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift */; };
+		E930BBCC2B1483E70054187E /* TurningUndeadSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCB2B1483E60054187E /* TurningUndeadSubReviewModelTest.swift */; };
+		E930BBCE2B1484D40054187E /* SpellsSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */; };
 		E93B1C022B0B341F00702379 /* IndexPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C012B0B341F00702379 /* IndexPublisher.swift */; };
 		E93B1C042B0B355D00702379 /* OrientationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C032B0B355D00702379 /* OrientationHelper.swift */; };
 		E93B1C062B0B381500702379 /* MarkdownHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C052B0B381500702379 /* MarkdownHelper.swift */; };
@@ -55,6 +87,30 @@
 		E98E92732B11DB530071A7F7 /* EquipmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92722B11DB530071A7F7 /* EquipmentViewModel.swift */; };
 		E98E92752B11DEEF0071A7F7 /* Purchasable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92742B11DEEF0071A7F7 /* Purchasable.swift */; };
 		E98E92772B11FB7D0071A7F7 /* EquipmentViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92762B11FB7D0071A7F7 /* EquipmentViewModelTest.swift */; };
+		E98E927A2B1205E60071A7F7 /* CharacterReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92792B1205E60071A7F7 /* CharacterReview.swift */; };
+		E98E927C2B12B8110071A7F7 /* SavingThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E927B2B12B8110071A7F7 /* SavingThrow.swift */; };
+		E98E927E2B12D9260071A7F7 /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E927D2B12D9260071A7F7 /* ReviewItem.swift */; };
+		E98E92822B12E6EF0071A7F7 /* ReviewItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92812B12E6EF0071A7F7 /* ReviewItemModel.swift */; };
+		E98E92842B12F7C80071A7F7 /* AbilitiesSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92832B12F7C80071A7F7 /* AbilitiesSubReview.swift */; };
+		E98E92862B12F8990071A7F7 /* SavingThrowsSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92852B12F8990071A7F7 /* SavingThrowsSubReview.swift */; };
+		E98E92882B12F9680071A7F7 /* CombatSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92872B12F9680071A7F7 /* CombatSubReview.swift */; };
+		E98E928A2B12FC4D0071A7F7 /* CombatValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92892B12FC4D0071A7F7 /* CombatValue.swift */; };
+		E98E928C2B13092F0071A7F7 /* AttackMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E928B2B13092F0071A7F7 /* AttackMatrix.swift */; };
+		E98E928E2B130B400071A7F7 /* MatrixElementInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E928D2B130B400071A7F7 /* MatrixElementInt.swift */; };
+		E98E92902B130F840071A7F7 /* ClassAbilitySubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E928F2B130F840071A7F7 /* ClassAbilitySubReview.swift */; };
+		E98E92922B1324D00071A7F7 /* EncountersSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92912B1324D00071A7F7 /* EncountersSubReview.swift */; };
+		E98E92942B132B700071A7F7 /* ExplorationSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92932B132B700071A7F7 /* ExplorationSubReview.swift */; };
+		E98E92962B132CD30071A7F7 /* MovementSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92952B132CD30071A7F7 /* MovementSubReview.swift */; };
+		E98E92982B132FC70071A7F7 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92972B132FC70071A7F7 /* Movement.swift */; };
+		E98E929A2B1337170071A7F7 /* LanguageSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92992B1337170071A7F7 /* LanguageSubReview.swift */; };
+		E98E929C2B133FFC0071A7F7 /* AdvancementSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E929B2B133FFC0071A7F7 /* AdvancementSubReview.swift */; };
+		E98E929E2B1346A30071A7F7 /* ArmorSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E929D2B1346A30071A7F7 /* ArmorSubReview.swift */; };
+		E98E92A02B13499D0071A7F7 /* WeaponReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E929F2B13499D0071A7F7 /* WeaponReviewModel.swift */; };
+		E98E92A22B134DB50071A7F7 /* WeaponsSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92A12B134DB50071A7F7 /* WeaponsSubReview.swift */; };
+		E98E92A42B134F730071A7F7 /* WeaponReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92A32B134F730071A7F7 /* WeaponReviewItem.swift */; };
+		E98E92A62B13576F0071A7F7 /* GearSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92A52B13576F0071A7F7 /* GearSubReview.swift */; };
+		E98E92A82B135C4A0071A7F7 /* ThievesSkillsSubReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92A72B135C4A0071A7F7 /* ThievesSkillsSubReview.swift */; };
+		E98E92AA2B135E360071A7F7 /* MatrixElementStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92A92B135E360071A7F7 /* MatrixElementStr.swift */; };
 		E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */; };
 		E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */; };
 		E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994150E2B08590000E58660 /* CharacterClassSelection.swift */; };
@@ -142,6 +198,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E930BB8C2B13643E0054187E /* TurningUndeadSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurningUndeadSubReview.swift; sourceTree = "<group>"; };
+		E930BB8E2B1366360054187E /* SpellsReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsReview.swift; sourceTree = "<group>"; };
+		E930BB922B1455B40054187E /* AbilitySubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitySubReviewModel.swift; sourceTree = "<group>"; };
+		E930BB942B1458480054187E /* SavingThrowsSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrowsSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BB962B1458F30054187E /* CombatSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BB982B1459720054187E /* ClassAbilitySubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilitySubReviewModel.swift; sourceTree = "<group>"; };
+		E930BB9A2B1459F00054187E /* EncounterSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BB9C2B145A940054187E /* ExplorationSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BB9E2B145B200054187E /* MovementSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBA02B145BB00054187E /* LanguageSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBA22B145C170054187E /* AdvancementSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancementSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBA42B145C740054187E /* ArmorSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBA62B145CF80054187E /* WeaponsSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBA82B145D6B0054187E /* GearSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBAA2B1461220054187E /* ThievesSkillsSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThievesSkillsSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBAC2B14616D0054187E /* TurningUndeadSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurningUndeadSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBAE2B1461D80054187E /* SpellSubReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellSubReviewModel.swift; sourceTree = "<group>"; };
+		E930BBB12B1464B40054187E /* AbilitySubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitySubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBB32B1467BD0054187E /* SavingThrowsSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrowsSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBB52B146A910054187E /* CombatSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBB72B1470D30054187E /* ClassAbilitySubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilitySubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBB92B14726E0054187E /* EncounterSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBBB2B1475190054187E /* ExplorationSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBBD2B1477E10054187E /* MovementSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBBF2B147B920054187E /* LanguageSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBC12B147DF00054187E /* AdvancementSubReviewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancementSubReviewTest.swift; sourceTree = "<group>"; };
+		E930BBC32B147F970054187E /* ArmorSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBC52B1480820054187E /* WeaponSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBC72B1481C80054187E /* GearSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBC92B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThievesSkillsSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBCB2B1483E60054187E /* TurningUndeadSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurningUndeadSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsSubReviewModelTest.swift; sourceTree = "<group>"; };
 		E93B1C012B0B341F00702379 /* IndexPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPublisher.swift; sourceTree = "<group>"; };
 		E93B1C032B0B355D00702379 /* OrientationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationHelper.swift; sourceTree = "<group>"; };
 		E93B1C052B0B381500702379 /* MarkdownHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHelper.swift; sourceTree = "<group>"; };
@@ -190,6 +278,30 @@
 		E98E92722B11DB530071A7F7 /* EquipmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewModel.swift; sourceTree = "<group>"; };
 		E98E92742B11DEEF0071A7F7 /* Purchasable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchasable.swift; sourceTree = "<group>"; };
 		E98E92762B11FB7D0071A7F7 /* EquipmentViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewModelTest.swift; sourceTree = "<group>"; };
+		E98E92792B1205E60071A7F7 /* CharacterReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterReview.swift; sourceTree = "<group>"; };
+		E98E927B2B12B8110071A7F7 /* SavingThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrow.swift; sourceTree = "<group>"; };
+		E98E927D2B12D9260071A7F7 /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
+		E98E92812B12E6EF0071A7F7 /* ReviewItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItemModel.swift; sourceTree = "<group>"; };
+		E98E92832B12F7C80071A7F7 /* AbilitiesSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesSubReview.swift; sourceTree = "<group>"; };
+		E98E92852B12F8990071A7F7 /* SavingThrowsSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrowsSubReview.swift; sourceTree = "<group>"; };
+		E98E92872B12F9680071A7F7 /* CombatSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatSubReview.swift; sourceTree = "<group>"; };
+		E98E92892B12FC4D0071A7F7 /* CombatValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatValue.swift; sourceTree = "<group>"; };
+		E98E928B2B13092F0071A7F7 /* AttackMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackMatrix.swift; sourceTree = "<group>"; };
+		E98E928D2B130B400071A7F7 /* MatrixElementInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixElementInt.swift; sourceTree = "<group>"; };
+		E98E928F2B130F840071A7F7 /* ClassAbilitySubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilitySubReview.swift; sourceTree = "<group>"; };
+		E98E92912B1324D00071A7F7 /* EncountersSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncountersSubReview.swift; sourceTree = "<group>"; };
+		E98E92932B132B700071A7F7 /* ExplorationSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationSubReview.swift; sourceTree = "<group>"; };
+		E98E92952B132CD30071A7F7 /* MovementSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSubReview.swift; sourceTree = "<group>"; };
+		E98E92972B132FC70071A7F7 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		E98E92992B1337170071A7F7 /* LanguageSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSubReview.swift; sourceTree = "<group>"; };
+		E98E929B2B133FFC0071A7F7 /* AdvancementSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancementSubReview.swift; sourceTree = "<group>"; };
+		E98E929D2B1346A30071A7F7 /* ArmorSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorSubReview.swift; sourceTree = "<group>"; };
+		E98E929F2B13499D0071A7F7 /* WeaponReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponReviewModel.swift; sourceTree = "<group>"; };
+		E98E92A12B134DB50071A7F7 /* WeaponsSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsSubReview.swift; sourceTree = "<group>"; };
+		E98E92A32B134F730071A7F7 /* WeaponReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponReviewItem.swift; sourceTree = "<group>"; };
+		E98E92A52B13576F0071A7F7 /* GearSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearSubReview.swift; sourceTree = "<group>"; };
+		E98E92A72B135C4A0071A7F7 /* ThievesSkillsSubReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThievesSkillsSubReview.swift; sourceTree = "<group>"; };
+		E98E92A92B135E360071A7F7 /* MatrixElementStr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixElementStr.swift; sourceTree = "<group>"; };
 		E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassSelectionViewModel.swift; sourceTree = "<group>"; };
 		E994150D2B08590000E58660 /* CharacterCarouselPortrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCarouselPortrait.swift; sourceTree = "<group>"; };
 		E994150E2B08590000E58660 /* CharacterClassSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterClassSelection.swift; sourceTree = "<group>"; };
@@ -288,6 +400,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E930BB902B137BD60054187E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E930BB912B1455810054187E /* CharacterReviewViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E930BB922B1455B40054187E /* AbilitySubReviewModel.swift */,
+				E930BB942B1458480054187E /* SavingThrowsSubReviewModel.swift */,
+				E930BB962B1458F30054187E /* CombatSubReviewModel.swift */,
+				E930BB982B1459720054187E /* ClassAbilitySubReviewModel.swift */,
+				E930BB9A2B1459F00054187E /* EncounterSubReviewModel.swift */,
+				E930BB9C2B145A940054187E /* ExplorationSubReviewModel.swift */,
+				E930BB9E2B145B200054187E /* MovementSubReviewModel.swift */,
+				E930BBA02B145BB00054187E /* LanguageSubReviewModel.swift */,
+				E930BBA22B145C170054187E /* AdvancementSubReviewModel.swift */,
+				E930BBA42B145C740054187E /* ArmorSubReviewModel.swift */,
+				E930BBA62B145CF80054187E /* WeaponsSubReviewModel.swift */,
+				E930BBA82B145D6B0054187E /* GearSubReviewModel.swift */,
+				E930BBAA2B1461220054187E /* ThievesSkillsSubReviewModel.swift */,
+				E930BBAC2B14616D0054187E /* TurningUndeadSubReviewModel.swift */,
+				E930BBAE2B1461D80054187E /* SpellSubReviewModel.swift */,
+			);
+			path = CharacterReviewViewModels;
+			sourceTree = "<group>";
+		};
+		E930BBB02B14647A0054187E /* CharacterReviewViewModelsTest */ = {
+			isa = PBXGroup;
+			children = (
+				E930BBB12B1464B40054187E /* AbilitySubReviewModelTest.swift */,
+				E930BBB32B1467BD0054187E /* SavingThrowsSubReviewModelTest.swift */,
+				E930BBB52B146A910054187E /* CombatSubReviewModelTest.swift */,
+				E930BBB72B1470D30054187E /* ClassAbilitySubReviewModelTest.swift */,
+				E930BBB92B14726E0054187E /* EncounterSubReviewModelTest.swift */,
+				E930BBBB2B1475190054187E /* ExplorationSubReviewModelTest.swift */,
+				E930BBBD2B1477E10054187E /* MovementSubReviewModelTest.swift */,
+				E930BBBF2B147B920054187E /* LanguageSubReviewModelTest.swift */,
+				E930BBC12B147DF00054187E /* AdvancementSubReviewTest.swift */,
+				E930BBC32B147F970054187E /* ArmorSubReviewModelTest.swift */,
+				E930BBC52B1480820054187E /* WeaponSubReviewModelTest.swift */,
+				E930BBC72B1481C80054187E /* GearSubReviewModelTest.swift */,
+				E930BBC92B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift */,
+				E930BBCB2B1483E60054187E /* TurningUndeadSubReviewModelTest.swift */,
+				E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */,
+			);
+			path = CharacterReviewViewModelsTest;
+			sourceTree = "<group>";
+		};
 		E941980C2B0F0ADD00B54205 /* 5-CharacterBio */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,12 +478,12 @@
 				E94198402B105B9600B54205 /* WeaponsTabList.swift */,
 				E94198422B105E8400B54205 /* AmmoTabList.swift */,
 				E94198442B105EA900B54205 /* GearTabList.swift */,
+				E941984E2B109B2400B54205 /* Inventory.swift */,
 				E941984C2B109ADE00B54205 /* ArmorDetail.swift */,
 				E98E92662B10BE120071A7F7 /* WeaponDetail.swift */,
 				E98E92702B11C6750071A7F7 /* AmmoDetail.swift */,
 				E98E926E2B11A8CC0071A7F7 /* GearDetail.swift */,
 				E941984A2B108E6800B54205 /* EquipmentListItem.swift */,
-				E941984E2B109B2400B54205 /* Inventory.swift */,
 			);
 			path = "7-Equipment";
 			sourceTree = "<group>";
@@ -342,6 +505,32 @@
 				E94198362B10484400B54205 /* SDVentriloquism.swift */,
 			);
 			path = SpellDescriptions;
+			sourceTree = "<group>";
+		};
+		E98E92782B1205C80071A7F7 /* 8-CharacterReview */ = {
+			isa = PBXGroup;
+			children = (
+				E98E92792B1205E60071A7F7 /* CharacterReview.swift */,
+				E98E92832B12F7C80071A7F7 /* AbilitiesSubReview.swift */,
+				E98E92852B12F8990071A7F7 /* SavingThrowsSubReview.swift */,
+				E98E92872B12F9680071A7F7 /* CombatSubReview.swift */,
+				E98E928F2B130F840071A7F7 /* ClassAbilitySubReview.swift */,
+				E98E92912B1324D00071A7F7 /* EncountersSubReview.swift */,
+				E98E92932B132B700071A7F7 /* ExplorationSubReview.swift */,
+				E98E92952B132CD30071A7F7 /* MovementSubReview.swift */,
+				E98E92992B1337170071A7F7 /* LanguageSubReview.swift */,
+				E98E929B2B133FFC0071A7F7 /* AdvancementSubReview.swift */,
+				E98E929D2B1346A30071A7F7 /* ArmorSubReview.swift */,
+				E98E92A12B134DB50071A7F7 /* WeaponsSubReview.swift */,
+				E98E92A52B13576F0071A7F7 /* GearSubReview.swift */,
+				E98E92A72B135C4A0071A7F7 /* ThievesSkillsSubReview.swift */,
+				E930BB8C2B13643E0054187E /* TurningUndeadSubReview.swift */,
+				E930BB8E2B1366360054187E /* SpellsReview.swift */,
+				E98E928B2B13092F0071A7F7 /* AttackMatrix.swift */,
+				E98E927D2B12D9260071A7F7 /* ReviewItem.swift */,
+				E98E92A32B134F730071A7F7 /* WeaponReviewItem.swift */,
+			);
+			path = "8-CharacterReview";
 			sourceTree = "<group>";
 		};
 		E99415152B09801A00E58660 /* 3-AbilityAdjustment */ = {
@@ -389,6 +578,7 @@
 		E9FD77562B04899F00596BF0 /* DungeonDelversOSRToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				E930BB902B137BD60054187E /* Services */,
 				E9FD778B2B049A1A00596BF0 /* Info.plist */,
 				E9FD77AB2B05F67800596BF0 /* Helpers */,
 				E9FD778D2B049DDB00596BF0 /* Views */,
@@ -421,6 +611,8 @@
 				E9FD776B2B048D5C00596BF0 /* PlayerCharacter.swift */,
 				E9FD776D2B048D8400596BF0 /* ApplicationScreen.swift */,
 				E93B1C012B0B341F00702379 /* IndexPublisher.swift */,
+				E98E92812B12E6EF0071A7F7 /* ReviewItemModel.swift */,
+				E98E929F2B13499D0071A7F7 /* WeaponReviewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -455,6 +647,9 @@
 				E98E92642B10B4CF0071A7F7 /* Weapon.swift */,
 				E98E92682B11240D0071A7F7 /* Ammo.swift */,
 				E98E926A2B1125620071A7F7 /* Gear.swift */,
+				E98E927B2B12B8110071A7F7 /* SavingThrow.swift */,
+				E98E92892B12FC4D0071A7F7 /* CombatValue.swift */,
+				E98E92972B132FC70071A7F7 /* Movement.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -476,6 +671,7 @@
 		E9FD778D2B049DDB00596BF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E98E92782B1205C80071A7F7 /* 8-CharacterReview */,
 				E941981A2B10291800B54205 /* 7-Equipment */,
 				E94198172B10269100B54205 /* 6-Spells */,
 				E941980C2B0F0ADD00B54205 /* 5-CharacterBio */,
@@ -501,6 +697,8 @@
 				E9FD77A72B05F0CF00596BF0 /* BulletedText.swift */,
 				E99415182B0984B800E58660 /* Hexagon.swift */,
 				E994151C2B099EE800E58660 /* Triangle.swift */,
+				E98E928D2B130B400071A7F7 /* MatrixElementInt.swift */,
+				E98E92A92B135E360071A7F7 /* MatrixElementStr.swift */,
 			);
 			path = Atomics;
 			sourceTree = "<group>";
@@ -520,6 +718,7 @@
 		E9FD779C2B04B44C00596BF0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E930BB912B1455810054187E /* CharacterReviewViewModels */,
 				E9FD779D2B04B46600596BF0 /* AbilityViewModel.swift */,
 				E9FD77AE2B05F6D700596BF0 /* ModifierViewModel.swift */,
 				E99415032B084CAA00E58660 /* CharacterClassSelectionViewModel.swift */,
@@ -592,6 +791,7 @@
 		E9FE6C882B0C6721003006D8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E930BBB02B14647A0054187E /* CharacterReviewViewModelsTest */,
 				E9FE6C892B0C6739003006D8 /* AbilityViewModelTest.swift */,
 				E9FE6C8B2B0C6BE6003006D8 /* ModifierViewModelTest.swift */,
 				E9FE6C8F2B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift */,
@@ -737,6 +937,7 @@
 				E94198272B1042DF00B54205 /* SDHoldPortal.swift in Sources */,
 				E941982F2B1045AA00B54205 /* SDReadLanguages.swift in Sources */,
 				E94198332B1046B300B54205 /* SDShield.swift in Sources */,
+				E930BBAB2B1461220054187E /* ThievesSkillsSubReviewModel.swift in Sources */,
 				E94198122B0F2B6100B54205 /* CharacterBioViewModel.swift in Sources */,
 				E9FD77A22B05CED100596BF0 /* Buttons.swift in Sources */,
 				E94198352B10473500B54205 /* SDSleep.swift in Sources */,
@@ -745,13 +946,16 @@
 				E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */,
 				E94198472B10606500B54205 /* Armor.swift in Sources */,
 				E9FD77762B048DFD00596BF0 /* Stat.swift in Sources */,
+				E98E927E2B12D9260071A7F7 /* ReviewItem.swift in Sources */,
 				E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */,
 				E94198032B0DF81E00B54205 /* HitPointsGenerator.swift in Sources */,
+				E98E927C2B12B8110071A7F7 /* SavingThrow.swift in Sources */,
 				E9FD77882B048F1000596BF0 /* Language.swift in Sources */,
 				E98E926B2B1125620071A7F7 /* Gear.swift in Sources */,
 				E94198292B10436A00B54205 /* SDLight.swift in Sources */,
 				E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */,
 				E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */,
+				E98E92902B130F840071A7F7 /* ClassAbilitySubReview.swift in Sources */,
 				E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */,
 				E99415252B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift in Sources */,
 				E941983B2B10564F00B54205 /* SpellsViewModel.swift in Sources */,
@@ -759,27 +963,47 @@
 				E994151D2B099EE800E58660 /* Triangle.swift in Sources */,
 				E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */,
 				E9FD775A2B04899F00596BF0 /* ContentView.swift in Sources */,
+				E98E92A22B134DB50071A7F7 /* WeaponsSubReview.swift in Sources */,
+				E98E929A2B1337170071A7F7 /* LanguageSubReview.swift in Sources */,
+				E98E92842B12F7C80071A7F7 /* AbilitiesSubReview.swift in Sources */,
 				E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */,
 				E941980E2B0F117D00B54205 /* CharacterBio.swift in Sources */,
 				E9FD779B2B04A77300596BF0 /* Abilities.swift in Sources */,
+				E930BB952B1458480054187E /* SavingThrowsSubReviewModel.swift in Sources */,
 				E9FD77962B04A17A00596BF0 /* AbilityFlourish.swift in Sources */,
 				E98E926F2B11A8CC0071A7F7 /* GearDetail.swift in Sources */,
+				E98E92A82B135C4A0071A7F7 /* ThievesSkillsSubReview.swift in Sources */,
+				E930BBA12B145BB00054187E /* LanguageSubReviewModel.swift in Sources */,
 				E9FD77682B048D0600596BF0 /* CharacterAbility.swift in Sources */,
+				E98E929C2B133FFC0071A7F7 /* AdvancementSubReview.swift in Sources */,
 				E93B1C062B0B381500702379 /* MarkdownHelper.swift in Sources */,
+				E98E92982B132FC70071A7F7 /* Movement.swift in Sources */,
 				E94198012B0DE7EF00B54205 /* CharacterDetailsPresentationPortrait.swift in Sources */,
 				E98E92672B10BE120071A7F7 /* WeaponDetail.swift in Sources */,
 				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
 				E94198432B105E8400B54205 /* AmmoTabList.swift in Sources */,
+				E98E92822B12E6EF0071A7F7 /* ReviewItemModel.swift in Sources */,
 				E98E92652B10B4CF0071A7F7 /* Weapon.swift in Sources */,
 				E94198212B1034AF00B54205 /* SDCharmPerson.swift in Sources */,
+				E98E927A2B1205E60071A7F7 /* CharacterReview.swift in Sources */,
+				E98E928A2B12FC4D0071A7F7 /* CombatValue.swift in Sources */,
 				E941983F2B105A5500B54205 /* Equipment.swift in Sources */,
 				E94198252B10422C00B54205 /* SDFloatingDisc.swift in Sources */,
 				E93B1C042B0B355D00702379 /* OrientationHelper.swift in Sources */,
+				E98E92942B132B700071A7F7 /* ExplorationSubReview.swift in Sources */,
 				E98E92692B11240D0071A7F7 /* Ammo.swift in Sources */,
+				E98E92A02B13499D0071A7F7 /* WeaponReviewModel.swift in Sources */,
 				E9FD77AA2B05F61800596BF0 /* AbilityDetailSheet.swift in Sources */,
+				E930BBA32B145C170054187E /* AdvancementSubReviewModel.swift in Sources */,
 				E9FD77802B048EA300596BF0 /* Screen.swift in Sources */,
+				E930BBA92B145D6B0054187E /* GearSubReviewModel.swift in Sources */,
+				E98E928C2B13092F0071A7F7 /* AttackMatrix.swift in Sources */,
 				E941981C2B10293F00B54205 /* Spells.swift in Sources */,
+				E930BBA72B145CF80054187E /* WeaponsSubReviewModel.swift in Sources */,
 				E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */,
+				E98E929E2B1346A30071A7F7 /* ArmorSubReview.swift in Sources */,
+				E98E92882B12F9680071A7F7 /* CombatSubReview.swift in Sources */,
+				E930BBAD2B14616D0054187E /* TurningUndeadSubReviewModel.swift in Sources */,
 				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
 				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
 				E994152A2B09ECEA00E58660 /* CharacterDetailsViewModel.swift in Sources */,
@@ -792,40 +1016,57 @@
 				E94198372B10484400B54205 /* SDVentriloquism.swift in Sources */,
 				E9FD77A82B05F0CF00596BF0 /* BulletedText.swift in Sources */,
 				E99415122B08592F00E58660 /* CharacterCarouselLandscape.swift in Sources */,
+				E98E92A62B13576F0071A7F7 /* GearSubReview.swift in Sources */,
 				E941984D2B109ADE00B54205 /* ArmorDetail.swift in Sources */,
 				E99415382B0A0AA400E58660 /* Die.swift in Sources */,
 				E941981E2B10298E00B54205 /* ArmorTabList.swift in Sources */,
 				E9FD77A02B05CBCB00596BF0 /* AbilityStatBlockItems.swift in Sources */,
 				E941982D2B10452200B54205 /* SDProtectionFromEvil.swift in Sources */,
+				E930BBA52B145C740054187E /* ArmorSubReviewModel.swift in Sources */,
 				E98E92732B11DB530071A7F7 /* EquipmentViewModel.swift in Sources */,
 				E94198102B0F1FD300B54205 /* LanguageMultiSelectPicker.swift in Sources */,
 				E94198092B0E00D600B54205 /* CharacterDetailsPresentationLandscape.swift in Sources */,
 				E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */,
+				E98E928E2B130B400071A7F7 /* MatrixElementInt.swift in Sources */,
 				E941984B2B108E6800B54205 /* EquipmentListItem.swift in Sources */,
 				E94198232B1040D900B54205 /* SDDetectMagic.swift in Sources */,
 				E94198452B105EA900B54205 /* GearTabList.swift in Sources */,
 				E94198142B0F4A0600B54205 /* CharacterBioTextField.swift in Sources */,
 				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,
 				E9FD779E2B04B46600596BF0 /* AbilityViewModel.swift in Sources */,
+				E930BB8D2B13643F0054187E /* TurningUndeadSubReview.swift in Sources */,
+				E930BB992B1459720054187E /* ClassAbilitySubReviewModel.swift in Sources */,
 				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,
 				E99415282B09ECA300E58660 /* CharacterDetails.swift in Sources */,
 				E9FD77AD2B05F69B00596BF0 /* ModCalculator.swift in Sources */,
 				E94198192B10278E00B54205 /* MUSpell.swift in Sources */,
+				E930BB9B2B1459F00054187E /* EncounterSubReviewModel.swift in Sources */,
 				E9A52AC92B0AAC3D009E90C1 /* Coinage.swift in Sources */,
+				E930BB932B1455B50054187E /* AbilitySubReviewModel.swift in Sources */,
+				E930BB972B1458F30054187E /* CombatSubReviewModel.swift in Sources */,
 				E9FD77712B048DB000596BF0 /* Ability.swift in Sources */,
 				E941984F2B109B2400B54205 /* Inventory.swift in Sources */,
+				E98E92962B132CD30071A7F7 /* MovementSubReview.swift in Sources */,
 				E9FD77582B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift in Sources */,
 				E94198052B0DFCB700B54205 /* GoldGenerator.swift in Sources */,
+				E98E92862B12F8990071A7F7 /* SavingThrowsSubReview.swift in Sources */,
+				E930BBAF2B1461D80054187E /* SpellSubReviewModel.swift in Sources */,
+				E930BB8F2B1366360054187E /* SpellsReview.swift in Sources */,
 				E9FD776E2B048D8400596BF0 /* ApplicationScreen.swift in Sources */,
 				E94198412B105B9600B54205 /* WeaponsTabList.swift in Sources */,
+				E930BB9F2B145B200054187E /* MovementSubReviewModel.swift in Sources */,
 				E99415192B0984B800E58660 /* Hexagon.swift in Sources */,
+				E98E92922B1324D00071A7F7 /* EncountersSubReview.swift in Sources */,
 				E99415172B09805000E58660 /* AbilityAdjustment.swift in Sources */,
+				E98E92A42B134F730071A7F7 /* WeaponReviewItem.swift in Sources */,
 				E94198072B0DFDB500B54205 /* AlignmentSelector.swift in Sources */,
 				E9FD77842B048ED800596BF0 /* Section.swift in Sources */,
 				E9FD77A42B05E20A00596BF0 /* AbilityPresentationPortrait.swift in Sources */,
 				E99415232B09DB0900E58660 /* AbilityAdjustmentPresentationPortrait.swift in Sources */,
+				E930BB9D2B145A940054187E /* ExplorationSubReviewModel.swift in Sources */,
 				E9FD776C2B048D5C00596BF0 /* PlayerCharacter.swift in Sources */,
 				E9FD77822B048EB800596BF0 /* TypeFace.swift in Sources */,
+				E98E92AA2B135E360071A7F7 /* MatrixElementStr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,20 +1077,35 @@
 				E9FE6C652B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift in Sources */,
 				E9FE6C782B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift in Sources */,
 				E9FE6C762B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift in Sources */,
+				E930BBC82B1481C80054187E /* GearSubReviewModelTest.swift in Sources */,
 				E98E92772B11FB7D0071A7F7 /* EquipmentViewModelTest.swift in Sources */,
+				E930BBCC2B1483E70054187E /* TurningUndeadSubReviewModelTest.swift in Sources */,
 				E9FE6C8C2B0C6BE6003006D8 /* ModifierViewModelTest.swift in Sources */,
 				E941983D2B10576200B54205 /* SpellViewModelTest.swift in Sources */,
+				E930BBC42B147F970054187E /* ArmorSubReviewModelTest.swift in Sources */,
 				E9FE6C722B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift in Sources */,
+				E930BBB62B146A910054187E /* CombatSubReviewModelTest.swift in Sources */,
+				E930BBBA2B14726E0054187E /* EncounterSubReviewModelTest.swift in Sources */,
 				E9FE6C902B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift in Sources */,
+				E930BBB22B1464B40054187E /* AbilitySubReviewModelTest.swift in Sources */,
+				E930BBB42B1467BD0054187E /* SavingThrowsSubReviewModelTest.swift in Sources */,
 				E9FE6C742B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift in Sources */,
 				E9FE6C7E2B0C4CA7003006D8 /* ModCalculatorXPAdjustmentSinglePrimeReq.swift in Sources */,
 				E9FE6C922B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift in Sources */,
 				E9FE6C8A2B0C6739003006D8 /* AbilityViewModelTest.swift in Sources */,
+				E930BBC02B147B920054187E /* LanguageSubReviewModelTest.swift in Sources */,
+				E930BBC62B1480820054187E /* WeaponSubReviewModelTest.swift in Sources */,
 				E9FE6C852B0C4D96003006D8 /* OrientationHelperTest.swift in Sources */,
+				E930BBBE2B1477E10054187E /* MovementSubReviewModelTest.swift in Sources */,
+				E930BBB82B1470D30054187E /* ClassAbilitySubReviewModelTest.swift in Sources */,
 				E9FE6C7A2B0C4C31003006D8 /* ModCaculatorRetainerMax.swift in Sources */,
+				E930BBCA2B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift in Sources */,
 				E9FE6C822B0C4D15003006D8 /* ModCalculatorXPAdjustmentHalfling.swift in Sources */,
+				E930BBCE2B1484D40054187E /* SpellsSubReviewModelTest.swift in Sources */,
 				E9FE6C802B0C4CE3003006D8 /* ModCalculatorXPAdjustmentElf.swift in Sources */,
 				E9FE6C702B0C4AAF003006D8 /* ModCalculatorStandardResultTest.swift in Sources */,
+				E930BBBC2B1475190054187E /* ExplorationSubReviewModelTest.swift in Sources */,
+				E930BBC22B147DF00054187E /* AdvancementSubReviewTest.swift in Sources */,
 				E94198162B0F635800B54205 /* CharacterBioViewModelTest.swift in Sources */,
 				E941980B2B0E674100B54205 /* CharacterDetailsViewModelTest.swift in Sources */,
 				E9FE6C7C2B0C4C68003006D8 /* ModCalculatorRetainerLoyalty.swift in Sources */,

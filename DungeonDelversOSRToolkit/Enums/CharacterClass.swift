@@ -168,7 +168,7 @@ enum CharacterClass: String, CaseIterable, Codable {
         "**Spell casting**: Once a cleric has proven their faith, the character may pray to receive spells.\n" +
         "**Using magic items**: As spell casters, clerics can use magic scrolls of spells on their spell list.",
         "Turning Undead": "Clerics can invoke the power of their deity to repel undead monsters encountered.",
-        "After Reaching 9th Level": "A cleric may establish or build a strong- hold."
+        "After Reaching 9th Level": "A cleric may establish or build a stronghold."
       ]
     case .dwarf:
       return [
@@ -176,7 +176,7 @@ enum CharacterClass: String, CaseIterable, Codable {
         "Combat": "Dwarves can use all types of armour. " +
         "Due to their short height, dwarves can only use small or normal sized weapons. " +
         "They cannot use longbows or two-handed swords.",
-        "Detect Construction Tricks": "As expert miners, dwarves have a 2-in- 6 chance of being able to detect " +
+        "Detect Construction Tricks": "As expert miners, dwarves have a 2-in-6 chance of being able to detect " +
         "new construction, sliding walls, or sloping passages when searching.",
         "Detect Room Traps": "Due to their expertise with construction, dwarves have a 2-in-6 chance of detecting " +
         "non-magical room traps when searching.",
@@ -241,7 +241,7 @@ enum CharacterClass: String, CaseIterable, Codable {
         "Scroll Use": "A thief of 10th level or higher can cast arcane spells from scrolls.",
         "Thief Skills": "**Climb sheer surfaces**, **Find or remove treasure traps**, **Hear noise**, " +
         "**Hide in shadows**, **Move silently**, **Open locks**, **Pick pockets**",
-        "After Reaching 9th Level": "A thief can establish a thief den, attract- ing 2d6 apprentices of 1st level. " +
+        "After Reaching 9th Level": "A thief can establish a thief den, attracting 2d6 apprentices of 1st level. " +
         "These thieves will serve the character with some reliability"
       ]
     }
@@ -293,6 +293,40 @@ enum CharacterClass: String, CaseIterable, Codable {
       return "chMagicUser"
     case .thief:
       return "chThief"
+    }
+  }
+
+  var savingThrowsAtLevel1: [SavingThrow: Int] {
+    switch self {
+    case .cleric:
+      return [.death: 11, .wands: 12, .paralysis: 14, .breath: 16, .spells: 15]
+    case .dwarf, .halfling:
+      return [.death: 8, .wands: 9, .paralysis: 10, .breath: 13, .spells: 12]
+    case .elf:
+      return [.death: 12, .wands: 12, .paralysis: 13, .breath: 13, .spells: 15]
+    case .fighter:
+      return [.death: 12, .wands: 13, .paralysis: 14, .breath: 15, .spells: 16]
+    case .magicUser:
+      return [.death: 12, .wands: 14, .paralysis: 13, .breath: 16, .spells: 15]
+    case .thief:
+      return [.death: 13, .wands: 14, .paralysis: 13, .breath: 16, .spells: 15]
+    }
+  }
+
+  var xpForLevel2: Int {
+    switch self {
+    case .cleric:
+      return 1500
+    case .dwarf:
+      return 2200
+    case .elf:
+      return 4000
+    case .fighter, .halfling:
+      return 2000
+    case .magicUser:
+      return 2500
+    case .thief:
+      return 1200
     }
   }
 }
