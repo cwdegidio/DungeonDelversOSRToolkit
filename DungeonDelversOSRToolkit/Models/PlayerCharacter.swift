@@ -7,7 +7,8 @@
 
 import Foundation
 
-final class PlayerCharacter: ObservableObject, Observable, Codable {
+final class PlayerCharacter: Identifiable, ObservableObject, Observable, Codable {
+  var id: UUID
   @Published var name: String
   var alignment: Alignment?
   @Published var title: String
@@ -26,6 +27,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
   @Published var gear: [Gear]
 
   enum CodingKeys: CodingKey {
+    case id
     case name
     case alignment
     case title
@@ -45,6 +47,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
   }
 
   init() {
+    self.id = UUID()
     self.name = ""
     self.title = ""
     self.level = 1
@@ -90,6 +93,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
 
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
+    self.id = try container.decode(UUID.self, forKey: .id)
     self.coins = try container.decode([Coinage: Int].self, forKey: .coins)
     self.characterClass = try container.decode(CharacterClass.self, forKey: .characterClass)
     self.abilityScores = try container.decode([CharacterAbility].self, forKey: .abilityScores)
@@ -110,6 +114,7 @@ final class PlayerCharacter: ObservableObject, Observable, Codable {
 
   func encode(to encoder: Encoder) throws {
     var container = encoder.container(keyedBy: CodingKeys.self)
+    try container.encode(id, forKey: .id)
     try container.encode(coins, forKey: .coins)
     try container.encode(characterClass, forKey: .characterClass)
     //    try container.encode(abilityScores, forKey: .abilityScores)

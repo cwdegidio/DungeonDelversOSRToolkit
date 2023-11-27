@@ -8,6 +8,8 @@
 import Foundation
 
 enum Screen {
+  case home
+  case localCharacterVault
   case abilities
   case classSelection
   case abilityAdjustment
@@ -16,4 +18,5 @@ enum Screen {
   case spells
   case equipment
   case characterReview
+  case characterSave
 }

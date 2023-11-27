@@ -39,6 +39,12 @@
 		E930BBCA2B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBC92B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift */; };
 		E930BBCC2B1483E70054187E /* TurningUndeadSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCB2B1483E60054187E /* TurningUndeadSubReviewModelTest.swift */; };
 		E930BBCE2B1484D40054187E /* SpellsSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */; };
+		E930BBD02B1489830054187E /* CharacterSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCF2B1489830054187E /* CharacterSave.swift */; };
+		E930BBD22B1491070054187E /* LocalStorageFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD12B1491070054187E /* LocalStorageFileManager.swift */; };
+		E930BBD42B1497C10054187E /* CharacerSaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD32B1497C10054187E /* CharacerSaveViewModel.swift */; };
+		E930BBD62B14F9700054187E /* LocalCharacterVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD52B14F9700054187E /* LocalCharacterVault.swift */; };
+		E930BBD82B1505100054187E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD72B1505100054187E /* Home.swift */; };
+		E930BBDA2B1509650054187E /* LocalCharacterVaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */; };
 		E93B1C022B0B341F00702379 /* IndexPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C012B0B341F00702379 /* IndexPublisher.swift */; };
 		E93B1C042B0B355D00702379 /* OrientationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C032B0B355D00702379 /* OrientationHelper.swift */; };
 		E93B1C062B0B381500702379 /* MarkdownHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C052B0B381500702379 /* MarkdownHelper.swift */; };
@@ -230,6 +236,12 @@
 		E930BBC92B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThievesSkillsSubReviewModelTest.swift; sourceTree = "<group>"; };
 		E930BBCB2B1483E60054187E /* TurningUndeadSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurningUndeadSubReviewModelTest.swift; sourceTree = "<group>"; };
 		E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBCF2B1489830054187E /* CharacterSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSave.swift; sourceTree = "<group>"; };
+		E930BBD12B1491070054187E /* LocalStorageFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageFileManager.swift; sourceTree = "<group>"; };
+		E930BBD32B1497C10054187E /* CharacerSaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacerSaveViewModel.swift; sourceTree = "<group>"; };
+		E930BBD52B14F9700054187E /* LocalCharacterVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCharacterVault.swift; sourceTree = "<group>"; };
+		E930BBD72B1505100054187E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCharacterVaultViewModel.swift; sourceTree = "<group>"; };
 		E93B1C012B0B341F00702379 /* IndexPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPublisher.swift; sourceTree = "<group>"; };
 		E93B1C032B0B355D00702379 /* OrientationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationHelper.swift; sourceTree = "<group>"; };
 		E93B1C052B0B381500702379 /* MarkdownHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHelper.swift; sourceTree = "<group>"; };
@@ -403,6 +415,7 @@
 		E930BB902B137BD60054187E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E930BBD12B1491070054187E /* LocalStorageFileManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -680,6 +693,9 @@
 				E9FD77B32B075C7900596BF0 /* 2-CharacterClass */,
 				E9FD77992B04A70300596BF0 /* 1-Abilities */,
 				E9FD778E2B049DE200596BF0 /* Atomics */,
+				E930BBCF2B1489830054187E /* CharacterSave.swift */,
+				E930BBD52B14F9700054187E /* LocalCharacterVault.swift */,
+				E930BBD72B1505100054187E /* Home.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -727,6 +743,8 @@
 				E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */,
 				E941983A2B10564F00B54205 /* SpellsViewModel.swift */,
 				E98E92722B11DB530071A7F7 /* EquipmentViewModel.swift */,
+				E930BBD32B1497C10054187E /* CharacerSaveViewModel.swift */,
+				E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -933,6 +951,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E930BBD62B14F9700054187E /* LocalCharacterVault.swift in Sources */,
 				E994151F2B09B4B900E58660 /* AdjustmentBlock.swift in Sources */,
 				E94198272B1042DF00B54205 /* SDHoldPortal.swift in Sources */,
 				E941982F2B1045AA00B54205 /* SDReadLanguages.swift in Sources */,
@@ -945,6 +964,7 @@
 				E98E92752B11DEEF0071A7F7 /* Purchasable.swift in Sources */,
 				E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */,
 				E94198472B10606500B54205 /* Armor.swift in Sources */,
+				E930BBD02B1489830054187E /* CharacterSave.swift in Sources */,
 				E9FD77762B048DFD00596BF0 /* Stat.swift in Sources */,
 				E98E927E2B12D9260071A7F7 /* ReviewItem.swift in Sources */,
 				E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */,
@@ -968,6 +988,7 @@
 				E98E92842B12F7C80071A7F7 /* AbilitiesSubReview.swift in Sources */,
 				E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */,
 				E941980E2B0F117D00B54205 /* CharacterBio.swift in Sources */,
+				E930BBDA2B1509650054187E /* LocalCharacterVaultViewModel.swift in Sources */,
 				E9FD779B2B04A77300596BF0 /* Abilities.swift in Sources */,
 				E930BB952B1458480054187E /* SavingThrowsSubReviewModel.swift in Sources */,
 				E9FD77962B04A17A00596BF0 /* AbilityFlourish.swift in Sources */,
@@ -983,6 +1004,7 @@
 				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
 				E94198432B105E8400B54205 /* AmmoTabList.swift in Sources */,
 				E98E92822B12E6EF0071A7F7 /* ReviewItemModel.swift in Sources */,
+				E930BBD22B1491070054187E /* LocalStorageFileManager.swift in Sources */,
 				E98E92652B10B4CF0071A7F7 /* Weapon.swift in Sources */,
 				E94198212B1034AF00B54205 /* SDCharmPerson.swift in Sources */,
 				E98E927A2B1205E60071A7F7 /* CharacterReview.swift in Sources */,
@@ -1002,6 +1024,7 @@
 				E930BBA72B145CF80054187E /* WeaponsSubReviewModel.swift in Sources */,
 				E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */,
 				E98E929E2B1346A30071A7F7 /* ArmorSubReview.swift in Sources */,
+				E930BBD42B1497C10054187E /* CharacerSaveViewModel.swift in Sources */,
 				E98E92882B12F9680071A7F7 /* CombatSubReview.swift in Sources */,
 				E930BBAD2B14616D0054187E /* TurningUndeadSubReviewModel.swift in Sources */,
 				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
@@ -1035,6 +1058,7 @@
 				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,
 				E9FD779E2B04B46600596BF0 /* AbilityViewModel.swift in Sources */,
 				E930BB8D2B13643F0054187E /* TurningUndeadSubReview.swift in Sources */,
+				E930BBD82B1505100054187E /* Home.swift in Sources */,
 				E930BB992B1459720054187E /* ClassAbilitySubReviewModel.swift in Sources */,
 				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,
 				E99415282B09ECA300E58660 /* CharacterDetails.swift in Sources */,

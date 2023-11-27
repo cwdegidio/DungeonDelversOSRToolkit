@@ -105,7 +105,7 @@ struct CharacterReview: View {
           .padding()
         }
         LargeButton(label: "Save Character") {
-          screen.currentScreen = .equipment
+          screen.currentScreen = .characterSave
         }
         .padding()
       }
