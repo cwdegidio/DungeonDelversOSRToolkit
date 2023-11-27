@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct Equipment: View {
-  var body: some View {
-    @Environment(\.verticalSizeClass)
-    var vSizeClass: UserInterfaceSizeClass?
-    @Environment(\.horizontalSizeClass)
-    var hSizeClass: UserInterfaceSizeClass?
-    @EnvironmentObject var player: PlayerCharacter
-    @EnvironmentObject var screen: ApplicationScreen
+  @Environment(\.verticalSizeClass)
+  var vSizeClass: UserInterfaceSizeClass?
+  @Environment(\.horizontalSizeClass)
+  var hSizeClass: UserInterfaceSizeClass?
+  @EnvironmentObject var player: PlayerCharacter
+  @EnvironmentObject var screen: ApplicationScreen
 
+  var body: some View {
     ZStack {
       GlobalBackground()
       VStack {
@@ -48,8 +48,8 @@ struct Equipment: View {
               }
           }
         }
-        LargeButton(label: "Next Step: Save Character") {
-          print("testing")
+        LargeButton(label: "Next Step: Review Character") {
+          screen.currentScreen = .characterReview
         }
         .padding()
       }

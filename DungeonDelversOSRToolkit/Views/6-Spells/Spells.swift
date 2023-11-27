@@ -49,7 +49,7 @@ struct Spells: View {
           selectedSpell.descriptionView
           Spacer()
           LargeButton(label: "Next Step: Equipment") {
-            screen.currentScreen = .equipment
+            screen.currentScreen = Screen.equipment
           }
           .padding()
         }
