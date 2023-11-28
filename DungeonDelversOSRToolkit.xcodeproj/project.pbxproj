@@ -39,6 +39,21 @@
 		E930BBCA2B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBC92B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift */; };
 		E930BBCC2B1483E70054187E /* TurningUndeadSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCB2B1483E60054187E /* TurningUndeadSubReviewModelTest.swift */; };
 		E930BBCE2B1484D40054187E /* SpellsSubReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */; };
+		E930BBD02B1489830054187E /* CharacterSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBCF2B1489830054187E /* CharacterSave.swift */; };
+		E930BBD22B1491070054187E /* LocalStorageFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD12B1491070054187E /* LocalStorageFileManager.swift */; };
+		E930BBD42B1497C10054187E /* CharacerSaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD32B1497C10054187E /* CharacerSaveViewModel.swift */; };
+		E930BBD62B14F9700054187E /* LocalCharacterVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD52B14F9700054187E /* LocalCharacterVault.swift */; };
+		E930BBD82B1505100054187E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD72B1505100054187E /* Home.swift */; };
+		E930BBDA2B1509650054187E /* LocalCharacterVaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */; };
+		E930BBDC2B151C800054187E /* NewCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBDB2B151C800054187E /* NewCharacterView.swift */; };
+		E930BBDE2B151EE00054187E /* CharacterManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBDD2B151EE00054187E /* CharacterManagementView.swift */; };
+		E930BBE02B1523080054187E /* GeneralCharacterReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBDF2B1523080054187E /* GeneralCharacterReview.swift */; };
+		E930BBE22B1525200054187E /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBE12B1525200054187E /* ReviewModel.swift */; };
+		E930BBE42B15262C0054187E /* CharacterManagementReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBE32B15262C0054187E /* CharacterManagementReview.swift */; };
+		E930BBEA2B15BC6D0054187E /* CloudDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBE92B15BC6D0054187E /* CloudDataManager.swift */; };
+		E930BBEC2B15BFAC0054187E /* CloudCharacterVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBEB2B15BFAC0054187E /* CloudCharacterVault.swift */; };
+		E930BBEE2B15C03E0054187E /* CloudCharacterVaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBED2B15C03E0054187E /* CloudCharacterVaultViewModel.swift */; };
+		E930BBF02B15D4EE0054187E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBEF2B15D4EE0054187E /* ResponseModel.swift */; };
 		E93B1C022B0B341F00702379 /* IndexPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C012B0B341F00702379 /* IndexPublisher.swift */; };
 		E93B1C042B0B355D00702379 /* OrientationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C032B0B355D00702379 /* OrientationHelper.swift */; };
 		E93B1C062B0B381500702379 /* MarkdownHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B1C052B0B381500702379 /* MarkdownHelper.swift */; };
@@ -87,7 +102,7 @@
 		E98E92732B11DB530071A7F7 /* EquipmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92722B11DB530071A7F7 /* EquipmentViewModel.swift */; };
 		E98E92752B11DEEF0071A7F7 /* Purchasable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92742B11DEEF0071A7F7 /* Purchasable.swift */; };
 		E98E92772B11FB7D0071A7F7 /* EquipmentViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92762B11FB7D0071A7F7 /* EquipmentViewModelTest.swift */; };
-		E98E927A2B1205E60071A7F7 /* CharacterReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92792B1205E60071A7F7 /* CharacterReview.swift */; };
+		E98E927A2B1205E60071A7F7 /* NewCharacterReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92792B1205E60071A7F7 /* NewCharacterReview.swift */; };
 		E98E927C2B12B8110071A7F7 /* SavingThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E927B2B12B8110071A7F7 /* SavingThrow.swift */; };
 		E98E927E2B12D9260071A7F7 /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E927D2B12D9260071A7F7 /* ReviewItem.swift */; };
 		E98E92822B12E6EF0071A7F7 /* ReviewItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92812B12E6EF0071A7F7 /* ReviewItemModel.swift */; };
@@ -230,6 +245,21 @@
 		E930BBC92B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThievesSkillsSubReviewModelTest.swift; sourceTree = "<group>"; };
 		E930BBCB2B1483E60054187E /* TurningUndeadSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurningUndeadSubReviewModelTest.swift; sourceTree = "<group>"; };
 		E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsSubReviewModelTest.swift; sourceTree = "<group>"; };
+		E930BBCF2B1489830054187E /* CharacterSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSave.swift; sourceTree = "<group>"; };
+		E930BBD12B1491070054187E /* LocalStorageFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageFileManager.swift; sourceTree = "<group>"; };
+		E930BBD32B1497C10054187E /* CharacerSaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacerSaveViewModel.swift; sourceTree = "<group>"; };
+		E930BBD52B14F9700054187E /* LocalCharacterVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCharacterVault.swift; sourceTree = "<group>"; };
+		E930BBD72B1505100054187E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCharacterVaultViewModel.swift; sourceTree = "<group>"; };
+		E930BBDB2B151C800054187E /* NewCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterView.swift; sourceTree = "<group>"; };
+		E930BBDD2B151EE00054187E /* CharacterManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManagementView.swift; sourceTree = "<group>"; };
+		E930BBDF2B1523080054187E /* GeneralCharacterReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCharacterReview.swift; sourceTree = "<group>"; };
+		E930BBE12B1525200054187E /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
+		E930BBE32B15262C0054187E /* CharacterManagementReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManagementReview.swift; sourceTree = "<group>"; };
+		E930BBE92B15BC6D0054187E /* CloudDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDataManager.swift; sourceTree = "<group>"; };
+		E930BBEB2B15BFAC0054187E /* CloudCharacterVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCharacterVault.swift; sourceTree = "<group>"; };
+		E930BBED2B15C03E0054187E /* CloudCharacterVaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCharacterVaultViewModel.swift; sourceTree = "<group>"; };
+		E930BBEF2B15D4EE0054187E /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		E93B1C012B0B341F00702379 /* IndexPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPublisher.swift; sourceTree = "<group>"; };
 		E93B1C032B0B355D00702379 /* OrientationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationHelper.swift; sourceTree = "<group>"; };
 		E93B1C052B0B381500702379 /* MarkdownHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHelper.swift; sourceTree = "<group>"; };
@@ -278,7 +308,7 @@
 		E98E92722B11DB530071A7F7 /* EquipmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewModel.swift; sourceTree = "<group>"; };
 		E98E92742B11DEEF0071A7F7 /* Purchasable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchasable.swift; sourceTree = "<group>"; };
 		E98E92762B11FB7D0071A7F7 /* EquipmentViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewModelTest.swift; sourceTree = "<group>"; };
-		E98E92792B1205E60071A7F7 /* CharacterReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterReview.swift; sourceTree = "<group>"; };
+		E98E92792B1205E60071A7F7 /* NewCharacterReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterReview.swift; sourceTree = "<group>"; };
 		E98E927B2B12B8110071A7F7 /* SavingThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrow.swift; sourceTree = "<group>"; };
 		E98E927D2B12D9260071A7F7 /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
 		E98E92812B12E6EF0071A7F7 /* ReviewItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItemModel.swift; sourceTree = "<group>"; };
@@ -403,6 +433,8 @@
 		E930BB902B137BD60054187E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E930BBD12B1491070054187E /* LocalStorageFileManager.swift */,
+				E930BBE92B15BC6D0054187E /* CloudDataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -449,6 +481,48 @@
 				E930BBCD2B1484D40054187E /* SpellsSubReviewModelTest.swift */,
 			);
 			path = CharacterReviewViewModelsTest;
+			sourceTree = "<group>";
+		};
+		E930BBE52B1581CD0054187E /* CharacterCreation */ = {
+			isa = PBXGroup;
+			children = (
+				E930BBE82B1582C00054187E /* 9-NewCharacterSave */,
+				E930BBE62B1581F80054187E /* 8-NewCharacterReview */,
+				E941981A2B10291800B54205 /* 7-Equipment */,
+				E94198172B10269100B54205 /* 6-Spells */,
+				E941980C2B0F0ADD00B54205 /* 5-CharacterBio */,
+				E99415262B09EC7E00E58660 /* 4-CharacterDetails */,
+				E99415152B09801A00E58660 /* 3-AbilityAdjustment */,
+				E9FD77B32B075C7900596BF0 /* 2-CharacterClass */,
+				E9FD77992B04A70300596BF0 /* 1-Abilities */,
+			);
+			path = CharacterCreation;
+			sourceTree = "<group>";
+		};
+		E930BBE62B1581F80054187E /* 8-NewCharacterReview */ = {
+			isa = PBXGroup;
+			children = (
+				E98E92792B1205E60071A7F7 /* NewCharacterReview.swift */,
+			);
+			path = "8-NewCharacterReview";
+			sourceTree = "<group>";
+		};
+		E930BBE72B1582890054187E /* CharacterVault */ = {
+			isa = PBXGroup;
+			children = (
+				E930BBD52B14F9700054187E /* LocalCharacterVault.swift */,
+				E930BBE32B15262C0054187E /* CharacterManagementReview.swift */,
+				E930BBEB2B15BFAC0054187E /* CloudCharacterVault.swift */,
+			);
+			path = CharacterVault;
+			sourceTree = "<group>";
+		};
+		E930BBE82B1582C00054187E /* 9-NewCharacterSave */ = {
+			isa = PBXGroup;
+			children = (
+				E930BBCF2B1489830054187E /* CharacterSave.swift */,
+			);
+			path = "9-NewCharacterSave";
 			sourceTree = "<group>";
 		};
 		E941980C2B0F0ADD00B54205 /* 5-CharacterBio */ = {
@@ -507,10 +581,10 @@
 			path = SpellDescriptions;
 			sourceTree = "<group>";
 		};
-		E98E92782B1205C80071A7F7 /* 8-CharacterReview */ = {
+		E98E92782B1205C80071A7F7 /* GeneralCharacterReview */ = {
 			isa = PBXGroup;
 			children = (
-				E98E92792B1205E60071A7F7 /* CharacterReview.swift */,
+				E930BBDF2B1523080054187E /* GeneralCharacterReview.swift */,
 				E98E92832B12F7C80071A7F7 /* AbilitiesSubReview.swift */,
 				E98E92852B12F8990071A7F7 /* SavingThrowsSubReview.swift */,
 				E98E92872B12F9680071A7F7 /* CombatSubReview.swift */,
@@ -530,7 +604,7 @@
 				E98E927D2B12D9260071A7F7 /* ReviewItem.swift */,
 				E98E92A32B134F730071A7F7 /* WeaponReviewItem.swift */,
 			);
-			path = "8-CharacterReview";
+			path = GeneralCharacterReview;
 			sourceTree = "<group>";
 		};
 		E99415152B09801A00E58660 /* 3-AbilityAdjustment */ = {
@@ -589,6 +663,8 @@
 				E9FD77662B048CF400596BF0 /* Models */,
 				E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */,
 				E9FD77592B04899F00596BF0 /* ContentView.swift */,
+				E930BBDD2B151EE00054187E /* CharacterManagementView.swift */,
+				E930BBDB2B151C800054187E /* NewCharacterView.swift */,
 				E9FD775B2B0489A000596BF0 /* Assets.xcassets */,
 				E9FD775D2B0489A000596BF0 /* Preview Content */,
 			);
@@ -613,6 +689,8 @@
 				E93B1C012B0B341F00702379 /* IndexPublisher.swift */,
 				E98E92812B12E6EF0071A7F7 /* ReviewItemModel.swift */,
 				E98E929F2B13499D0071A7F7 /* WeaponReviewModel.swift */,
+				E930BBE12B1525200054187E /* ReviewModel.swift */,
+				E930BBEF2B15D4EE0054187E /* ResponseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -671,15 +749,11 @@
 		E9FD778D2B049DDB00596BF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E98E92782B1205C80071A7F7 /* 8-CharacterReview */,
-				E941981A2B10291800B54205 /* 7-Equipment */,
-				E94198172B10269100B54205 /* 6-Spells */,
-				E941980C2B0F0ADD00B54205 /* 5-CharacterBio */,
-				E99415262B09EC7E00E58660 /* 4-CharacterDetails */,
-				E99415152B09801A00E58660 /* 3-AbilityAdjustment */,
-				E9FD77B32B075C7900596BF0 /* 2-CharacterClass */,
-				E9FD77992B04A70300596BF0 /* 1-Abilities */,
+				E930BBE72B1582890054187E /* CharacterVault */,
+				E930BBE52B1581CD0054187E /* CharacterCreation */,
+				E98E92782B1205C80071A7F7 /* GeneralCharacterReview */,
 				E9FD778E2B049DE200596BF0 /* Atomics */,
+				E930BBD72B1505100054187E /* Home.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -727,6 +801,9 @@
 				E94198112B0F2B6100B54205 /* CharacterBioViewModel.swift */,
 				E941983A2B10564F00B54205 /* SpellsViewModel.swift */,
 				E98E92722B11DB530071A7F7 /* EquipmentViewModel.swift */,
+				E930BBD32B1497C10054187E /* CharacerSaveViewModel.swift */,
+				E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */,
+				E930BBED2B15C03E0054187E /* CloudCharacterVaultViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -933,6 +1010,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E930BBD62B14F9700054187E /* LocalCharacterVault.swift in Sources */,
 				E994151F2B09B4B900E58660 /* AdjustmentBlock.swift in Sources */,
 				E94198272B1042DF00B54205 /* SDHoldPortal.swift in Sources */,
 				E941982F2B1045AA00B54205 /* SDReadLanguages.swift in Sources */,
@@ -945,10 +1023,12 @@
 				E98E92752B11DEEF0071A7F7 /* Purchasable.swift in Sources */,
 				E99415042B084CAA00E58660 /* CharacterClassSelectionViewModel.swift in Sources */,
 				E94198472B10606500B54205 /* Armor.swift in Sources */,
+				E930BBD02B1489830054187E /* CharacterSave.swift in Sources */,
 				E9FD77762B048DFD00596BF0 /* Stat.swift in Sources */,
 				E98E927E2B12D9260071A7F7 /* ReviewItem.swift in Sources */,
 				E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */,
 				E94198032B0DF81E00B54205 /* HitPointsGenerator.swift in Sources */,
+				E930BBDC2B151C800054187E /* NewCharacterView.swift in Sources */,
 				E98E927C2B12B8110071A7F7 /* SavingThrow.swift in Sources */,
 				E9FD77882B048F1000596BF0 /* Language.swift in Sources */,
 				E98E926B2B1125620071A7F7 /* Gear.swift in Sources */,
@@ -959,6 +1039,7 @@
 				E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */,
 				E99415252B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift in Sources */,
 				E941983B2B10564F00B54205 /* SpellsViewModel.swift in Sources */,
+				E930BBEE2B15C03E0054187E /* CloudCharacterVaultViewModel.swift in Sources */,
 				E94198312B10460300B54205 /* SDReadMagic.swift in Sources */,
 				E994151D2B099EE800E58660 /* Triangle.swift in Sources */,
 				E99415142B08757200E58660 /* CharacterClassDetailSheet.swift in Sources */,
@@ -968,6 +1049,7 @@
 				E98E92842B12F7C80071A7F7 /* AbilitiesSubReview.swift in Sources */,
 				E9FD77942B049FE400596BF0 /* CircularStar.swift in Sources */,
 				E941980E2B0F117D00B54205 /* CharacterBio.swift in Sources */,
+				E930BBDA2B1509650054187E /* LocalCharacterVaultViewModel.swift in Sources */,
 				E9FD779B2B04A77300596BF0 /* Abilities.swift in Sources */,
 				E930BB952B1458480054187E /* SavingThrowsSubReviewModel.swift in Sources */,
 				E9FD77962B04A17A00596BF0 /* AbilityFlourish.swift in Sources */,
@@ -983,9 +1065,10 @@
 				E9FD77782B048E2C00596BF0 /* Mod.swift in Sources */,
 				E94198432B105E8400B54205 /* AmmoTabList.swift in Sources */,
 				E98E92822B12E6EF0071A7F7 /* ReviewItemModel.swift in Sources */,
+				E930BBD22B1491070054187E /* LocalStorageFileManager.swift in Sources */,
 				E98E92652B10B4CF0071A7F7 /* Weapon.swift in Sources */,
 				E94198212B1034AF00B54205 /* SDCharmPerson.swift in Sources */,
-				E98E927A2B1205E60071A7F7 /* CharacterReview.swift in Sources */,
+				E98E927A2B1205E60071A7F7 /* NewCharacterReview.swift in Sources */,
 				E98E928A2B12FC4D0071A7F7 /* CombatValue.swift in Sources */,
 				E941983F2B105A5500B54205 /* Equipment.swift in Sources */,
 				E94198252B10422C00B54205 /* SDFloatingDisc.swift in Sources */,
@@ -1002,10 +1085,13 @@
 				E930BBA72B145CF80054187E /* WeaponsSubReviewModel.swift in Sources */,
 				E99415102B08590000E58660 /* CharacterClassSelection.swift in Sources */,
 				E98E929E2B1346A30071A7F7 /* ArmorSubReview.swift in Sources */,
+				E930BBD42B1497C10054187E /* CharacerSaveViewModel.swift in Sources */,
+				E930BBE02B1523080054187E /* GeneralCharacterReview.swift in Sources */,
 				E98E92882B12F9680071A7F7 /* CombatSubReview.swift in Sources */,
 				E930BBAD2B14616D0054187E /* TurningUndeadSubReviewModel.swift in Sources */,
 				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
 				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
+				E930BBEC2B15BFAC0054187E /* CloudCharacterVault.swift in Sources */,
 				E994152A2B09ECEA00E58660 /* CharacterDetailsViewModel.swift in Sources */,
 				E9FD77AF2B05F6D700596BF0 /* ModifierViewModel.swift in Sources */,
 				E9FD77A62B05E2BE00596BF0 /* AbilityPresentationLandscape.swift in Sources */,
@@ -1033,10 +1119,13 @@
 				E94198452B105EA900B54205 /* GearTabList.swift in Sources */,
 				E94198142B0F4A0600B54205 /* CharacterBioTextField.swift in Sources */,
 				E9FD77982B04A44800596BF0 /* GlobalBackground.swift in Sources */,
+				E930BBE42B15262C0054187E /* CharacterManagementReview.swift in Sources */,
 				E9FD779E2B04B46600596BF0 /* AbilityViewModel.swift in Sources */,
 				E930BB8D2B13643F0054187E /* TurningUndeadSubReview.swift in Sources */,
+				E930BBD82B1505100054187E /* Home.swift in Sources */,
 				E930BB992B1459720054187E /* ClassAbilitySubReviewModel.swift in Sources */,
 				E9FD77902B049E0F00596BF0 /* AbilityStatBlock.swift in Sources */,
+				E930BBEA2B15BC6D0054187E /* CloudDataManager.swift in Sources */,
 				E99415282B09ECA300E58660 /* CharacterDetails.swift in Sources */,
 				E9FD77AD2B05F69B00596BF0 /* ModCalculator.swift in Sources */,
 				E94198192B10278E00B54205 /* MUSpell.swift in Sources */,
@@ -1059,6 +1148,8 @@
 				E98E92922B1324D00071A7F7 /* EncountersSubReview.swift in Sources */,
 				E99415172B09805000E58660 /* AbilityAdjustment.swift in Sources */,
 				E98E92A42B134F730071A7F7 /* WeaponReviewItem.swift in Sources */,
+				E930BBF02B15D4EE0054187E /* ResponseModel.swift in Sources */,
+				E930BBDE2B151EE00054187E /* CharacterManagementView.swift in Sources */,
 				E94198072B0DFDB500B54205 /* AlignmentSelector.swift in Sources */,
 				E9FD77842B048ED800596BF0 /* Section.swift in Sources */,
 				E9FD77A42B05E20A00596BF0 /* AbilityPresentationPortrait.swift in Sources */,
@@ -1067,6 +1158,7 @@
 				E9FD776C2B048D5C00596BF0 /* PlayerCharacter.swift in Sources */,
 				E9FD77822B048EB800596BF0 /* TypeFace.swift in Sources */,
 				E98E92AA2B135E360071A7F7 /* MatrixElementStr.swift in Sources */,
+				E930BBE22B1525200054187E /* ReviewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

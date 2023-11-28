@@ -8,43 +8,66 @@
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject private var player = PlayerCharacter()
-  @StateObject var screen = ApplicationScreen(currentScreen: .abilities)
+  @StateObject var player = PlayerCharacter()
+  @StateObject var screen = ApplicationScreen(currentScreen: .home)
+  @StateObject var review = ReviewModel()
 
   var body: some View {
     switch screen.currentScreen {
+    case .home:
+      Home()
+        .environmentObject(screen)
+    case .localCharacterVault:
+      LocalCharacterVault()
+        .environmentObject(review)
+        .environmentObject(screen)
+    case .cloudCharacterVault:
+      CloudCharacterVault()
+        .environmentObject(review)
+        .environmentObject(screen)
+    case .characterManagementReview:
+      CharacterManagementReview()
+        .environmentObject(review)
+        .environmentObject(screen)
     case .abilities:
       Abilities()
-        .environment(player)
-        .environment(screen)
+        .environmentObject(player)
+        .environmentObject(screen)
     case .classSelection:
       CharacterClassSelection()
-        .environment(player)
-        .environment(screen)
+        .environmentObject(player)
+        .environmentObject(screen)
     case .abilityAdjustment:
       AbilityAdjustment()
-        .environment(player)
-        .environment(screen)
+        .environmentObject(player)
+        .environmentObject(screen)
     case .characterDetails:
       CharacterDetails()
-        .environment(player)
-        .environment(screen)
+        .environmentObject(player)
+        .environmentObject(screen)
     case .characterBio:
       CharacterBio()
-        .environment(player)
-        .environment(screen)
+        .environmentObject(player)
+        .environmentObject(screen)
     case .spells:
       Spells()
-        .environment(player)
-        .environment(screen)
+        .environmentObject(player)
+        .environmentObject(screen)
     case .equipment:
       Equipment()
-        .environment(player)
-        .environment(screen)
+        .environmentObject(player)
+        .environmentObject(screen)
     case .characterReview:
-      CharacterReview()
-        .environment(player)
-        .environment(screen)
+      NewCharacterReview()
+        .environmentObject(player)
+        .environmentObject(screen)
+    case .characterSave:
+      CharacterSave()
+        .environmentObject(player)
+        .environmentObject(screen)
+    default:
+      Home()
+        .environmentObject(screen)
     }
   }
 }
