@@ -9,10 +9,17 @@ import Foundation
 
 class CharacerSaveViewModel {
   let manager = LocalStorageFileManager.fileManagerInstance
+  let cloudManager = CloudDataManager.cloudManagerInstance
 
-  func saveCharacterToDevice(for player: PlayerCharacter) -> Bool{
+  func saveCharacterToDevice(for player: PlayerCharacter) -> Bool {
     let fileName = player.id.uuidString
-    let success =  manager.saveCharacterData(player: player, name: fileName)
+    let success = manager.saveCharacterData(player: player, name: fileName)
     return success
+  }
+
+  func saveLocalCharacterToCloud(player: PlayerCharacter) {
+    Task { @MainActor in
+      try await cloudManager.saveCharacterToCloud(player: player)
+    }
   }
 }

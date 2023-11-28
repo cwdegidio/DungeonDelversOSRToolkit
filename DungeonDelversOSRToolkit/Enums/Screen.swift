@@ -10,6 +10,10 @@ import Foundation
 enum Screen {
   case home
   case localCharacterVault
+  case cloudCharacterVault
+  case newCharacterView
+  case characterManagement
+  case characterManagementReview
   case abilities
   case classSelection
   case abilityAdjustment

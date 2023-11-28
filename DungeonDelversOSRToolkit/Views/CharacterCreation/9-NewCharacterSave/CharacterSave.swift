@@ -31,14 +31,14 @@ struct CharacterSave: View {
         }
         .padding(.bottom, 10)
         .alert(localSaveSuccess ? localSuccessMessage : localFailMessage, isPresented: $showLocalSaveAlert) {
-              Button("OK", role: .cancel) { }
-          }
+          Button("OK", role: .cancel) { }
+        }
         SmallButton(label: "Save to Dungeon Cloud", icon: "cloud.fill", bgColor: Color("tkBlue"), fgColor: .white) {
-          print("[ DEBUG ] Save To Cloud")
+          viewModel.saveLocalCharacterToCloud(player: player)
         }
         .padding(.bottom, 10)
         LargeButton(label: localSaveSuccess ? "Return to Home" : "Abandon Character and Return Home") {
-          print("[ DEBUG ] Go To Home")
+          screen.currentScreen = .home
         }
       }
       .padding()

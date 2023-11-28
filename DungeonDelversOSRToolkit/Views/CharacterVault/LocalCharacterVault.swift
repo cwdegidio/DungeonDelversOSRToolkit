@@ -8,42 +8,45 @@
 import SwiftUI
 
 struct LocalCharacterVault: View {
-  @EnvironmentObject var player: PlayerCharacter
+  @EnvironmentObject var review: ReviewModel
   @EnvironmentObject var screen: ApplicationScreen
   let viewModel = LocalCharacterVaultViewModel()
   @State var localCharacters: [PlayerCharacter] = []
 
   var body: some View {
-    ZStack {
-      GlobalBackground()
-      VStack {
+    NavigationStack {
+      ZStack {
+        GlobalBackground()
         VStack {
-          Image(systemName: "figure.fencing")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 50, height: 50)
-          AbilityTitle(content: "Characters")
-          ScrollView {
-            ForEach(localCharacters.sorted { $0.name < $1.name }, id: \.id) { character in
-              SmallButton(
-                label: "\(character.name) (\(character.characterClass?.name ?? "No class"))",
-                icon: "\(character.characterClass?.symbol ?? "person.fill")",
-                bgColor: Color("tkBlue"),
-                fgColor: Color.white
-              ) {
-                
-                screen.currentScreen = .characterReview
+          List {
+            ScrollView {
+              ForEach(localCharacters.sorted { $0.name < $1.name }, id: \.id) { character in
+                VStack {
+                  NavigationLink(destination: GeneralCharacterReview(player: character)) {
+                    HStack {
+                      Text("\(character.name) (\(character.characterClass?.name ?? "No class"))")
+                      Spacer()
+                      Image(systemName: "chevron.forward")
+                    }
+                  }
+                  .padding()
+                  Divider()
+                }
               }
-              .padding(.bottom, 10)
             }
           }
-        }
-        LargeButton(label: "Return Home") {
-          screen.currentScreen = .home
+          .navigationTitle("Characters")
+          .navigationBarTitleDisplayMode(.inline)
+          .navigationBarBackButtonHidden(true)
+          .scrollContentBackground(.hidden)
+          LargeButton(label: "Return Home") {
+            screen.currentScreen = .home
+          }
+          .padding()
         }
       }
-      .padding()
     }
+    .scrollContentBackground(.hidden)
     .onAppear {
       if localCharacters.isEmpty {
         guard let availableLocalCharacters = viewModel.getLocalCharacters() else {

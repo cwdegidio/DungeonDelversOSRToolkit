@@ -10,15 +10,24 @@ import SwiftUI
 struct ContentView: View {
   @StateObject var player = PlayerCharacter()
   @StateObject var screen = ApplicationScreen(currentScreen: .home)
+  @StateObject var review = ReviewModel()
 
   var body: some View {
     switch screen.currentScreen {
     case .home:
       Home()
-        .environment(screen)
+        .environmentObject(screen)
     case .localCharacterVault:
       LocalCharacterVault()
-        .environmentObject(player)
+        .environmentObject(review)
+        .environmentObject(screen)
+    case .cloudCharacterVault:
+      CloudCharacterVault()
+        .environmentObject(review)
+        .environmentObject(screen)
+    case .characterManagementReview:
+      CharacterManagementReview()
+        .environmentObject(review)
         .environmentObject(screen)
     case .abilities:
       Abilities()
@@ -49,12 +58,15 @@ struct ContentView: View {
         .environmentObject(player)
         .environmentObject(screen)
     case .characterReview:
-      CharacterReview()
+      NewCharacterReview()
         .environmentObject(player)
         .environmentObject(screen)
     case .characterSave:
       CharacterSave()
         .environmentObject(player)
+        .environmentObject(screen)
+    default:
+      Home()
         .environmentObject(screen)
     }
   }

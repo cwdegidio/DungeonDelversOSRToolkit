@@ -15,16 +15,31 @@ struct Home: View {
       GlobalBackground()
       VStack {
         Subtitle(content: "What would you like to do?")
-        SmallButton(label: "Create a new character", icon: "dice.fill", bgColor: Color("tkGreen"), fgColor: Color.white) {
+        SmallButton(
+          label: "Create a new character",
+          icon: "dice.fill",
+          bgColor: Color("tkGreen"),
+          fgColor: Color.white
+        ) {
           screen.currentScreen = .abilities
         }
         .padding(.bottom, 10)
-        SmallButton(label: "View local character vault", icon: "iphone", bgColor: Color("tkBlue"), fgColor: Color.white) {
+        SmallButton(
+          label: "View local character vault",
+          icon: "iphone",
+          bgColor: Color("tkBlue"),
+          fgColor: Color.white
+        ) {
           screen.currentScreen = .localCharacterVault
         }
         .padding(.bottom, 10)
-        SmallButton(label: "View characters on Dungeon Cloud", icon: "cloud.fill", bgColor: Color("tkYellow"), fgColor: Color.white) {
-          print("Create a new character")
+        SmallButton(
+          label: "View characters on Dungeon Cloud",
+          icon: "cloud.fill",
+          bgColor: Color("tkYellow"),
+          fgColor: Color.white
+        ) {
+          screen.currentScreen = .cloudCharacterVault
         }
       }
       .padding()
