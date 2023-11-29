@@ -17,31 +17,40 @@ struct CloudCharacterVault: View {
       ZStack {
         GlobalBackground()
         VStack {
-          List {
-            ScrollView {
-              ForEach(viewModel.characters.sorted { $0.name < $1.name }, id: \.id) { character in
-                VStack {
-                  NavigationLink(destination: GeneralCharacterReview(player: character)) {
-                    HStack {
-                      Text("\(character.name) (\(character.characterClass?.name ?? "No class"))")
-                      Spacer()
-                      Image(systemName: "chevron.forward")
+          if viewModel.characters.isEmpty {
+            VStack {
+              ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
+                .controlSize(.large)
+              Subtitle(content: "Loading characters\nfrom Dragon Cloud...")
+            }
+          } else {
+            List {
+              ScrollView {
+                ForEach(viewModel.characters.sorted { $0.name < $1.name }, id: \.id) { character in
+                  VStack {
+                    NavigationLink(destination: GeneralCharacterReview(player: character)) {
+                      HStack {
+                        Text("\(character.name) (\(character.characterClass?.name ?? "No class"))")
+                        Spacer()
+                        Image(systemName: "chevron.forward")
+                      }
                     }
+                    .padding()
+                    Divider()
                   }
-                  .padding()
-                  Divider()
                 }
               }
             }
+            .navigationTitle("Characters")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
+            .scrollContentBackground(.hidden)
+            LargeButton(label: "Return Home") {
+              screen.currentScreen = .home
+            }
+            .padding()
           }
-          .navigationTitle("Characters")
-          .navigationBarTitleDisplayMode(.inline)
-          .navigationBarBackButtonHidden(true)
-          .scrollContentBackground(.hidden)
-          LargeButton(label: "Return Home") {
-            screen.currentScreen = .home
-          }
-          .padding()
         }
       }
     }
@@ -49,6 +58,7 @@ struct CloudCharacterVault: View {
     .task {
       do {
         try await viewModel.getLocalCharacters()
+        print("done")
       } catch {
         print("[ DEBUG ] Issue getting the characters!")
       }

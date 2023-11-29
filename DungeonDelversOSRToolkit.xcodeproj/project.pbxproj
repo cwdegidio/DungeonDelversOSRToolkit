@@ -45,8 +45,6 @@
 		E930BBD62B14F9700054187E /* LocalCharacterVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD52B14F9700054187E /* LocalCharacterVault.swift */; };
 		E930BBD82B1505100054187E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD72B1505100054187E /* Home.swift */; };
 		E930BBDA2B1509650054187E /* LocalCharacterVaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */; };
-		E930BBDC2B151C800054187E /* NewCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBDB2B151C800054187E /* NewCharacterView.swift */; };
-		E930BBDE2B151EE00054187E /* CharacterManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBDD2B151EE00054187E /* CharacterManagementView.swift */; };
 		E930BBE02B1523080054187E /* GeneralCharacterReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBDF2B1523080054187E /* GeneralCharacterReview.swift */; };
 		E930BBE22B1525200054187E /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBE12B1525200054187E /* ReviewModel.swift */; };
 		E930BBE42B15262C0054187E /* CharacterManagementReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930BBE32B15262C0054187E /* CharacterManagementReview.swift */; };
@@ -251,8 +249,6 @@
 		E930BBD52B14F9700054187E /* LocalCharacterVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCharacterVault.swift; sourceTree = "<group>"; };
 		E930BBD72B1505100054187E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E930BBD92B1509650054187E /* LocalCharacterVaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCharacterVaultViewModel.swift; sourceTree = "<group>"; };
-		E930BBDB2B151C800054187E /* NewCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterView.swift; sourceTree = "<group>"; };
-		E930BBDD2B151EE00054187E /* CharacterManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManagementView.swift; sourceTree = "<group>"; };
 		E930BBDF2B1523080054187E /* GeneralCharacterReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCharacterReview.swift; sourceTree = "<group>"; };
 		E930BBE12B1525200054187E /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		E930BBE32B15262C0054187E /* CharacterManagementReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManagementReview.swift; sourceTree = "<group>"; };
@@ -663,8 +659,6 @@
 				E9FD77662B048CF400596BF0 /* Models */,
 				E9FD77572B04899F00596BF0 /* DungeonDelversOSRToolkitApp.swift */,
 				E9FD77592B04899F00596BF0 /* ContentView.swift */,
-				E930BBDD2B151EE00054187E /* CharacterManagementView.swift */,
-				E930BBDB2B151C800054187E /* NewCharacterView.swift */,
 				E9FD775B2B0489A000596BF0 /* Assets.xcassets */,
 				E9FD775D2B0489A000596BF0 /* Preview Content */,
 			);
@@ -1028,7 +1022,6 @@
 				E98E927E2B12D9260071A7F7 /* ReviewItem.swift in Sources */,
 				E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */,
 				E94198032B0DF81E00B54205 /* HitPointsGenerator.swift in Sources */,
-				E930BBDC2B151C800054187E /* NewCharacterView.swift in Sources */,
 				E98E927C2B12B8110071A7F7 /* SavingThrow.swift in Sources */,
 				E9FD77882B048F1000596BF0 /* Language.swift in Sources */,
 				E98E926B2B1125620071A7F7 /* Gear.swift in Sources */,
@@ -1149,7 +1142,6 @@
 				E99415172B09805000E58660 /* AbilityAdjustment.swift in Sources */,
 				E98E92A42B134F730071A7F7 /* WeaponReviewItem.swift in Sources */,
 				E930BBF02B15D4EE0054187E /* ResponseModel.swift in Sources */,
-				E930BBDE2B151EE00054187E /* CharacterManagementView.swift in Sources */,
 				E94198072B0DFDB500B54205 /* AlignmentSelector.swift in Sources */,
 				E9FD77842B048ED800596BF0 /* Section.swift in Sources */,
 				E9FD77A42B05E20A00596BF0 /* AbilityPresentationPortrait.swift in Sources */,
