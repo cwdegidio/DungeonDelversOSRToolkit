@@ -9,7 +9,8 @@ import Foundation
 
 class CloudDataManager {
   static let cloudManagerInstance = CloudDataManager()
-  
+  var urlSession = URLSession.shared
+
   enum CloudDataManagerErrors: Error {
     case invalidUrl
     case requestFailed
@@ -17,15 +18,15 @@ class CloudDataManager {
   }
 
   func fetchCharactersFromCloud() async throws -> [PlayerCharacter] {
-    let urlString = "http://localhost:8080/api/v1/characters"
+    let urlString = "http://ddostk.cwdegidio.com:8080/api/v1/characters"
 
     guard let url = URL(string: urlString) else {
       throw CloudDataManagerErrors.invalidUrl
     }
 
-    var request = URLRequest(url: url)
+    let request = URLRequest(url: url)
 
-    let (data, response) = try await URLSession.shared.data(for: request)
+    let (data, response) = try await urlSession.data(for: request)
 
     guard let httpResponse = response as? HTTPURLResponse else {
       throw CloudDataManagerErrors.requestFailed
@@ -47,7 +48,7 @@ class CloudDataManager {
   }
 
   func saveCharacterToCloud(player: PlayerCharacter) async throws {
-    let urlString = "http://localhost:8080/api/v1/character"
+    let urlString = "http://ddostk.cwdegidio.com:8080/api/v1/character"
 
     guard let url = URL(string: urlString) else {
       throw CloudDataManagerErrors.invalidUrl
@@ -58,7 +59,7 @@ class CloudDataManager {
     request.httpMethod = "POST"
     let encoder = JSONEncoder()
     let data = try encoder.encode(player)
-    request.httpBody = data
-    let (responseData, response) = try await URLSession.shared.upload(for: request, from: data)
+    let task = urlSession.uploadTask(with: request, from: data)
+    task.resume()
   }
 }
