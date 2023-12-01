@@ -19,6 +19,7 @@ struct CharacterClassSelection: View {
   @State private var allowedClasses: [CharacterClass] = []
   @State private var showSheet = false
   @State private var currentIndex = 0
+  @State var characterClassSelected = false
   let viewModel = CharacterClassSelectionViewModel()
   let carouselLandscapePadding = CGFloat(40)
   let carouselPortraitPadding = CGFloat(-30)
@@ -56,7 +57,7 @@ struct CharacterClassSelection: View {
         .frame(maxHeight: .infinity)
         .padding(.top, portrait ? carouselPortraitPadding : 0)
         Spacer()
-        LargeButton(label: "Next Step: Ability Adjustment") {
+        LargeButton(label: "Next Step: Ability Adjustment", isDisabled: player.characterClass == nil) {
           nextScreen()
         }
         .padding(.horizontal)

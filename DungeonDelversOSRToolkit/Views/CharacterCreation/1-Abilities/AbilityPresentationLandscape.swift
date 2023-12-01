@@ -26,8 +26,8 @@ struct AbilityPresentationLandscape: View {
           SmallButton(
             label: "Modifiers",
             icon: "plus.forwardslash.minus",
-            bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-            fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
+            bgColor: Color("tkBlue"),
+            isDisabled: !statsRolled
           ) {
             displaySheet()
           }
@@ -39,8 +39,8 @@ struct AbilityPresentationLandscape: View {
           SmallButton(
             label: "Reroll \(currentCharacterAbility.statType.shortName)",
             icon: "die.face.6.fill",
-            bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-            fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
+            bgColor: Color("tkBlue"),
+            isDisabled: !statsRolled
           ) {
             viewModel.setSingleAbilityScore(for: player, onAbility: currentCharacterAbility.statType)
             abilityScore = currentCharacterAbility.score
@@ -51,7 +51,7 @@ struct AbilityPresentationLandscape: View {
           label: "Roll All Abilities",
           icon: "dice.fill",
           bgColor: Color("tkRed"),
-          fgColor: nil
+          isDisabled: statsRolled
         ) {
           statsRolled = true
           viewModel.setAllAbilityScores(for: player)
@@ -75,7 +75,7 @@ struct AbilityPresentationLandscape: View {
 #Preview {
   AbilityPresentationLandscape(
     abilityTitle: .constant("Strength"),
-    abilityScore: .constant(18),
+    abilityScore: .constant(0),
     currentCharacterAbility: .constant(CharacterAbility(statType: .str, score: 18)),
     showSheet: .constant(false),
     statsRolled: .constant(false),

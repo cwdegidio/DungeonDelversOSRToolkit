@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct AbilityStatBlockItems: View {
+  @Environment(\.verticalSizeClass)
+  var vSizeClass: UserInterfaceSizeClass?
+  @Environment(\.horizontalSizeClass)
+  var hSizeClass: UserInterfaceSizeClass?
   @Binding var currentCharacterAbility: Ability
   @Binding var abilityScore: Int
   @Binding var abilityTitle: String
   var player: PlayerCharacter
-  var horizontalSizeClass: UserInterfaceSizeClass
-  var verticalSizeClass: UserInterfaceSizeClass
   let portraitPadding = CGFloat(50)
   let landscapePadding = CGFloat(100)
   let vGridSpacing = CGFloat(40)
@@ -21,9 +23,7 @@ struct AbilityStatBlockItems: View {
   let hGridItemSize = CGFloat(50)
 
   var body: some View {
-    let portrait = horizontalSizeClass == .compact && verticalSizeClass == .regular
-    let landscape = horizontalSizeClass == .compact && verticalSizeClass == .compact ||
-    horizontalSizeClass == .regular && verticalSizeClass == .compact
+    let portrait = OrientationHelper.isPortrait(hClass: hSizeClass, vClass: vSizeClass)
 
     Group {
       if portrait {
@@ -42,12 +42,12 @@ struct AbilityStatBlockItems: View {
             )
           }
         }
-        .padding(.bottom, portraitPadding)
-      }
-
-      if landscape {
-        LazyHGrid(
-          rows: [GridItem(.fixed(hGridItemSize))],
+      } else {
+        LazyVGrid(
+          columns: [
+            GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()),
+            GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())
+          ],
           spacing: hGridSpacing
         ) {
           ForEach(player.abilityScores, id: \.statType) { stat in
@@ -61,7 +61,6 @@ struct AbilityStatBlockItems: View {
             )
           }
         }
-        .padding(.bottom, landscapePadding)
       }
     }
   }
@@ -72,15 +71,11 @@ struct AbilityStatBlockItems: View {
   let abilityScore = 18
   let abilityTitle = "Strength"
   let player = PlayerCharacter()
-  let horizontalSizeClass = UserInterfaceSizeClass.compact
-  let verticalSizeClass = UserInterfaceSizeClass.regular
 
   return AbilityStatBlockItems(
     currentCharacterAbility: .constant(currentAbility),
     abilityScore: .constant(abilityScore),
     abilityTitle: .constant(abilityTitle),
-    player: player,
-    horizontalSizeClass: horizontalSizeClass,
-    verticalSizeClass: verticalSizeClass
+    player: player
   )
 }

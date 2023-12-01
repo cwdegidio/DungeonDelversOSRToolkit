@@ -18,12 +18,11 @@ struct AbilityPortraitFlourish: View {
   let largeCircleStrokeOpacity = 0.8
   let flourishShadowOpacity = 0.4
   let flourishShadowRadius = CGFloat(20)
-  let abilityScorePadding = CGFloat(-10)
+  let abilityScorePadding = CGFloat(0)
   let smallCircleOffsetX = CGFloat(150)
   let mediumCircleOffsetX = CGFloat(75)
 
   var body: some View {
-    AbilityTitle(content: abilityTitle)
     ZStack {
       Group {
         Circle()
@@ -49,10 +48,10 @@ struct AbilityPortraitFlourish: View {
         CircularStar()
           .stroke(.white.opacity(largeCircleStrokeOpacity))
           .frame(width: largeCircleFrame, height: largeCircleFrame)
+        AbilityScoreFlourish(content: abilityScore)
       }
-      .shadow(color: .black.opacity(flourishShadowOpacity), radius: flourishShadowRadius)
-      AbilityScoreFlourish(content: abilityScore)
-        .padding(.top, abilityScorePadding)
+      AbilityTitle(content: abilityTitle)
+        .offset(x: 0, y: -125)
     }
   }
 }
@@ -84,6 +83,7 @@ struct AbilityLandscapeFlourish: View {
       AbilityScoreFlourish(content: abilityScore)
         .padding(.top, abilityScorePadding)
       AbilityTitle(content: abilityTitle)
+        .frame(width: 250)
         .padding(.top, abilityTitlePadding)
     }
   }
@@ -200,7 +200,7 @@ struct AbilityAdjustmentLandscapeFlourish: View {
 }
 
 #Preview("Ability Landscape Flourish") {
-  AbilityLandscapeFlourish(abilityScore: 18, abilityTitle: "Strength")
+  AbilityLandscapeFlourish(abilityScore: 18, abilityTitle: "Intelligence")
 }
 
 #Preview("Ability Adjustment Portrait Flourish") {

@@ -20,7 +20,7 @@ struct CharacterManagementReview: View {
           } else {
             Text("No characters to review")
           }
-          LargeButton(label: "Return to Home") {
+          LargeButton(label: "Return to Home", isDisabled: false) {
             screen.currentScreen = .home
           }
           .padding()

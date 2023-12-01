@@ -58,6 +58,7 @@ struct AbilityScoreFlourish: View {
   var body: some View {
     Text("\(content)")
       .font(.system(size: size, design: .rounded))
+      .frame(maxWidth: 200, maxHeight: 200)
   }
 }
 

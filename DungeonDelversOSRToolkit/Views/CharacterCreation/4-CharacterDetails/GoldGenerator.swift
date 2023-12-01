@@ -24,7 +24,7 @@ struct GoldGenerator: View {
         label: "Roll Starting Gold",
         icon: "banknote.fill",
         bgColor: Color("tkGreen"),
-        fgColor: Color.white
+        isDisabled: false
       ) { viewModel.generateStartingGold(for: player) }
     }
     .padding(.horizontal)

@@ -27,8 +27,8 @@ struct AbilityPresentationPortrait: View {
         SmallButton(
           label: "Modifiers",
           icon: "plus.forwardslash.minus",
-          bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-          fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
+          bgColor: Color("tkBlue"),
+          isDisabled: !statsRolled
         ) {
           displaySheet()
         }
@@ -41,8 +41,8 @@ struct AbilityPresentationPortrait: View {
         SmallButton(
           label: "Reroll \(currentCharacterAbility.statType.shortName)",
           icon: "die.face.6.fill",
-          bgColor: statsRolled ? Color("tkBlue") : Color.gray,
-          fgColor: statsRolled ? Color.white : Color("tkDisabledLabel")
+          bgColor: Color("tkBlue"),
+          isDisabled: !statsRolled
         ) {
           viewModel.setSingleAbilityScore(for: player, onAbility: currentCharacterAbility.statType)
           abilityScore = currentCharacterAbility.score
@@ -51,7 +51,7 @@ struct AbilityPresentationPortrait: View {
       }
       .padding(.horizontal)
       .padding(.top, smallButtonStackPadding)
-      SmallButton(label: "Roll All Abilities", icon: "dice.fill", bgColor: Color("tkRed"), fgColor: nil) {
+      SmallButton(label: "Roll All Abilities", icon: "dice.fill", bgColor: Color("tkRed"), isDisabled: statsRolled) {
         statsRolled = true
         viewModel.setAllAbilityScores(for: player)
         abilityScore = currentCharacterAbility.score

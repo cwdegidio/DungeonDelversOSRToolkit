@@ -13,8 +13,12 @@ struct AbilityStatBlock: View {
   @Binding var abilityScore: Int
   @Binding var abilityTitle: String
   var stat: Ability
+  var isRolled: Bool {
+    abilityScore > 0
+  }
   let score: Int
   let ability: String
+  let isDisabled = false
   let rectangleCornerSize = CGSize(width: 10, height: 10)
   let rectangleStrikeWidth = CGFloat(5)
   let rectangleFrameSize = CGFloat(75)
@@ -30,15 +34,17 @@ struct AbilityStatBlock: View {
     ZStack {
       RoundedRectangle(cornerSize: rectangleCornerSize)
         .stroke(.black, lineWidth: rectangleStrikeWidth)
-        .fill(Color("tkGreen"))
+        .fill(isRolled ? Color("tkGreen") : Color.gray)
         .frame(width: rectangleFrameSize, height: rectangleFrameSize)
         .shadow(color: .black.opacity(rectangleShadowOpacity), radius: rectangleShadowRadius)
       VStack {
         Text("\(score)")
           .font(Font.custom("Courier", size: scoreFontSize))
+          .foregroundStyle(isRolled ? Color.black : Color.black.opacity(0.4))
         Text("\(ability)")
           .font(.title2)
           .fontWeight(.bold)
+          .foregroundStyle(isRolled ? Color.black : Color.black.opacity(0.4))
       }
     }
     .scaleEffect(scaleValue)
@@ -53,6 +59,7 @@ struct AbilityStatBlock: View {
         scaleValue = largeScaleValue
       }
     }
+    .disabled(!isRolled)
   }
 }
 

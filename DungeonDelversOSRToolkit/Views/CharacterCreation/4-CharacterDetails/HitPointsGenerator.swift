@@ -52,7 +52,7 @@ struct HitPointsGenerator: View {
         label: "Roll Hit Points",
         icon: "cross.vial.fill",
         bgColor: Color("tkBlue"),
-        fgColor: Color.white
+        isDisabled: false
       ) {
         determineCharacterHitPoints()
         hpRolled = true

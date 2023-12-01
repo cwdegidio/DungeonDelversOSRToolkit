@@ -91,6 +91,11 @@
 		E941984B2B108E6800B54205 /* EquipmentListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941984A2B108E6800B54205 /* EquipmentListItem.swift */; };
 		E941984D2B109ADE00B54205 /* ArmorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941984C2B109ADE00B54205 /* ArmorDetail.swift */; };
 		E941984F2B109B2400B54205 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941984E2B109B2400B54205 /* Inventory.swift */; };
+		E95CB57C2B18652A007ABCB5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95CB57B2B18652A007ABCB5 /* SplashScreen.swift */; };
+		E95CB57E2B186CF0007ABCB5 /* JollyLodger-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E95CB57D2B186CF0007ABCB5 /* JollyLodger-Regular.ttf */; };
+		E95CB5802B187310007ABCB5 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95CB57F2B187310007ABCB5 /* ContainerView.swift */; };
+		E95CB5832B187ECD007ABCB5 /* OnBoardingMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95CB5822B187ECD007ABCB5 /* OnBoardingMain.swift */; };
+		E95CB5852B188BBF007ABCB5 /* OnBoardingTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95CB5842B188BBF007ABCB5 /* OnBoardingTemplate.swift */; };
 		E98E92652B10B4CF0071A7F7 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92642B10B4CF0071A7F7 /* Weapon.swift */; };
 		E98E92672B10BE120071A7F7 /* WeaponDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92662B10BE120071A7F7 /* WeaponDetail.swift */; };
 		E98E92692B11240D0071A7F7 /* Ammo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92682B11240D0071A7F7 /* Ammo.swift */; };
@@ -295,6 +300,11 @@
 		E941984A2B108E6800B54205 /* EquipmentListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentListItem.swift; sourceTree = "<group>"; };
 		E941984C2B109ADE00B54205 /* ArmorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorDetail.swift; sourceTree = "<group>"; };
 		E941984E2B109B2400B54205 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		E95CB57B2B18652A007ABCB5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		E95CB57D2B186CF0007ABCB5 /* JollyLodger-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JollyLodger-Regular.ttf"; sourceTree = "<group>"; };
+		E95CB57F2B187310007ABCB5 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		E95CB5822B187ECD007ABCB5 /* OnBoardingMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingMain.swift; sourceTree = "<group>"; };
+		E95CB5842B188BBF007ABCB5 /* OnBoardingTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingTemplate.swift; sourceTree = "<group>"; };
 		E98E92642B10B4CF0071A7F7 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		E98E92662B10BE120071A7F7 /* WeaponDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetail.swift; sourceTree = "<group>"; };
 		E98E92682B11240D0071A7F7 /* Ammo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
@@ -577,6 +587,15 @@
 			path = SpellDescriptions;
 			sourceTree = "<group>";
 		};
+		E95CB5812B187E9E007ABCB5 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				E95CB5822B187ECD007ABCB5 /* OnBoardingMain.swift */,
+				E95CB5842B188BBF007ABCB5 /* OnBoardingTemplate.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		E98E92782B1205C80071A7F7 /* GeneralCharacterReview */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,6 +680,8 @@
 				E9FD77592B04899F00596BF0 /* ContentView.swift */,
 				E9FD775B2B0489A000596BF0 /* Assets.xcassets */,
 				E9FD775D2B0489A000596BF0 /* Preview Content */,
+				E95CB57B2B18652A007ABCB5 /* SplashScreen.swift */,
+				E95CB57F2B187310007ABCB5 /* ContainerView.swift */,
 			);
 			path = DungeonDelversOSRToolkit;
 			sourceTree = "<group>";
@@ -729,6 +750,7 @@
 		E9FD77892B04990400596BF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E95CB57D2B186CF0007ABCB5 /* JollyLodger-Regular.ttf */,
 				E994152F2B09F5CF00E58660 /* ArtsPolyhedralDiceD4Rounded.ttf */,
 				E994152C2B09F5CF00E58660 /* ArtsPolyhedralDiceD6.ttf */,
 				E99415302B09F5CF00E58660 /* ArtsPolyhedralDiceD8.ttf */,
@@ -743,6 +765,7 @@
 		E9FD778D2B049DDB00596BF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E95CB5812B187E9E007ABCB5 /* OnBoarding */,
 				E930BBE72B1582890054187E /* CharacterVault */,
 				E930BBE52B1581CD0054187E /* CharacterCreation */,
 				E98E92782B1205C80071A7F7 /* GeneralCharacterReview */,
@@ -958,6 +981,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99415362B09F88F00E58660 /* ArtsPolyhedralDiceD20.ttf in Resources */,
+				E95CB57E2B186CF0007ABCB5 /* JollyLodger-Regular.ttf in Resources */,
 				E9FD778C2B049B4400596BF0 /* Handlee-Regular.ttf in Resources */,
 				E99415342B09F88800E58660 /* ArtsPolyhedralDiceD10.ttf in Resources */,
 				E9FD775F2B0489A000596BF0 /* Preview Assets.xcassets in Resources */,
@@ -1027,7 +1051,9 @@
 				E98E926B2B1125620071A7F7 /* Gear.swift in Sources */,
 				E94198292B10436A00B54205 /* SDLight.swift in Sources */,
 				E9FD777C2B048E6600596BF0 /* Literacy.swift in Sources */,
+				E95CB5802B187310007ABCB5 /* ContainerView.swift in Sources */,
 				E9FD77732B048DD100596BF0 /* Modifier.swift in Sources */,
+				E95CB57C2B18652A007ABCB5 /* SplashScreen.swift in Sources */,
 				E98E92902B130F840071A7F7 /* ClassAbilitySubReview.swift in Sources */,
 				E994150F2B08590000E58660 /* CharacterCarouselPortrait.swift in Sources */,
 				E99415252B09DB2700E58660 /* AbilityAdjustmentPresentationLandscape.swift in Sources */,
@@ -1085,6 +1111,7 @@
 				E9FD77922B049EAE00596BF0 /* Typography.swift in Sources */,
 				E9FD776A2B048D3100596BF0 /* CharacterMod.swift in Sources */,
 				E930BBEC2B15BFAC0054187E /* CloudCharacterVault.swift in Sources */,
+				E95CB5832B187ECD007ABCB5 /* OnBoardingMain.swift in Sources */,
 				E994152A2B09ECEA00E58660 /* CharacterDetailsViewModel.swift in Sources */,
 				E9FD77AF2B05F6D700596BF0 /* ModifierViewModel.swift in Sources */,
 				E9FD77A62B05E2BE00596BF0 /* AbilityPresentationLandscape.swift in Sources */,
@@ -1100,6 +1127,7 @@
 				E99415382B0A0AA400E58660 /* Die.swift in Sources */,
 				E941981E2B10298E00B54205 /* ArmorTabList.swift in Sources */,
 				E9FD77A02B05CBCB00596BF0 /* AbilityStatBlockItems.swift in Sources */,
+				E95CB5852B188BBF007ABCB5 /* OnBoardingTemplate.swift in Sources */,
 				E941982D2B10452200B54205 /* SDProtectionFromEvil.swift in Sources */,
 				E930BBA52B145C740054187E /* ArmorSubReviewModel.swift in Sources */,
 				E98E92732B11DB530071A7F7 /* EquipmentViewModel.swift in Sources */,

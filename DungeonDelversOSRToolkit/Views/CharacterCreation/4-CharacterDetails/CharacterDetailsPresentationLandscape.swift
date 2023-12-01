@@ -27,7 +27,10 @@ struct CharacterDetailsPresentationLandscape: View {
         }
       }
       Spacer()
-      LargeButton(label: "Next Step: Biography") {
+      LargeButton(
+        label: "Next Step: Biography",
+        isDisabled: player.pcHitPoints == 0 || player.coins.first { $0.key == .goldPieces }?.value == 0
+      ) {
         screen.currentScreen = .characterBio
       }
       .padding(.horizontal, 20)

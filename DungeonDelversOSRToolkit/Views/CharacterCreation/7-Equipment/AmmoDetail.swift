@@ -46,7 +46,7 @@ struct AmmoDetail: View {
                 label: "Refund Cost: \(ammo.cost)",
                 icon: "dollarsign.arrow.circlepath",
                 bgColor: Color("tkBlue"),
-                fgColor: Color.white
+                isDisabled: false
               ) {
                 viewModel.refundCostOfPurchasable(item: ammo, for: player)
               }
@@ -54,8 +54,8 @@ struct AmmoDetail: View {
               SmallButton(
                 label: purchasable ? "Purchase" : "Not enough gold",
                 icon: purchasable ? "dollarsign" : "exclamationmark.octagon.fill",
-                bgColor: purchasable ? Color("tkGreen") : Color.gray,
-                fgColor: purchasable ? Color.white : Color.black
+                bgColor: Color("tkGreen"),
+                isDisabled: false
               ) {
                 viewModel.purchaseItem(item: ammo, for: player)
               }

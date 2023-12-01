@@ -11,7 +11,7 @@ import SwiftUI
 struct DungeonDelversOSRToolkitApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      ContainerView()
     }
   }
 }

@@ -42,7 +42,6 @@ class LocalStorageFileManager {
 
   func getAllCharacters() -> [PlayerCharacter]? {
     var localVaultList: [PlayerCharacter] = []
-    let fileManager = FileManager()
 
     guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
       print("[ DEBUG ] Unable to get document directory.")
@@ -50,7 +49,9 @@ class LocalStorageFileManager {
     }
 
     do {
-      let charactersURLs = try fileManager.contentsOfDirectory(at: documentDirectory, includingPropertiesForKeys: nil)
+      let charactersURLs =
+      try FileManager.default.contentsOfDirectory(at: documentDirectory, includingPropertiesForKeys: nil)
+      print("[ DEBUG ] \(documentDirectory)")
 
       for characterURL in charactersURLs {
         let characterData = try Data(contentsOf: characterURL)
@@ -60,6 +61,7 @@ class LocalStorageFileManager {
       print("[DEBUG] localValutList: \(localVaultList)")
     } catch {
       print("[ DEBUG ] Cannot retrieve local character vault contents.")
+      print("\(error)")
       return nil
     }
 

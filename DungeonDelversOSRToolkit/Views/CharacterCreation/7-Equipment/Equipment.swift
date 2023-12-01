@@ -48,7 +48,7 @@ struct Equipment: View {
               }
           }
         }
-        LargeButton(label: "Next Step: Review Character") {
+        LargeButton(label: "Next Step: Review Character", isDisabled: false) {
           screen.currentScreen = .characterReview
         }
         .padding()

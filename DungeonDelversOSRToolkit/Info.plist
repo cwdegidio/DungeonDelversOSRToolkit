@@ -9,6 +9,7 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>JollyLodger-Regular.ttf</string>
 		<string>ArtsPolyhedralDiceD4Rounded.ttf</string>
 		<string>ArtsPolyhedralDiceD6.ttf</string>
 		<string>ArtsPolyhedralDiceD8.ttf</string>

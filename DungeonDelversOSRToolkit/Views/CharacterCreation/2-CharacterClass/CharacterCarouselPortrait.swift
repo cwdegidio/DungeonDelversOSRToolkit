@@ -31,7 +31,7 @@ struct CharacterCarouselPortrait: View {
         label: "View \(thisClass.name) Features",
         icon: "\(thisClass.symbol)",
         bgColor: Color("tkBlue"),
-        fgColor: Color.white
+        isDisabled: false
       ) {
         showSheet.toggle()
       }
@@ -43,9 +43,10 @@ struct CharacterCarouselPortrait: View {
       }
       SmallButton(
         label: "Choose \(thisClass.name)",
-        icon: "checkmark",
-        bgColor: Color("tkGreen"),
-        fgColor: Color.white
+        icon: player.characterClass == thisClass ? "checkmark" : "questionmark",
+        bgColor: player.characterClass == nil || player.characterClass != thisClass ?
+        Color("tkBlue") : Color("tkGreen"),
+        isDisabled: false
       ) {
         viewModel.setCharacterClass(as: thisClass, for: player)
       }
@@ -73,4 +74,5 @@ struct CharacterCarouselPortrait: View {
     thisClass: CharacterClass.magicUser,
     viewModel: CharacterClassSelectionViewModel()
   )
+  .environment(player)
 }

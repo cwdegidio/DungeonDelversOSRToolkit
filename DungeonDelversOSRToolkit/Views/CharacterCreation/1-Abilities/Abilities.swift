@@ -12,10 +12,8 @@ struct Abilities: View {
   var vSizeClass: UserInterfaceSizeClass?
   @Environment(\.horizontalSizeClass)
   var hSizeClass: UserInterfaceSizeClass?
-
   @EnvironmentObject var player: PlayerCharacter
   @EnvironmentObject var screen: ApplicationScreen
-
   @State private var showSheet = false
   @State private var currentCharacterAbility: Ability = CharacterAbility(statType: .str, score: 0)
   @State private var abilityScore = 0
@@ -58,17 +56,16 @@ struct Abilities: View {
           currentCharacterAbility: $currentCharacterAbility,
           abilityScore: $abilityScore,
           abilityTitle: $abilityTitle,
-          player: player,
-          horizontalSizeClass: hSizeClass ?? .regular,
-          verticalSizeClass: vSizeClass ?? .regular
+          player: player
         )
+        .offset(x: 0, y: -20)
         Spacer()
-        LargeButton(label: "Next Step: Select Class") {
+        LargeButton(label: "Next Step: Select Class", isDisabled: !statsRolled) {
           nextScreen()
         }
         .padding(.horizontal)
-        .padding(.bottom)
       }
+      .padding(.bottom, portrait ? 0 : 100)
     }
   }
 

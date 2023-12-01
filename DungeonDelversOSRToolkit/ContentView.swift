@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  @AppStorage("_onBoardingComplete")
+  var onBoardingComplete = false
   @StateObject var player = PlayerCharacter()
   @StateObject var screen = ApplicationScreen(currentScreen: .home)
   @StateObject var review = ReviewModel()
