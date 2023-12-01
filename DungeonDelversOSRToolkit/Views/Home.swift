@@ -15,6 +15,7 @@ struct Home: View {
       GlobalBackground()
       VStack {
         Subtitle(content: "What would you like to do?")
+          .accessibilityLabel("homeTitle")
         SmallButton(
           label: "Create a new character",
           icon: "dice.fill",

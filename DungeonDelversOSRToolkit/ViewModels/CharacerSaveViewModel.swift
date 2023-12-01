@@ -17,7 +17,7 @@ class CharacerSaveViewModel {
     return success
   }
 
-  func saveLocalCharacterToCloud(player: PlayerCharacter) {
+  func saveLocalCharacterToCloud(player: PlayerCharacter) throws {
     Task { @MainActor in
       try await cloudManager.saveCharacterToCloud(player: player)
     }

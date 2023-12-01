@@ -24,12 +24,14 @@ struct OnBoardingTemplate: View {
     AnyLayout(HStackLayout())
 
     layout {
-      Text("Dungeon Delver's OSR Toolkit")
-        .font(.title)
-        .fontWeight(.black)
-        .foregroundStyle(Color("tkRed"))
-        .frame(alignment: .center)
-        .multilineTextAlignment(portrait ? .center : .trailing)
+      if portrait {
+        Text("Dungeon Delver's OSR Toolkit")
+          .font(.title)
+          .fontWeight(.black)
+          .foregroundStyle(Color("tkRed"))
+          .frame(alignment: .center)
+          .multilineTextAlignment(portrait ? .center : .trailing)
+      }
       ZStack {
         Image(image)
           .resizable()
@@ -41,18 +43,21 @@ struct OnBoardingTemplate: View {
           .frame(width: 300, height: 300)
           .padding(.bottom)
       }
-      Text(content)
-        .font(.title3)
-        .fontWeight(.bold)
-        .frame(maxWidth: 300)
-      Spacer()
-      if showCompletionButton {
-        LargeButton(label: "Continue to the Toolkit!", isDisabled: false) {
-          showOnBoarding = false
+      VStack {
+        Text(content)
+          .font(.title3)
+          .fontWeight(.bold)
+          .frame(maxWidth: 300)
+          .padding(.bottom, 50)
+        if showCompletionButton {
+          LargeButton(label: "Continue to the Toolkit!", isDisabled: false) {
+            showOnBoarding = false
+          }
+          .offset(x: 0, y: -30)
         }
-        .offset(x: 0, y: -30)
-        .padding()
       }
+      .frame(width: 300, height: 200)
+      .padding()
     }
   }
 }

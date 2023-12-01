@@ -56,6 +56,17 @@
                ReferencedContainer = "container:DungeonDelversOSRToolkit.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E95CB5892B1976AE007ABCB5"
+               BuildableName = "DungeonDelversOSRToolkitUITests.xctest"
+               BlueprintName = "DungeonDelversOSRToolkitUITests"
+               ReferencedContainer = "container:DungeonDelversOSRToolkit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

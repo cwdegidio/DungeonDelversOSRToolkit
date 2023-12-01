@@ -64,6 +64,7 @@ struct Abilities: View {
           nextScreen()
         }
         .padding(.horizontal)
+        .padding(.bottom, 20)
       }
       .padding(.bottom, portrait ? 0 : 100)
     }

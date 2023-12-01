@@ -10,6 +10,12 @@ import XCTest
 
 final class ModCalculatorStandardResultTest: XCTestCase {
   // MARK: - getValue (standardResult)
+  func test_ModCalculator_getValue_shouldBeStandardResultDefault() throws {
+    let modifier = CharacterMod(modType: .melee, asscStat: .str)
+
+    XCTAssertEqual(-3, ModCalculator().getValue(for: modifier, using: 0))
+  }
+
   func test_ModCalculator_getValue_shouldBeStandardResultMinus3() throws {
     let modifier = CharacterMod(modType: .melee, asscStat: .str)
 

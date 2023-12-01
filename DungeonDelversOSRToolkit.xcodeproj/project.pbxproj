@@ -96,6 +96,30 @@
 		E95CB5802B187310007ABCB5 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95CB57F2B187310007ABCB5 /* ContainerView.swift */; };
 		E95CB5832B187ECD007ABCB5 /* OnBoardingMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95CB5822B187ECD007ABCB5 /* OnBoardingMain.swift */; };
 		E95CB5852B188BBF007ABCB5 /* OnBoardingTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95CB5842B188BBF007ABCB5 /* OnBoardingTemplate.swift */; };
+		E98DE6492B197E4D006B49DD /* StatEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6482B197E4D006B49DD /* StatEnumTest.swift */; };
+		E98DE64B2B198064006B49DD /* ModEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE64A2B198064006B49DD /* ModEnumTest.swift */; };
+		E98DE64D2B1983B5006B49DD /* SpokenLanguageEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE64C2B1983B5006B49DD /* SpokenLanguageEnumTest.swift */; };
+		E98DE64F2B1993CC006B49DD /* LiteractyEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE64E2B1993CC006B49DD /* LiteractyEnumTest.swift */; };
+		E98DE6512B199461006B49DD /* AlignmentEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6502B199461006B49DD /* AlignmentEnumTest.swift */; };
+		E98DE6532B19955D006B49DD /* TypeFaceEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6522B19955D006B49DD /* TypeFaceEnumTest.swift */; };
+		E98DE6552B199647006B49DD /* CharacterClassEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6542B199647006B49DD /* CharacterClassEnumTest.swift */; };
+		E98DE6572B19BC51006B49DD /* LanguageEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6562B19BC51006B49DD /* LanguageEnumTest.swift */; };
+		E98DE6592B19BEA4006B49DD /* DieEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6582B19BEA4006B49DD /* DieEnumTest.swift */; };
+		E98DE65B2B19C0EF006B49DD /* CoinageEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE65A2B19C0EF006B49DD /* CoinageEnumTest.swift */; };
+		E98DE65D2B19C21C006B49DD /* MUSpellEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE65C2B19C21C006B49DD /* MUSpellEnumTest.swift */; };
+		E98DE65F2B19C3BF006B49DD /* ArmorEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE65E2B19C3BF006B49DD /* ArmorEnumTest.swift */; };
+		E98DE6612B19C5EA006B49DD /* WeaponEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6602B19C5EA006B49DD /* WeaponEnumTest.swift */; };
+		E98DE6632B19CE2F006B49DD /* AmmoEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6622B19CE2F006B49DD /* AmmoEnumTest.swift */; };
+		E98DE6652B19CF90006B49DD /* GearEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6642B19CF90006B49DD /* GearEnumTest.swift */; };
+		E98DE6672B19D5FA006B49DD /* SavingThrowEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6662B19D5FA006B49DD /* SavingThrowEnumTest.swift */; };
+		E98DE6692B19D6C3006B49DD /* CombatValueEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6682B19D6C3006B49DD /* CombatValueEnumTest.swift */; };
+		E98DE66B2B19D821006B49DD /* MovementEnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE66A2B19D821006B49DD /* MovementEnumTest.swift */; };
+		E98DE66E2B19D92D006B49DD /* CharacterAbilityModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE66D2B19D92D006B49DD /* CharacterAbilityModelTest.swift */; };
+		E98DE6702B19DA13006B49DD /* CharacterModTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE66F2B19DA13006B49DD /* CharacterModTest.swift */; };
+		E98DE6722B19DAD2006B49DD /* PlayerCharacterModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6712B19DAD2006B49DD /* PlayerCharacterModelTest.swift */; };
+		E98DE6742B19E010006B49DD /* ApplicationScreenModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6732B19E010006B49DD /* ApplicationScreenModelTest.swift */; };
+		E98DE6762B19E115006B49DD /* MarkdownHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6752B19E115006B49DD /* MarkdownHelperTest.swift */; };
+		E98DE6782B19E491006B49DD /* ReviewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DE6772B19E491006B49DD /* ReviewModelTest.swift */; };
 		E98E92652B10B4CF0071A7F7 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92642B10B4CF0071A7F7 /* Weapon.swift */; };
 		E98E92672B10BE120071A7F7 /* WeaponDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92662B10BE120071A7F7 /* WeaponDetail.swift */; };
 		E98E92692B11240D0071A7F7 /* Ammo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98E92682B11240D0071A7F7 /* Ammo.swift */; };
@@ -168,7 +192,6 @@
 		E9FD777E2B048E7F00596BF0 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD777D2B048E7F00596BF0 /* Alignment.swift */; };
 		E9FD77802B048EA300596BF0 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD777F2B048EA300596BF0 /* Screen.swift */; };
 		E9FD77822B048EB800596BF0 /* TypeFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77812B048EB800596BF0 /* TypeFace.swift */; };
-		E9FD77842B048ED800596BF0 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77832B048ED800596BF0 /* Section.swift */; };
 		E9FD77862B048EF800596BF0 /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77852B048EF800596BF0 /* CharacterClass.swift */; };
 		E9FD77882B048F1000596BF0 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD77872B048F1000596BF0 /* Language.swift */; };
 		E9FD778C2B049B4400596BF0 /* Handlee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */; };
@@ -305,6 +328,30 @@
 		E95CB57F2B187310007ABCB5 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		E95CB5822B187ECD007ABCB5 /* OnBoardingMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingMain.swift; sourceTree = "<group>"; };
 		E95CB5842B188BBF007ABCB5 /* OnBoardingTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingTemplate.swift; sourceTree = "<group>"; };
+		E98DE6482B197E4D006B49DD /* StatEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatEnumTest.swift; sourceTree = "<group>"; };
+		E98DE64A2B198064006B49DD /* ModEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModEnumTest.swift; sourceTree = "<group>"; };
+		E98DE64C2B1983B5006B49DD /* SpokenLanguageEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenLanguageEnumTest.swift; sourceTree = "<group>"; };
+		E98DE64E2B1993CC006B49DD /* LiteractyEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteractyEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6502B199461006B49DD /* AlignmentEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6522B19955D006B49DD /* TypeFaceEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeFaceEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6542B199647006B49DD /* CharacterClassEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6562B19BC51006B49DD /* LanguageEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6582B19BEA4006B49DD /* DieEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieEnumTest.swift; sourceTree = "<group>"; };
+		E98DE65A2B19C0EF006B49DD /* CoinageEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinageEnumTest.swift; sourceTree = "<group>"; };
+		E98DE65C2B19C21C006B49DD /* MUSpellEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUSpellEnumTest.swift; sourceTree = "<group>"; };
+		E98DE65E2B19C3BF006B49DD /* ArmorEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6602B19C5EA006B49DD /* WeaponEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6622B19CE2F006B49DD /* AmmoEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmmoEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6642B19CF90006B49DD /* GearEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6662B19D5FA006B49DD /* SavingThrowEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingThrowEnumTest.swift; sourceTree = "<group>"; };
+		E98DE6682B19D6C3006B49DD /* CombatValueEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatValueEnumTest.swift; sourceTree = "<group>"; };
+		E98DE66A2B19D821006B49DD /* MovementEnumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementEnumTest.swift; sourceTree = "<group>"; };
+		E98DE66D2B19D92D006B49DD /* CharacterAbilityModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAbilityModelTest.swift; sourceTree = "<group>"; };
+		E98DE66F2B19DA13006B49DD /* CharacterModTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModTest.swift; sourceTree = "<group>"; };
+		E98DE6712B19DAD2006B49DD /* PlayerCharacterModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCharacterModelTest.swift; sourceTree = "<group>"; };
+		E98DE6732B19E010006B49DD /* ApplicationScreenModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationScreenModelTest.swift; sourceTree = "<group>"; };
+		E98DE6752B19E115006B49DD /* MarkdownHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownHelperTest.swift; sourceTree = "<group>"; };
+		E98DE6772B19E491006B49DD /* ReviewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModelTest.swift; sourceTree = "<group>"; };
 		E98E92642B10B4CF0071A7F7 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		E98E92662B10BE120071A7F7 /* WeaponDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetail.swift; sourceTree = "<group>"; };
 		E98E92682B11240D0071A7F7 /* Ammo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
@@ -378,7 +425,6 @@
 		E9FD777D2B048E7F00596BF0 /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
 		E9FD777F2B048EA300596BF0 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		E9FD77812B048EB800596BF0 /* TypeFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeFace.swift; sourceTree = "<group>"; };
-		E9FD77832B048ED800596BF0 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		E9FD77852B048EF800596BF0 /* CharacterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
 		E9FD77872B048F1000596BF0 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E9FD778A2B04991200596BF0 /* Handlee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handlee-Regular.ttf"; sourceTree = "<group>"; };
@@ -596,6 +642,43 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		E98DE6472B197CBB006B49DD /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E98DE6482B197E4D006B49DD /* StatEnumTest.swift */,
+				E98DE64A2B198064006B49DD /* ModEnumTest.swift */,
+				E98DE64C2B1983B5006B49DD /* SpokenLanguageEnumTest.swift */,
+				E98DE64E2B1993CC006B49DD /* LiteractyEnumTest.swift */,
+				E98DE6502B199461006B49DD /* AlignmentEnumTest.swift */,
+				E98DE6522B19955D006B49DD /* TypeFaceEnumTest.swift */,
+				E98DE6542B199647006B49DD /* CharacterClassEnumTest.swift */,
+				E98DE6562B19BC51006B49DD /* LanguageEnumTest.swift */,
+				E98DE6582B19BEA4006B49DD /* DieEnumTest.swift */,
+				E98DE65A2B19C0EF006B49DD /* CoinageEnumTest.swift */,
+				E98DE65C2B19C21C006B49DD /* MUSpellEnumTest.swift */,
+				E98DE65E2B19C3BF006B49DD /* ArmorEnumTest.swift */,
+				E98DE6602B19C5EA006B49DD /* WeaponEnumTest.swift */,
+				E98DE6622B19CE2F006B49DD /* AmmoEnumTest.swift */,
+				E98DE6642B19CF90006B49DD /* GearEnumTest.swift */,
+				E98DE6662B19D5FA006B49DD /* SavingThrowEnumTest.swift */,
+				E98DE6682B19D6C3006B49DD /* CombatValueEnumTest.swift */,
+				E98DE66A2B19D821006B49DD /* MovementEnumTest.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		E98DE66C2B19D913006B49DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E98DE66D2B19D92D006B49DD /* CharacterAbilityModelTest.swift */,
+				E98DE66F2B19DA13006B49DD /* CharacterModTest.swift */,
+				E98DE6712B19DAD2006B49DD /* PlayerCharacterModelTest.swift */,
+				E98DE6732B19E010006B49DD /* ApplicationScreenModelTest.swift */,
+				E98DE6772B19E491006B49DD /* ReviewModelTest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E98E92782B1205C80071A7F7 /* GeneralCharacterReview */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,7 +813,6 @@
 				E9FD777D2B048E7F00596BF0 /* Alignment.swift */,
 				E9FD777F2B048EA300596BF0 /* Screen.swift */,
 				E9FD77812B048EB800596BF0 /* TypeFace.swift */,
-				E9FD77832B048ED800596BF0 /* Section.swift */,
 				E9FD77852B048EF800596BF0 /* CharacterClass.swift */,
 				E9FD77872B048F1000596BF0 /* Language.swift */,
 				E99415372B0A0AA400E58660 /* Die.swift */,
@@ -849,6 +931,8 @@
 		E9FE6C632B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
+				E98DE66C2B19D913006B49DD /* Models */,
+				E98DE6472B197CBB006B49DD /* Enums */,
 				E9FE6C882B0C6721003006D8 /* ViewModels */,
 				E9FE6C832B0C4D7A003006D8 /* Helpers */,
 				E9FE6C642B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift */,
@@ -878,6 +962,7 @@
 			children = (
 				E9FE6C6E2B0C4A7F003006D8 /* ModCalculator */,
 				E9FE6C842B0C4D96003006D8 /* OrientationHelperTest.swift */,
+				E98DE6752B19E115006B49DD /* MarkdownHelperTest.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1171,7 +1256,6 @@
 				E98E92A42B134F730071A7F7 /* WeaponReviewItem.swift in Sources */,
 				E930BBF02B15D4EE0054187E /* ResponseModel.swift in Sources */,
 				E94198072B0DFDB500B54205 /* AlignmentSelector.swift in Sources */,
-				E9FD77842B048ED800596BF0 /* Section.swift in Sources */,
 				E9FD77A42B05E20A00596BF0 /* AbilityPresentationPortrait.swift in Sources */,
 				E99415232B09DB0900E58660 /* AbilityAdjustmentPresentationPortrait.swift in Sources */,
 				E930BB9D2B145A940054187E /* ExplorationSubReviewModel.swift in Sources */,
@@ -1189,37 +1273,61 @@
 				E9FE6C652B0C2FA4003006D8 /* DungeonDelversOSRToolkitTests.swift in Sources */,
 				E9FE6C782B0C4BF9003006D8 /* ModCalculatorLiteracyTest.swift in Sources */,
 				E9FE6C762B0C4BBC003006D8 /* ModCalculatorSpokenLanguagesTest.swift in Sources */,
+				E98DE6552B199647006B49DD /* CharacterClassEnumTest.swift in Sources */,
+				E98DE6722B19DAD2006B49DD /* PlayerCharacterModelTest.swift in Sources */,
 				E930BBC82B1481C80054187E /* GearSubReviewModelTest.swift in Sources */,
 				E98E92772B11FB7D0071A7F7 /* EquipmentViewModelTest.swift in Sources */,
+				E98DE64F2B1993CC006B49DD /* LiteractyEnumTest.swift in Sources */,
 				E930BBCC2B1483E70054187E /* TurningUndeadSubReviewModelTest.swift in Sources */,
+				E98DE6692B19D6C3006B49DD /* CombatValueEnumTest.swift in Sources */,
 				E9FE6C8C2B0C6BE6003006D8 /* ModifierViewModelTest.swift in Sources */,
+				E98DE6782B19E491006B49DD /* ReviewModelTest.swift in Sources */,
 				E941983D2B10576200B54205 /* SpellViewModelTest.swift in Sources */,
+				E98DE6672B19D5FA006B49DD /* SavingThrowEnumTest.swift in Sources */,
 				E930BBC42B147F970054187E /* ArmorSubReviewModelTest.swift in Sources */,
+				E98DE6592B19BEA4006B49DD /* DieEnumTest.swift in Sources */,
 				E9FE6C722B0C4B11003006D8 /* ModCalculatorSecondaryResultTest.swift in Sources */,
 				E930BBB62B146A910054187E /* CombatSubReviewModelTest.swift in Sources */,
 				E930BBBA2B14726E0054187E /* EncounterSubReviewModelTest.swift in Sources */,
+				E98DE64D2B1983B5006B49DD /* SpokenLanguageEnumTest.swift in Sources */,
+				E98DE65B2B19C0EF006B49DD /* CoinageEnumTest.swift in Sources */,
+				E98DE6512B199461006B49DD /* AlignmentEnumTest.swift in Sources */,
 				E9FE6C902B0C7234003006D8 /* CharacterClassSelectionViewModelTest.swift in Sources */,
 				E930BBB22B1464B40054187E /* AbilitySubReviewModelTest.swift in Sources */,
 				E930BBB42B1467BD0054187E /* SavingThrowsSubReviewModelTest.swift in Sources */,
 				E9FE6C742B0C4B6A003006D8 /* ModCalculatorOpenDoorsTest.swift in Sources */,
+				E98DE6532B19955D006B49DD /* TypeFaceEnumTest.swift in Sources */,
 				E9FE6C7E2B0C4CA7003006D8 /* ModCalculatorXPAdjustmentSinglePrimeReq.swift in Sources */,
+				E98DE6632B19CE2F006B49DD /* AmmoEnumTest.swift in Sources */,
+				E98DE6652B19CF90006B49DD /* GearEnumTest.swift in Sources */,
+				E98DE64B2B198064006B49DD /* ModEnumTest.swift in Sources */,
 				E9FE6C922B0C7867003006D8 /* AbilityAdjustmentViewModelTest.swift in Sources */,
 				E9FE6C8A2B0C6739003006D8 /* AbilityViewModelTest.swift in Sources */,
 				E930BBC02B147B920054187E /* LanguageSubReviewModelTest.swift in Sources */,
+				E98DE65F2B19C3BF006B49DD /* ArmorEnumTest.swift in Sources */,
 				E930BBC62B1480820054187E /* WeaponSubReviewModelTest.swift in Sources */,
+				E98DE6612B19C5EA006B49DD /* WeaponEnumTest.swift in Sources */,
+				E98DE6702B19DA13006B49DD /* CharacterModTest.swift in Sources */,
+				E98DE65D2B19C21C006B49DD /* MUSpellEnumTest.swift in Sources */,
 				E9FE6C852B0C4D96003006D8 /* OrientationHelperTest.swift in Sources */,
 				E930BBBE2B1477E10054187E /* MovementSubReviewModelTest.swift in Sources */,
+				E98DE6572B19BC51006B49DD /* LanguageEnumTest.swift in Sources */,
 				E930BBB82B1470D30054187E /* ClassAbilitySubReviewModelTest.swift in Sources */,
 				E9FE6C7A2B0C4C31003006D8 /* ModCaculatorRetainerMax.swift in Sources */,
+				E98DE66B2B19D821006B49DD /* MovementEnumTest.swift in Sources */,
 				E930BBCA2B1482AA0054187E /* ThievesSkillsSubReviewModelTest.swift in Sources */,
+				E98DE6742B19E010006B49DD /* ApplicationScreenModelTest.swift in Sources */,
 				E9FE6C822B0C4D15003006D8 /* ModCalculatorXPAdjustmentHalfling.swift in Sources */,
 				E930BBCE2B1484D40054187E /* SpellsSubReviewModelTest.swift in Sources */,
 				E9FE6C802B0C4CE3003006D8 /* ModCalculatorXPAdjustmentElf.swift in Sources */,
 				E9FE6C702B0C4AAF003006D8 /* ModCalculatorStandardResultTest.swift in Sources */,
+				E98DE6492B197E4D006B49DD /* StatEnumTest.swift in Sources */,
 				E930BBBC2B1475190054187E /* ExplorationSubReviewModelTest.swift in Sources */,
 				E930BBC22B147DF00054187E /* AdvancementSubReviewTest.swift in Sources */,
 				E94198162B0F635800B54205 /* CharacterBioViewModelTest.swift in Sources */,
 				E941980B2B0E674100B54205 /* CharacterDetailsViewModelTest.swift in Sources */,
+				E98DE66E2B19D92D006B49DD /* CharacterAbilityModelTest.swift in Sources */,
+				E98DE6762B19E115006B49DD /* MarkdownHelperTest.swift in Sources */,
 				E9FE6C7C2B0C4C68003006D8 /* ModCalculatorRetainerLoyalty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
