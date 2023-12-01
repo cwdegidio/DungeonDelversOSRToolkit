@@ -17,7 +17,7 @@ struct NewCharacterReview: View {
       GlobalBackground()
       VStack {
         GeneralCharacterReview(player: player)
-        LargeButton(label: "Save Character") {
+        LargeButton(label: "Save Character", isDisabled: false) {
           screen.currentScreen = .characterSave
         }
         .padding()

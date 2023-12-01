@@ -56,7 +56,12 @@ struct CharacterBio: View {
         }
         .padding()
         Spacer()
-        LargeButton(label: "Next Step: \(isMagicUser ? "Spell Selection" : "Equipment")") {
+        LargeButton(
+          label: "Next Step: \(isMagicUser ? "Spell Selection" : "Equipment")",
+          isDisabled:
+            player.name.isEmpty ||
+          player.additionalLanguages.count != viewModel.getNumberOfLanguages(for: player)
+        ) {
           var nextScreen: Screen
           if isMagicUser {
             nextScreen = .spells

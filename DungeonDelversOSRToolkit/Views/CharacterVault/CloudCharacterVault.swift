@@ -46,7 +46,7 @@ struct CloudCharacterVault: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
             .scrollContentBackground(.hidden)
-            LargeButton(label: "Return Home") {
+            LargeButton(label: "Return Home", isDisabled: false) {
               screen.currentScreen = .home
             }
             .padding()

@@ -25,7 +25,7 @@ struct CharacterSave: View {
       GlobalBackground()
       VStack {
         Subtitle(content: "Choose a save location:")
-        SmallButton(label: "Save to Device", icon: "iphone", bgColor: Color("tkBlue"), fgColor: .white) {
+        SmallButton(label: "Save to Device", icon: "iphone", bgColor: Color("tkBlue"), isDisabled: false) {
           localSaveSuccess = viewModel.saveCharacterToDevice(for: player)
           showLocalSaveAlert = true
         }
@@ -33,11 +33,16 @@ struct CharacterSave: View {
         .alert(localSaveSuccess ? localSuccessMessage : localFailMessage, isPresented: $showLocalSaveAlert) {
           Button("OK", role: .cancel) { }
         }
-        SmallButton(label: "Save to Dungeon Cloud", icon: "cloud.fill", bgColor: Color("tkBlue"), fgColor: .white) {
+        SmallButton(label: "Save to Dungeon Cloud", icon: "cloud.fill", bgColor: Color("tkBlue"), isDisabled: false) {
           viewModel.saveLocalCharacterToCloud(player: player)
         }
         .padding(.bottom, 10)
-        LargeButton(label: localSaveSuccess ? "Return to Home" : "Abandon Character and Return Home") {
+        SmallButton(
+          label: localSaveSuccess ? "Return to Home" : "Abandon Character and Return Home",
+          icon: localSaveSuccess ? "cloud.fill" : "exclamationmark.triangle.fill",
+          bgColor: localSaveSuccess ? Color("tkGreen") : Color("tkRed"),
+          isDisabled: false
+        ) {
           screen.currentScreen = .home
         }
       }

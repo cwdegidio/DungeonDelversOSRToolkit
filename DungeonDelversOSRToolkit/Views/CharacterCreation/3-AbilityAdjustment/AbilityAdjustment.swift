@@ -46,7 +46,7 @@ struct AbilityAdjustment: View {
         }
 
         Spacer()
-        LargeButton(label: "Next Step: Select Class") {
+        LargeButton(label: "Next Step: Details", isDisabled: false) {
           screen.currentScreen = Screen.characterDetails
         }
         .padding(.horizontal)

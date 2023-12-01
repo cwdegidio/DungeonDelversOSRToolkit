@@ -35,7 +35,7 @@ struct CharacterClassDetailSheet: View {
       }
     }
     Text(characterURLString)
-    SmallButton(label: "Got it!", icon: "hand.thumbsup.fill", bgColor: Color("tkBlue"), fgColor: nil) {
+    SmallButton(label: "Got it!", icon: "hand.thumbsup.fill", bgColor: Color("tkBlue"), isDisabled: false) {
       dismiss()
     }
     .padding()

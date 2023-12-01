@@ -48,7 +48,7 @@ struct Spells: View {
 
           selectedSpell.descriptionView
           Spacer()
-          LargeButton(label: "Next Step: Equipment") {
+          LargeButton(label: "Next Step: Equipment", isDisabled: false) {
             screen.currentScreen = Screen.equipment
           }
           .padding()

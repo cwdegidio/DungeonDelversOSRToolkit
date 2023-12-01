@@ -19,7 +19,7 @@ struct Home: View {
           label: "Create a new character",
           icon: "dice.fill",
           bgColor: Color("tkGreen"),
-          fgColor: Color.white
+          isDisabled: false
         ) {
           screen.currentScreen = .abilities
         }
@@ -28,7 +28,7 @@ struct Home: View {
           label: "View local character vault",
           icon: "iphone",
           bgColor: Color("tkBlue"),
-          fgColor: Color.white
+          isDisabled: false
         ) {
           screen.currentScreen = .localCharacterVault
         }
@@ -37,7 +37,7 @@ struct Home: View {
           label: "View characters on Dungeon Cloud",
           icon: "cloud.fill",
           bgColor: Color("tkYellow"),
-          fgColor: Color.white
+          isDisabled: false
         ) {
           screen.currentScreen = .cloudCharacterVault
         }
