@@ -105,7 +105,7 @@ enum CharacterClass: String, CaseIterable, Codable {
     }
   }
 
-  var armour: String {
+  var armor: String {
     switch self {
     case .cleric, .dwarf, .elf, .fighter:
       return "Any, including shields"

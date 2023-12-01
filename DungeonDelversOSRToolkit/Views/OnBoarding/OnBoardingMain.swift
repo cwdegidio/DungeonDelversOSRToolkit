@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnBoardingMain: View {
   @Binding var showOnboarding: Bool
-  
+
   var body: some View {
     VStack {
       TabView {

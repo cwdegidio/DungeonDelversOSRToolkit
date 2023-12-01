@@ -10,6 +10,12 @@ import XCTest
 
 final class ModCalculatorSpokenLanguagesTest: XCTestCase {
   // MARK: - getValue (spokenLanguages)
+  func test_ModCalculator_getValue_shouldBeSpokenLanguagesNativeBrokenDefault() {
+    let modifier = CharacterMod(modType: .spokenLanguage, asscStat: .int)
+
+    XCTAssertEqual(1, ModCalculator().getValue(for: modifier, using: 0))
+  }
+
   func test_ModCalculator_getValue_shouldBeSpokenLanguagesNativeBroken() {
     let modifier = CharacterMod(modType: .spokenLanguage, asscStat: .int)
 

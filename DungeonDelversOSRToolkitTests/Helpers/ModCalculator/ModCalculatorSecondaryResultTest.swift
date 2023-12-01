@@ -11,6 +11,12 @@ import XCTest
 
 final class ModCalculatorSecondaryResultTest: XCTestCase {
   // MARK: - getValue (secondaryResult)
+  func test_ModCalculator_getValue_shouldBeSecondaryResultMinus2default() throws {
+    let modifier = CharacterMod(modType: .initiative, asscStat: .dex)
+
+    XCTAssertEqual(-2, ModCalculator().getValue(for: modifier, using: 0))
+  }
+
   func test_ModCalculator_getValue_shouldBeSecondaryResultMinus2() throws {
     let modifier = CharacterMod(modType: .initiative, asscStat: .dex)
 
@@ -39,6 +45,12 @@ final class ModCalculatorSecondaryResultTest: XCTestCase {
     let modifier = CharacterMod(modType: .initiative, asscStat: .dex)
 
     XCTAssertEqual(2, ModCalculator().getValue(for: modifier, using: 18))
+  }
+
+  func test_ModCalculator_getValue_shouldBeOpenDoors1default() throws {
+    let modifier = CharacterMod(modType: .openDoors, asscStat: .str)
+
+    XCTAssertEqual(1, ModCalculator().getValue(for: modifier, using: 0))
   }
 
   func test_ModCalculator_getValue_shouldBeOpenDoors1() throws {

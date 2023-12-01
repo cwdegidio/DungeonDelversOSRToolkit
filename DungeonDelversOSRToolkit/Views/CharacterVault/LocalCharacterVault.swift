@@ -19,20 +19,24 @@ struct LocalCharacterVault: View {
         GlobalBackground()
         VStack {
           List {
-            ScrollView {
-              ForEach(localCharacters.sorted { $0.name < $1.name }, id: \.id) { character in
-                VStack {
-                  NavigationLink(destination: GeneralCharacterReview(player: character)) {
-                    HStack {
-                      Text("\(character.name) (\(character.characterClass?.name ?? "No class"))")
-                      Spacer()
-                      Image(systemName: "chevron.forward")
+            if !localCharacters.isEmpty {
+              ScrollView {
+                ForEach(localCharacters.sorted { $0.name < $1.name }, id: \.id) { character in
+                  VStack {
+                    NavigationLink(destination: GeneralCharacterReview(player: character)) {
+                      HStack {
+                        Text("\(character.name) (\(character.characterClass?.name ?? "No class"))")
+                        Spacer()
+                        Image(systemName: "chevron.forward")
+                      }
                     }
+                    .padding()
+                    Divider()
                   }
-                  .padding()
-                  Divider()
                 }
               }
+            } else {
+              Subtitle(content: "No local characters saved.")
             }
           }
           .navigationTitle("Characters")
